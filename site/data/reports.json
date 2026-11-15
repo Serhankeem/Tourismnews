@@ -1,9 +1,22 @@
 {
   "schema_version": 1,
   "mode": "verified_official_metadata",
-  "generated_at": "2026-11-09T07:50:14+09:00",
-  "count": 137,
+  "generated_at": "2026-11-16T08:05:27+09:00",
+  "count": 138,
   "reports": [
+    {
+      "title": "Monitoring Sentiment for Intra-European Travel Autumn & Winter 2026/2027",
+      "publisher": "European Travel Commission (ETC)",
+      "published_at": "2026-11-09",
+      "report_type": "정기 시장동향",
+      "category": "관광시장 전망·트렌드",
+      "keywords": [
+        "sentiment",
+        "travel"
+      ],
+      "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-autumn-winter-2026-2027/",
+      "access_type": "무료 공개"
+    },
     {
       "title": "European Tourism – Trends & Prospects (Q3/2026)",
       "publisher": "European Travel Commission (ETC)",
@@ -1746,6 +1759,10 @@
     }
   },
   "date_basis": {
+    "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-autumn-winter-2026-2027/": {
+      "kind": "official_page_first_publication",
+      "precision": "day"
+    },
     "https://etc-corporate.org/reports/european-tourism-trends-prospects-q3-2026/": {
       "kind": "official_page_first_publication",
       "precision": "day"
