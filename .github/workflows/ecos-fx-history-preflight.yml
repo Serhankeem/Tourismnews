@@ -1,0 +1,27 @@
+name: Market Weather FX History Preflight
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ecos-market-readonly-preflight
+  cancel-in-progress: false
+jobs:
+  preflight:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run isolated FX history tests without Secret
+        run: python -m unittest discover -s tests -p test_ecos_fx_history_preflight.py -v
+      - name: Audit fixed 70 months in memory and write safe Summary
+        env:
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+        run: python -m src.macro.ecos_fx_history_preflight

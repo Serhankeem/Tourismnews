@@ -1,0 +1,33 @@
+{
+  "date_kst": "2026-11-16",
+  "base_main": "3fec16225f4982ed7857fe1ec721ec8da446b60f",
+  "tests_passed": 651,
+  "new_synthetic_tests": 10,
+  "authenticated_previously_verified_periods": [
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "not_authenticated_this_step": {
+    "from": "2021-01",
+    "through": "2026-07",
+    "months": 67
+  },
+  "new_authenticated_queries": 0,
+  "separate_bok_publication_comparison": {
+    "months": [
+      "2026-09",
+      "2026-10"
+    ],
+    "equal": true,
+    "pdf_sha256": "7aa122db16d440f5e20bb5b2f63f573c1b656da2957b9a1d330db80c800e1a76",
+    "independent_origin_or_formula_verified": false,
+    "remaining_publication_months": 68
+  },
+  "unchanged_tracked_files": 570,
+  "existing_preflight_unchanged": true,
+  "production_settings_changed": false,
+  "actions_executed": false,
+  "collection_ready": false,
+  "publication_ready": false
+}
