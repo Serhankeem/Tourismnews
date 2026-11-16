@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-17T00:32:57+09:00",
+  "checked_at": "2026-11-17T02:38:02+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -4270,6 +4270,60 @@
       "decision": "exclude"
     },
     {
+      "id": "fd92c26a675e686d3b",
+      "title": "Explora Journeys Partners With Steamery To Elevate The In-Suite Experience",
+      "url": "https://www.hospitalitynet.org/news/4135504/explora-journeys-partners-with-steamery-to-elevate-the-in-suite-experience",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "0faef6f7c861e5dd0a",
+      "title": "WorldHotels Unveils Rewards Overhaul, Elite Status After Just 5 Nights",
+      "url": "https://www.hospitalitynet.org/news/4135502/worldhotels-unveils-rewards-overhaul-elite-status-after-just-5-nights",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "5ce1038098ce961d95",
+      "title": "Alessio Re Explains Agentic AI to Aliens, Hotel Rates Won't Carry 2027, India's Hotel Pipeline Reaches 77% of Existing Rooms",
+      "url": "https://www.hospitalitynet.org/editorial/4135500/alessio-re-explains-agentic-ai-to-aliens-hotel-rates-wont-carry-2027-indias-hotel-pipeline-reaches-77-of-existing-rooms",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "2d0e60237736da8f41",
       "title": "Hotel GEO drives 116% organic revenue growth, Cendyn research reveals",
       "url": "https://www.hospitalitynet.org/news/4135499/hotel-geo-drives-116-organic-revenue-growth-cendyn-research-reveals",
@@ -4605,71 +4659,6 @@
       "id": "dc11026c9eecae8796",
       "title": "RAM Hotels Unveils Complete Corporate Rebranding to Signify Evolution into Lifestyle Space",
       "url": "https://www.hospitalitynet.org/news/4135482/ram-hotels-unveils-complete-corporate-rebranding-to-signify-evolution-into-lifestyle-space",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "7176a0a904b5a2d7e9",
-      "title": "Hotel Indigo Celebrates 40 Open Hotels in Greater China, Bringing More Neighbourhood Stories to Life",
-      "url": "https://www.hospitalitynet.org/news/4135481/hotel-indigo-celebrates-40-open-hotels-in-greater-china-bringing-more-neighbourhood-stories-to-life",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hotel",
-              "open"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "cce6774022951defd8",
-      "title": "In 2027, Your Hotel Has Two Guests. You're Probably Ignoring Both.",
-      "url": "https://www.hospitalitynet.org/opinion/4135480/in-2027-your-hotel-has-two-guests-youre-probably-ignoring-both",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "b4754f70095239ccad",
-      "title": "Hotel rates carried 2026. The forecast says they won’t carry 2027.",
-      "url": "https://www.hospitalitynet.org/opinion/4135479/hotel-rates-carried-2026-the-forecast-says-they-wont-carry-2027",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
