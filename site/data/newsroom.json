@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-16T18:11:34+09:00",
-  "last_successful_fetch": "2026-11-16T18:11:34+09:00",
-  "count": 111,
+  "generated_at": "2026-11-16T20:47:43+09:00",
+  "last_successful_fetch": "2026-11-16T20:47:43+09:00",
+  "count": 113,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,27 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Why Hotels Need Budgets That Adapt to Demand",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-16T20:34:36+09:00",
+      "url": "https://www.hospitalitynet.org/opinion/4135483/why-hotels-need-budgets-that-adapt-to-demand",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels"
+      ]
+    },
+    {
+      "title": "Hotel Indigo Celebrates 40 Open Hotels in Greater China, Bringing More Neighbourhood Stories to Life",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-16T20:27:22+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135481/hotel-indigo-celebrates-40-open-hotels-in-greater-china-bringing-more-neighbourhood-stories-to-life",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels",
+        "Hotel"
+      ]
+    },
     {
       "title": "아제르바이잔, 무비자로 갈 수 있게 됐다…직항 개설도 추진",
       "source": "여행신문",
