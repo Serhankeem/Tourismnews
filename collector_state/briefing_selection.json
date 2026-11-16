@@ -603,6 +603,19 @@
           ]
         }
       ]
+    },
+    {
+      "briefing_date": "2026-11-16",
+      "generated_at": "2026-11-16T10:50:52+09:00",
+      "mode": "live_rss",
+      "decisions": [
+        {
+          "article_id": "6c63fd8225e3cd23ef",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-16T00:10:00+09:00"
+        }
+      ]
     }
   ]
 }
