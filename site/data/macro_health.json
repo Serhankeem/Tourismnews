@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-15T13:16:15.304982+09:00",
+  "checked_at": "2026-11-16T12:25:31.328601+09:00",
   "status": "ok",
   "sources": [
     {
@@ -8,7 +8,7 @@
       "name": "한국관광공사 한국관광통계",
       "status": "ok",
       "reason": null,
-      "last_successful_check": "2026-11-15T13:16:15.304982+09:00",
+      "last_successful_check": "2026-11-16T12:25:31.328601+09:00",
       "reference_period": "2026-09",
       "release_published_at": "2026-10-28T10:10:00+09:00",
       "observations": 483,
