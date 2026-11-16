@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-11-16T20:47:43+09:00",
+  "generated_at": "2026-11-17T00:32:57+09:00",
   "mode": "live_rss",
   "decisions": [
+    {
+      "article_id": "2d0e60237736da8f41",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-17T00:21:12+09:00"
+    },
+    {
+      "article_id": "0aaad09e9d63540045",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-16T22:34:05+09:00"
+    },
+    {
+      "article_id": "94883d0576db38f2c7",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-16T21:07:33+09:00"
+    },
+    {
+      "article_id": "9e2e434d0bdb6b1d4d",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-16T21:05:00+09:00"
+    },
     {
       "article_id": "c8978f35e40a0d299f",
       "decision": "editorial_ineligible",
@@ -15,10 +39,10 @@
       "published_at": "2026-11-16T20:27:22+09:00"
     },
     {
-      "article_id": "6c63fd8225e3cd23ef",
+      "article_id": "553648132644ade06c",
       "decision": "editorial_ineligible",
       "tier": "reference",
-      "published_at": "2026-11-16T00:10:00+09:00"
+      "published_at": "2026-11-16T17:33:29+09:00"
     }
   ]
 }

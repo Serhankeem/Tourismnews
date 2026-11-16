@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-16T20:47:43+09:00",
-  "last_successful_fetch": "2026-11-16T20:47:43+09:00",
-  "count": 113,
+  "generated_at": "2026-11-17T00:32:57+09:00",
+  "last_successful_fetch": "2026-11-17T00:32:57+09:00",
+  "count": 118,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,46 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Hotel GEO drives 116% organic revenue growth, Cendyn research reveals",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-17T00:21:12+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135499/hotel-geo-drives-116-organic-revenue-growth-cendyn-research-reveals",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "‘2030 관광기업 육성’ 비전 선포",
+      "source": "트래블데일리",
+      "published_at": "2026-11-16T22:34:05+09:00",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72703",
+      "category": "여행산업",
+      "keywords": [
+        "관광기업"
+      ]
+    },
+    {
+      "title": "9 Revenue Leaks on Your Hotel Website",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-16T21:07:33+09:00",
+      "url": "https://www.hospitalitynet.org/opinion/4135488/9-revenue-leaks-on-your-hotel-website",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "APEC sends Shenzhen hotel demand to an annual high",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-16T21:05:00+09:00",
+      "url": "https://www.hospitalitynet.org/report/4135487/apec-sends-shenzhen-hotel-demand-to-an-annual-high",
+      "category": "항공·숙박",
+      "keywords": [
+        "hotel"
+      ]
+    },
     {
       "title": "Why Hotels Need Budgets That Adapt to Demand",
       "source": "Hospitality Net",
@@ -32,6 +72,16 @@
       "keywords": [
         "Hotels",
         "Hotel"
+      ]
+    },
+    {
+      "title": "한진트래블·한국조리기능장협회 업무협약 체결…인바운드 K-푸드 체험 콘텐츠 공동 개발",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-16T17:33:29+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3162991",
+      "category": "인바운드",
+      "keywords": [
+        "인바운드"
       ]
     },
     {
