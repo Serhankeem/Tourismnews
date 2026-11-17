@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-18T00:18:47+09:00",
-  "last_successful_fetch": "2026-11-18T00:18:47+09:00",
-  "count": 125,
+  "generated_at": "2026-11-18T02:31:00+09:00",
+  "last_successful_fetch": "2026-11-18T02:31:00+09:00",
+  "count": 126,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,16 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Apartment Collection by Hilton Announces First International Signings Amid Growing Owner Demand",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-18T01:11:50+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135525/apartment-collection-by-hilton-announces-first-international-signings-amid-growing-owner-demand",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hilton"
+      ]
+    },
     {
       "title": "Remington Hospitality Launches DRIVEN, a New General Manager Academy for Rising Leaders",
       "source": "Hospitality Net",
