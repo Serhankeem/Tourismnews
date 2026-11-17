@@ -1,0 +1,65 @@
+{
+  "kto_inbound": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "전체 외국인 입국자 중 관광객으로 볼 수 없는 일부 체류자격을 제외하고 재외국민 입국자를 포함한 한국관광통계 공표치. 승무원 포함. 순수 관광목적 입국자나 Foreign Visitors 행만의 합계와 다름.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  },
+  "kto_outbound": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "전체 국민 출국자 중 재외국민 출국자를 제외한 한국관광통계 공표치. 승무원 포함. Departures Korean 행만의 값으로 대체하지 않으며 2006년 7월 이후 행선지별 통계가 아님.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  },
+  "kto_tourism_receipts": {
+    "source_id": "tourgo_tourism_balance",
+    "definition": "TOURGO 관광수입(일반여행수입); 유학연수를 포함한 전체 여행수지와 구분. 원본 천 US$, Macro 원장 US$.",
+    "unit": "US$",
+    "frequency": "M",
+    "publisher": "한국문화관광연구원 관광지식정보시스템(TOURGO)"
+  },
+  "kto_tourism_expenditure": {
+    "source_id": "tourgo_tourism_balance",
+    "definition": "TOURGO 관광지출(일반여행지급); 유학연수를 포함한 전체 여행수지와 구분. 원본 천 US$, Macro 원장 US$.",
+    "unit": "US$",
+    "frequency": "M",
+    "publisher": "한국문화관광연구원 관광지식정보시스템(TOURGO)"
+  },
+  "kto_inbound_cn": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "한국관광통계의 중국 국적별 방한 공표치. 출입국 통계 가공·승무원 포함. 거주지 기준 시장 규모와 동일하다고 간주하지 않음.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  },
+  "kto_inbound_jp": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "한국관광통계의 일본 국적별 방한 공표치. 출입국 통계 가공·승무원 포함. 거주지 기준 시장 규모와 동일하다고 간주하지 않음.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  },
+  "kto_inbound_tw": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "한국관광통계의 대만 국적별 방한 공표치. 출입국 통계 가공·승무원 포함. 거주지 기준 시장 규모와 동일하다고 간주하지 않음.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  },
+  "kto_inbound_us": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "한국관광통계의 미국 국적별 방한 공표치. 출입국 통계 가공·승무원 포함. 거주지 기준 시장 규모와 동일하다고 간주하지 않음.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  },
+  "kto_inbound_vn": {
+    "source_id": "kto_monthly_statistics",
+    "definition": "한국관광통계의 베트남 국적별 방한 공표치. 출입국 통계 가공·승무원 포함. 거주지 기준 시장 규모와 동일하다고 간주하지 않음.",
+    "unit": "명",
+    "frequency": "M",
+    "publisher": "한국관광공사"
+  }
+}
