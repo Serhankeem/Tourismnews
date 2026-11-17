@@ -24,7 +24,7 @@
   el('market-demand-cards').innerHTML=demand.length?demand.map(i=>card(i)).join(''):'<p class="empty">검증된 관광수요 자료가 없습니다. 관측 불가.</p>';
   el('market-country-cards').innerHTML=countries.length?countries.map(i=>card(i,inbound?.latest.period)).join(''):'<p class="empty">검증된 국적별 자료가 없습니다.</p>';
   el('market-observation-status').textContent=inbound?`관광수요 관측 · 기준 ${inbound.latest.period} (현재 날짜와 다름) · ${status(inbound)}`:'관측 불가 · 검증된 방한객 자료가 없습니다. 종합 판정은 유보합니다.';
-  el('home-market-observation').innerHTML=`<div class="small-label">공식 관광시장 관측</div>${inbound?`<p class="home-observed-value">방한객 전년 동월 <strong>${pct(inbound.latest.comparisons.yoy_pct)}</strong></p><p class="tiny">기준 ${esc(inbound.latest.period)} · ${fmt(inbound.latest.value)}명<br>${esc(status(inbound))}</p>${source(inbound)}`:'<p>공식 수요 관측 불가 · 검증된 자료 없음</p>'}<p class="market-withheld">시장 전체 날씨: 종합 판정 유보</p><a class="text-link" href="#weather" data-goto="weather">수요 관측 상세 →</a>`;
+  el('home-market-observation').innerHTML=`<div class="small-label">공식 관광시장 관측</div>${inbound?`<p class="home-observed-value">방한객 전년 동월 <strong>${pct(inbound.latest.comparisons.yoy_pct)}</strong></p><p class="tiny">기준 ${esc(inbound.latest.period)} · ${fmt(inbound.latest.value)}명<br>${esc(status(inbound))}</p>${source(inbound)}`:'<p>공식 수요 관측 불가 · 검증된 자료 없음</p>'}<p class="market-withheld">시장 전체 날씨: 종합 판정 유보</p><a class="text-link" href="#weather-simulator" data-goto="weather-simulator">수요 관측 상세 →</a>`;
   renderChart();
  }
  el('market-chart-metric').addEventListener('change',renderChart);el('market-chart-mode').addEventListener('change',renderChart);

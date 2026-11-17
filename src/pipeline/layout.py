@@ -2,6 +2,7 @@
 import hashlib
 import json
 import shutil
+import copy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -22,15 +23,28 @@ def read(path):
 
 def configuration(root=ROOT):
     cfg = read(Path(root)/'pipeline.json')
-    if any(not name.startswith('site/data/') for name in cfg['public_files']) or any(not name.startswith('collector_state/') for name in cfg['private_files']):
+    if any(not name.startswith('site/data/') for name in cfg['public_files']+cfg.get('optional_public_files',[])) or any(not name.startswith('collector_state/') for name in cfg['private_files']):
         raise DataError('data_ownership_prefix_invalid')
-    for name in cfg['public_files'] + cfg['private_files']:
+    for name in cfg['public_files'] + cfg['private_files'] + cfg.get('optional_public_files',[]):
         p = Path(name)
         if p.is_absolute() or '..' in p.parts or p.suffix != '.json' or len(p.parts) != (3 if name.startswith('site/data/') else 2):
             raise DataError('unsafe_data_path')
-    if len(set(cfg['public_files']+cfg['private_files'])) != len(cfg['public_files']+cfg['private_files']):
+    names=cfg['public_files']+cfg['private_files']+cfg.get('optional_public_files',[])
+    if len(set(names)) != len(names):
         raise DataError('duplicate_data_path')
     return cfg
+
+
+def optional(cfg,root):
+    from ..macro.weather_release import PUBLIC_FILES
+    allowed=cfg.get('optional_public_files',[])
+    if allowed and tuple(allowed)!=PUBLIC_FILES:raise DataError('optional_public_allowlist_invalid')
+    present=[(Path(root)/name).exists() for name in allowed]
+    if any(present) and not all(present):raise DataError('monthly_pair_incomplete')
+    result=copy.deepcopy(cfg)
+    if present and all(present):
+        result['public_files']+= [name for name in allowed if name not in result['public_files']]
+    return result
 
 
 def files(cfg):
@@ -58,6 +72,7 @@ def copy_data(source, target, cfg):
 
 def owner(name):
     leaf = Path(name).name
+    if leaf.startswith('market_weather_'):return 'weather'
     if leaf.startswith('reports_') or leaf == 'reports.json':
         return 'reports'
     if leaf.startswith('macro_') or leaf == 'macro.json':

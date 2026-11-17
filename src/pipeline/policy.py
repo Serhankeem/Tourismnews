@@ -85,7 +85,7 @@ def project(root, code, at):
     return news
 
 
-def verify_public(root,code,macro_config=None):
+def verify_public(root,code,macro_config=None,monthly_authority=None,at=None):
     data=Path(root)/'site/data';state=Path(root)/'collector_state'
     gate=PublicationGate(read(Path(code)/'sources.json')['sources'],current_permission(code),data,providers=provider_configuration(code))
     archive=read(state/'archive.json')['articles']
@@ -105,3 +105,6 @@ def verify_public(root,code,macro_config=None):
                          read(state/'macro_archive.json'),timestamp(document['generated_at']),read(Path(code)/'operating_policy.json'))
     if any(document.get(k)!=expected.get(k) for k in ('indicators','tourism_balance')):
         raise ValidationError('macro_publication_gate_projection_mismatch')
+    from ..macro.weather_release import verify as verify_monthly
+    try:verify_monthly(root,code,monthly_authority,at)
+    except (ValueError,KeyError,TypeError,AttributeError,OSError):raise ValidationError('monthly_publication_gate_rejected') from None

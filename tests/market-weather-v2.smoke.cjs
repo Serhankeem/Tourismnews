@@ -13,7 +13,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
    assert.match(await page.locator('#home-market-observation').textContent(),new RegExp(inbound.latest.comparisons.yoy_pct.toFixed(2).replace('.','\\.')));
    assert.match(await page.locator('#home-market-observation').textContent(),/종합 판정 유보/);
    assert.equal(await page.locator('#home-market-observation [data-weather]').count(),0);
-   for(const route of ['overview','weather']){
+   for(const route of ['overview','weather-simulator']){
     await page.evaluate(r=>navigate(r),route);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),width+'/'+route);
     if([390,1440].includes(width))await page.screenshot({path:`${dir}/after-${route}-${width}.png`,fullPage:true});
    }

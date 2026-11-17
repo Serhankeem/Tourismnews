@@ -5,7 +5,7 @@ import base64
 import shutil
 import subprocess
 from pathlib import Path
-from .layout import MANIFEST, CONTROL, files, hashes, copy_data, read
+from .layout import MANIFEST, CONTROL, files, hashes, copy_data, read, optional
 from .validation import validate
 from ..collector import write_atomic, now_kst, iso
 
@@ -55,6 +55,7 @@ class Store:
             git(self.path,'fetch','--no-tags','origin','refs/heads/data/live')
             git(self.path,'checkout','-B','snapshot','FETCH_HEAD')
             self.base=git(self.path,'rev-parse','HEAD').stdout.strip()
+            self.cfg=optional(self.cfg,self.path)
             allowed=set(files(self.cfg)+[MANIFEST,CONTROL])
             for line in git(self.path,'ls-tree','-r','HEAD').stdout.splitlines():
                 mode,kind,tail=line.split(' ',2);_,name=tail.split('\t',1)
@@ -66,6 +67,7 @@ class Store:
             validate(self.path,self.cfg)
             return False
         # Only an explicitly absent ref bootstraps. Network/auth errors abort.
+        self.cfg=optional(self.cfg,seed)
         counts=validate(seed,self.cfg)
         copy_data(seed,self.path,self.cfg)
         write_atomic(self.path/CONTROL,{'schema_version':1,'initialized_from_main':code_commit,
@@ -73,7 +75,9 @@ class Store:
                      'initial_file_sha256':hashes(seed,files(self.cfg)),'completed_slots':{}})
         return True
 
-    def commit(self, stage, code_commit, before):
+    def commit(self, stage, code_commit, before,precommit=None):
+        if precommit is not None:precommit()
+        self.cfg=optional(self.cfg,stage)
         validate(stage,self.cfg,before=before)
         if self.tip()!=self.base:
             raise Conflict('remote_data_changed_retry_collection')
@@ -89,6 +93,7 @@ class Store:
         git(self.path,'add','--',*files(self.cfg),CONTROL,MANIFEST)
         git(self.path,'commit','-m','Persist validated collection state')
         commit=git(self.path,'rev-parse','HEAD').stdout.strip()
+        if precommit is not None:precommit()
         # Normal push has server-side fast-forward protection even after tip().
         pushed=git(self.path,'push','origin','HEAD:refs/heads/data/live',ok=(0,1,128))
         if pushed.returncode:

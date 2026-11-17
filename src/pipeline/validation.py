@@ -3,7 +3,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
-from .layout import read, files, hashes, DataError
+from .layout import read, files, hashes, DataError, optional
 from ..publication import PUBLIC_FIELDS
 from ..editorial import publication_order
 from ..collector import canonical_url
@@ -22,10 +22,14 @@ def rows_by_id(rows):
 
 def validate(root, cfg, before=None):
     root = Path(root)
+    cfg=optional(cfg,root)
     inventory={str(p.relative_to(root)) for folder in ('site/data','collector_state') for p in (root/folder).rglob('*') if p.is_file()}
     if inventory!=set(files(cfg)):
         raise ValidationError('unexpected_or_missing_data_inventory')
     hashes(root, files(cfg))
+    from ..macro.weather_release import catalog
+    try:catalog(root,before)
+    except (ValueError,KeyError,TypeError,AttributeError):raise ValidationError('monthly_catalog_invalid') from None
     docs = {name:read(root/name) for name in files(cfg)}
     if any(not isinstance(d, dict) for d in docs.values()):
         raise ValidationError('invalid_json_root')
