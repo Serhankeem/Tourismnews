@@ -1,0 +1,59 @@
+{
+  "main_commit": "44a95770a119b6de0dd301506c73c91357146da4",
+  "live_commit": "8c8e7ad61f14860e6fac6b72e8161c91b54beb45",
+  "actual_preview_target": "2026-09",
+  "approved_core_series": 2,
+  "source_bundle_integrity": "passed",
+  "input_snapshot_byte_unchanged": true,
+  "python_tests": 688,
+  "python_test_seconds": "284.861",
+  "python_status": "passed",
+  "new_python_tests": 6,
+  "browser_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "browser_states": [
+    "verified_private",
+    "public_blocked",
+    "flag_only_blocked",
+    "missing",
+    "delayed",
+    "no_data",
+    "unavailable"
+  ],
+  "axe_core_version": "4.14.1",
+  "axe_wcag_tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21aa"
+  ],
+  "axe_violations": 0,
+  "browser_regressions_passed": [
+    "home.smoke.cjs",
+    "briefing-observation.smoke.cjs",
+    "header-weather-v22.smoke.cjs",
+    "market-weather-public-preservation.smoke.cjs"
+  ],
+  "legacy_browser_failures": {
+    "macro.smoke.cjs": "expects_two_core_series_before_TOURGO_activation",
+    "market-weather-v2.smoke.cjs": "expects_financial_series_in_population_observation_cards"
+  },
+  "public_artifact_identical_to_main": true,
+  "public_artifact_files": 34,
+  "private_files_in_public_artifact": false,
+  "public_active_series": 9,
+  "macro_observations_preserved": 621,
+  "site_changed": false,
+  "operating_approvals_changed": false,
+  "production_enabled": false,
+  "preview_deployed": false,
+  "publication_approved": false,
+  "private_screenshots_committed": false,
+  "final_preview_server_tests": 6,
+  "final_preview_server_status": "passed",
+  "api_excludes_supporting_series": true,
+  "final_browser_status": "passed"
+}
