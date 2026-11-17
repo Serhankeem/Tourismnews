@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-17T22:38:33+09:00",
-  "last_successful_fetch": "2026-11-17T22:38:33+09:00",
-  "count": 123,
+  "generated_at": "2026-11-18T00:18:47+09:00",
+  "last_successful_fetch": "2026-11-18T00:18:47+09:00",
+  "count": 125,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,26 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Remington Hospitality Launches DRIVEN, a New General Manager Academy for Rising Leaders",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-17T23:30:57+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135519/remington-hospitality-launches-driven-a-new-general-manager-academy-for-rising-leaders",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hospitality"
+      ]
+    },
+    {
+      "title": "K-관광, 사상 첫 방한객 2천만 시대 개막 ... “대체불가 관광대국 닻 올려”",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-17T23:06:51+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3163533",
+      "category": "인바운드",
+      "keywords": [
+        "방한객"
+      ]
+    },
     {
       "title": "인바운드 2천만 ‘대체불가 관광대국 대한민국’ 다짐",
       "source": "트래블데일리",
