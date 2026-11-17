@@ -1,0 +1,437 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "content_id": {
+      "type": "string",
+      "pattern": "^market-weather-[0-9]{4}-(0[1-9]|1[0-2])$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "reference_period": {
+      "$ref": "#/$defs/period"
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "data_cutoff": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "analysis_mode": {
+      "const": "retrospective_current_vintage"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000
+    },
+    "overall_state": {
+      "const": "withheld"
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kto_inbound": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "unit": {
+              "const": "명"
+            },
+            "comparisons": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "mom": {
+                  "$ref": "#/$defs/comparison"
+                },
+                "yoy": {
+                  "$ref": "#/$defs/comparison"
+                }
+              },
+              "required": [
+                "mom",
+                "yoy"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "comparisons"
+          ]
+        },
+        "kto_tourism_receipts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "unit": {
+              "const": "US$"
+            },
+            "comparisons": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "mom": {
+                  "$ref": "#/$defs/comparison"
+                },
+                "yoy": {
+                  "$ref": "#/$defs/comparison"
+                }
+              },
+              "required": [
+                "mom",
+                "yoy"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "comparisons"
+          ]
+        }
+      },
+      "required": [
+        "kto_inbound",
+        "kto_tourism_receipts"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "indicator": {
+            "enum": [
+              "kto_inbound",
+              "kto_tourism_receipts"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6000
+          },
+          "source_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "comparison_periods": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/$defs/period"
+            }
+          }
+        },
+        "required": [
+          "indicator",
+          "text",
+          "source_ids",
+          "comparison_periods"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{0,39}$"
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 2000,
+            "pattern": "^https://(datalab\\.visitkorea\\.or\\.kr|know\\.tour\\.go\\.kr)/"
+          },
+          "original_publication_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "finality": {
+            "enum": [
+              "not_stated",
+              "provisional",
+              "final"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "publisher",
+          "url",
+          "original_publication_at",
+          "finality"
+        ]
+      }
+    },
+    "limitations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "industry_activity_missing": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "nominal_bop_definition": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "nonseasonal_mom": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "vintage_and_lag": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        },
+        "base_effect_and_revisions": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6000
+        }
+      },
+      "required": [
+        "industry_activity_missing",
+        "nominal_bop_definition",
+        "nonseasonal_mom",
+        "vintage_and_lag",
+        "base_effect_and_revisions"
+      ]
+    },
+    "methodology_version": {
+      "type": "string",
+      "pattern": "^weather-diagnostic-v[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "correction": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "previous_revision": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 600
+            },
+            "corrected_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "previous_revision",
+            "note",
+            "corrected_at"
+          ]
+        }
+      ]
+    },
+    "editorial_revision": {
+      "type": "string",
+      "pattern": "^r[1-9][0-9]*$"
+    },
+    "article": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subtitle",
+        "sections"
+      ],
+      "properties": {
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 600
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "heading",
+              "markdown"
+            ],
+            "properties": {
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 600
+              },
+              "markdown": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 6000
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "content_id",
+    "revision",
+    "reference_period",
+    "issued_at",
+    "data_cutoff",
+    "analysis_mode",
+    "title",
+    "summary",
+    "overall_state",
+    "metrics",
+    "evidence",
+    "sources",
+    "limitations",
+    "methodology_version",
+    "correction",
+    "editorial_revision",
+    "article"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Market Weather public content v0.2 — requires independent Publication Gate",
+  "$comment": "No actual release is authorized by this schema. Editorial r2 and first public revision 1 are different identifiers. All approved prose sections are preserved; private review metadata is excluded.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "revision": {
+            "const": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "correction": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "correction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "previous_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 600
+              },
+              "corrected_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "previous_revision",
+              "note",
+              "corrected_at"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "period": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "period": {
+          "$ref": "#/$defs/period"
+        },
+        "pct": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^-?[0-9]+\\.[0-9]{6}$"
+        },
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "unchanged",
+            "unavailable"
+          ]
+        }
+      },
+      "required": [
+        "period",
+        "pct",
+        "direction"
+      ]
+    }
+  }
+}

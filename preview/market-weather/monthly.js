@@ -60,6 +60,25 @@ function axis(key,index,payload){
   return section;
 }
 function blocked(root){root.replaceChildren(el('section',{class:'blocked',role:'status'},el('div',{class:'eyebrow'},'PUBLICATION GATE'),el('h1',{},'월간 진단 자료 미공개'),el('p',{},'공개 승인과 편집 검수 전에는 수치와 비공개 초안을 표시하지 않습니다.')));}
+function inline(parent,text){
+  const parts=text.split(/(\*\*[^*]+\*\*|\*[^*\n]+\*|\[[^\]]+\]\(https:\/\/[^\s)]+\))/g);
+  for(const part of parts){
+    const l=part.match(/^\[([^\]]+)\]\((https:\/\/[^\s)]+)\)$/);
+    parent.append(l?link(l[2],l[1]):part.startsWith('**')?el('strong',{},part.slice(2,-2)):part.startsWith('*')?el('em',{},part.slice(1,-1)):document.createTextNode(part));
+  }
+  return parent;
+}
+function approvedArticle(article){
+  const node=el('article',{class:'approved-article','aria-label':'편집 승인 원고 비공개 검토'});
+  for(const section of article.sections){
+    node.append(el('h2',{},section.heading));
+    for(const block of section.markdown.split('\n\n')){
+      if(block.startsWith('- '))node.append(el('ul',{},block.split('\n').map(line=>inline(el('li'),line.replace(/^- /,'')))));
+      else node.append(inline(el('p'),block));
+    }
+  }
+  return node;
+}
 export function renderReport(root,payload={},context='public'){
   // Public integration is deliberately closed in Step 14, including flag-only edits.
   if(context!=='private-preview'){blocked(root);return;}
@@ -67,7 +86,8 @@ export function renderReport(root,payload={},context='public'){
   const diagnostic=payload.diagnostic||{},ready=payload.state==='private_review'&&diagnostic.target_ready===true;
   const target=period(diagnostic.target_period),meta=el('dl',{class:'metadata'});
   for(const [k,v] of [['발행월','미정 · 미발행'],['통계 기준월',target],['자료 마감',date(diagnostic.input_cutoff)],['분석 방식','현재 빈티지 회고']])meta.append(el('div',{},el('dt',{},k),el('dd',{},v)));
-  const hero=el('header',{class:'hero'},el('div',{class:'eyebrow'},'MONTHLY / TOURISM MARKET MONITOR'),el('h1',{},'Market Weather'),el('p',{class:'deck'},'방한 수요와 일반여행수입으로 읽는 월간 관광 흐름.'),meta);
+  const approved=payload.editorial_private?.gate?.editorial_verified===true?payload.editorial_private.article:null;
+  const hero=el('header',{class:approved?'hero has-approved':'hero'},el('div',{class:'eyebrow'},'MONTHLY / TOURISM MARKET MONITOR'),el('h1',{},approved?.title||'Market Weather'),el('p',{class:'deck'},approved?.subtitle||'방한 수요와 일반여행수입으로 읽는 월간 관광 흐름.'),meta);
   const status=el('section',{class:'status','aria-labelledby':'overall-heading'},el('div',{},el('div',{class:'eyebrow'},'OVERALL ASSESSMENT'),el('h2',{id:'overall-heading'},'종합 판정 보류')),el('p',{},el('strong',{},ready?'두 핵심 지표의 부분 모니터입니다.':'검토 가능한 목표월 자료가 부족합니다.'),el('br'),'산업 활동 입력이 없어 관광시장 전체 상태를 판정하지 않습니다. 점수와 날씨 등급을 산출하지 않습니다.'));
   const axes=el('div',{class:'axes'},CORES.map((k,i)=>axis(k,i,payload)));
   const evidence=el('section',{'aria-labelledby':'evidence-heading'},el('div',{class:'section-top'},el('h2',{id:'evidence-heading'},'관측의 주요 근거'),el('span',{},'원지표와 비교월에 한정한 사실')));
@@ -82,15 +102,16 @@ export function renderReport(root,payload={},context='public'){
     '과거 당시 빈티지가 입증되지 않아 실시간 백테스트로 해석할 수 없습니다.'
   ].map(t=>el('li',{},t))));
   const archive=el('section',{class:'archive','aria-labelledby':'archive-heading'},el('div',{class:'section-top'},el('h2',{id:'archive-heading'},'발행 기록과 방법론'),el('span',{},'검토 중인 정보 구조 · 공개 아카이브 아님')));
-  const lineage=el('details',{},el('summary',{},'검토본 추적 정보'),el('p',{},'편집 검토: 대기 · 게시 승인: false'),el('p',{},'분석 실행: '+date(diagnostic.analysis_at)),el('p',{},'모형: ',el('code',{},payload.methodology_version||'미확인')),el('p',{},'입력 원장 해시: ',el('code',{},diagnostic.input_hashes?.archive||'미확인')));
+  const lineage=el('details',{},el('summary',{},'검토본 추적 정보'),el('p',{},approved?'편집 검토: 승인 · 게시 승인: 없음':'편집 검토: 대기 · 게시 승인: false'),el('p',{},'분석 실행: '+date(diagnostic.analysis_at)),el('p',{},'모형: ',el('code',{},payload.methodology_version||'미확인')),el('p',{},'입력 원장 해시: ',el('code',{},diagnostic.input_hashes?.archive||'미확인')));
   archive.append(el('div',{class:'archive-grid'},el('div',{},el('h3',{},'과거 발행물'),el('p',{},'공개 발행물 없음. 비공개 검토본을 발행 이력으로 노출하지 않습니다.')),el('div',{},el('h3',{},'방법론 v0.1'),el('p',{},'동일 기준월의 두 핵심을 정렬하고 정확한 원값으로 MoM·YoY를 비교합니다.'),lineage),el('div',{},el('h3',{},'정정·검토 이력'),el('p',{},'이전 입력과 검토본은 덮어쓰지 않고 해시로 연결합니다.'),el('p',{},'기록된 검토본 연결: '+(Number.isInteger(payload.revision_count)?payload.revision_count+'건':'미확인')+' · 공식 통계 정정 건수와 다름'))));
   archive.append(el('p',{class:'context',id:'context'},'Macro Monitor는 개별 공식 통계, Daily Briefing은 일간 뉴스 맥락을 제공합니다. 이 Preview는 월간 해석의 비공개 검토용이며 기존 사이트로 자동 연결하거나 발행하지 않습니다.'));
   root.replaceChildren(hero,status);
+  if(approved)root.append(el('p',{id:'publication-gate-status',class:'warning',role:'status'},'편집 승인 완료 · 게시 승인 없음 · 비공개 검토용 · 공개 JSON 생성 차단'));
   if(!ready)root.append(el('p',{class:'warning',role:'status'},payload.state==='unavailable'?'자료 검증 또는 접근에 실패했습니다. 통계는 표시하지 않습니다.':'목표월 자료 없음 또는 갱신 지연 · 새 월 진단 발행 불가'));
   const warnings=[...(diagnostic.warnings||[]),...CORES.flatMap(k=>diagnostic.axes?.[k]?.warnings||[])].filter(w=>w!=='industry_activity_unavailable');
   const warningText={target_period_unavailable_or_delayed:'목표 기준월 미확보 또는 갱신 지연',comparative_judgment_withheld:'비교 기준이 부족하여 증감 판단 보류',yoy_unavailable_or_zero_baseline:'전년값 없음 또는 0으로 YoY 비교 불가',mom_unavailable_or_zero_baseline:'전월값 없음 또는 0으로 MoM 비교 불가',pandemic_baseline_context_required:'팬데믹 시기의 비교 기준으로 기저효과 검토 필요',revised_observation:'현재 관측에 정정 이력 있음',revised_comparison_baseline:'비교 기준월에 정정 이력 있음'};
   if(warnings.length)root.append(el('details',{},el('summary',{},'자료 상태·정정 경고 확인'),el('ul',{},[...new Set(warnings.map(w=>warningText[w]||'사용 자격을 확인하지 못한 통계 제외'))].map(w=>el('li',{},w)))));
-  root.append(el('div',{class:'section-top'},el('h2',{},'두 가지 월간 흐름'),el('span',{},'승인된 핵심 지표만 사용 · 미확보 값 보충 없음')),axes,el('div',{class:'reading'},evidence,notes),archive);
+  root.append(el('div',{class:'section-top'},el('h2',{},'두 가지 월간 흐름'),el('span',{},'승인된 핵심 지표만 사용 · 미확보 값 보충 없음')),axes,approved?approvedArticle(approved):el('div',{class:'reading'},evidence,notes),archive);
 }
 async function boot(){
   const root=document.getElementById('report');if(!root)return;
