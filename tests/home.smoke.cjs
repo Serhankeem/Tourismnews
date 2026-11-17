@@ -26,8 +26,8 @@ const crypto=require('node:crypto');
   }
   await checkLogoRatio(page);
   assert.equal(await page.locator('.sidebar').count(),0);
-  assert.equal(await page.locator('.primary-navigation a').count(),6);
-  assert.deepEqual(await page.locator('.primary-navigation a').evaluateAll(a=>a.map(x=>x.dataset.nav)),['weather','news','briefing','research','macro','about']);
+  assert.equal(await page.locator('.primary-navigation a').count(),8);
+  assert.deepEqual(await page.locator('.primary-navigation a[data-nav]').evaluateAll(a=>a.map(x=>x.dataset.nav)),['weather','weather-simulator','news','briefing','research','macro','about']);
   assert.equal(await page.title(),'여행기류 currentourism — 관광산업 인텔리전스');
   const rect=await page.locator('.overview-hero').evaluate(el=>[...el.children].map(n=>({x:n.getBoundingClientRect().x,y:n.getBoundingClientRect().y,w:n.getBoundingClientRect().width})));
   assert.equal(rect[0].y,rect[1].y);assert.ok(rect[0].w>rect[1].w);

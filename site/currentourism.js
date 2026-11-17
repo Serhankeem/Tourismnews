@@ -67,27 +67,38 @@ function syncHomeWeather(){
  for(const key of ['title','score'])document.getElementById('home-weather-'+key).textContent=document.getElementById('weather-'+key).textContent;
 }
 document.addEventListener('DOMContentLoaded',()=>{
- const button=document.getElementById('news-menu-toggle'),panel=document.getElementById('news-submenu'),group=button.closest('.news-nav');
  const header=document.querySelector('.site-header'),inner=header.querySelector('.header-inner'),nav=document.getElementById('primary-navigation'),menu=document.getElementById('header-menu-toggle');
- function closeNews(returnFocus=false){const inside=panel.contains(document.activeElement);panel.hidden=true;button.setAttribute('aria-expanded','false');if(returnFocus||inside)button.focus();}
- function openNews(){panel.hidden=false;button.setAttribute('aria-expanded','true');}
+ const disclosures=[...nav.querySelectorAll('[data-header-disclosure]')].map(group=>({group,button:group.querySelector('button'),panel:group.querySelector('.news-submenu')}));
+ // On compact layouts, collapsing a panel on pointer-induced focusout would
+ // move the next button between pointerdown and click. Click handles closing;
+ // keyboard focusout still closes immediately.
+ let pointerActive=false;
+ document.addEventListener('pointerdown',()=>{pointerActive=true;},true);
+ document.addEventListener('pointercancel',()=>{pointerActive=false;},true);
+ document.addEventListener('keydown',()=>{pointerActive=false;},true);
+ function close(item,returnFocus=false){const inside=item.panel.contains(document.activeElement);item.panel.hidden=true;item.button.setAttribute('aria-expanded','false');if(returnFocus||inside)item.button.focus();}
+ function open(item){disclosures.filter(other=>other!==item).forEach(other=>close(other));item.panel.hidden=false;item.button.setAttribute('aria-expanded','true');}
  function closeNavigation(returnFocus=false){
-  const inside=nav.contains(document.activeElement);closeNews();nav.classList.remove('is-open');menu.setAttribute('aria-expanded','false');
+  const inside=nav.contains(document.activeElement);disclosures.forEach(item=>close(item));nav.classList.remove('is-open');menu.setAttribute('aria-expanded','false');
   if(header.dataset.compact==='true'&&(returnFocus||inside))menu.focus();
  }
  function openNavigation(){nav.classList.add('is-open');menu.setAttribute('aria-expanded','true');}
- window.closeNewsMenu=closeNews;window.closeNavigation=closeNavigation;
+ const firstControl=()=>nav.querySelector('[data-header-disclosure]>button,a');
+ window.closeNewsMenu=returnFocus=>close(disclosures.find(item=>item.button.id==='news-menu-toggle'),returnFocus);window.closeNavigation=closeNavigation;
  menu.addEventListener('click',()=>menu.getAttribute('aria-expanded')==='true'?closeNavigation():openNavigation());
- menu.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();openNavigation();nav.querySelector('a').focus();}});
- button.addEventListener('click',()=>panel.hidden?openNews():closeNews());
- button.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();openNews();panel.querySelector('a').focus();}});
+ menu.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();openNavigation();firstControl().focus();}});
+ for(const item of disclosures){
+  item.button.addEventListener('click',()=>item.panel.hidden?open(item):close(item));
+  item.button.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();open(item);item.panel.querySelector('a').focus();}});
+  item.group.addEventListener('focusout',event=>{if(!pointerActive&&event.relatedTarget&&!item.group.contains(event.relatedTarget))close(item);});
+ }
  document.addEventListener('keydown',event=>{if(event.key==='Escape'){
-  if(!panel.hidden){event.preventDefault();closeNews(true);}
+  const expanded=disclosures.find(item=>!item.panel.hidden);
+  if(expanded){event.preventDefault();close(expanded,true);}
   else if(menu.getAttribute('aria-expanded')==='true'){event.preventDefault();closeNavigation(true);}
  }});
- document.addEventListener('click',event=>{if(!group.contains(event.target))closeNews();if(!header.contains(event.target))closeNavigation();});
- header.addEventListener('focusout',event=>{if(event.relatedTarget&&!header.contains(event.relatedTarget))closeNavigation();});
- group.addEventListener('focusout',event=>{if(event.relatedTarget&&!group.contains(event.relatedTarget))closeNews();});
+ document.addEventListener('click',event=>{disclosures.filter(item=>!item.group.contains(event.target)).forEach(item=>close(item));if(!header.contains(event.target))closeNavigation();pointerActive=false;});
+ header.addEventListener('focusout',event=>{if(!pointerActive&&event.relatedTarget&&!header.contains(event.relatedTarget))closeNavigation();});
  function sizeHeader(){
   // Measure the same links in their desktop style, synchronously and without
   // paint/focus changes. No viewport breakpoint decides whether they fit.
@@ -99,7 +110,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(header.dataset.compact!==String(compact)){
    const active=document.activeElement;header.dataset.compact=String(compact);closeNavigation();
    if(compact&&nav.contains(active))menu.focus();
-   else if(!compact&&active===menu)nav.querySelector('a').focus();
+   else if(!compact&&active===menu)firstControl().focus();
   }
   document.documentElement.style.setProperty('--site-header-height',header.getBoundingClientRect().height+'px');
  }
