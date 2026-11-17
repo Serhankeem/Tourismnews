@@ -7,7 +7,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
    const page=await browser.newPage({viewport:{width,height:1100}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
    await page.goto(base);await page.waitForFunction(()=>!newsLoading&&ResearchLibrary?.database.reports.length>0);
    const top=page.locator('.primary-navigation>a,.primary-navigation>.news-nav>button'),toggle=page.locator('#news-menu-toggle');
-   assert.deepEqual((await top.allTextContents()).map(t=>t.trim()),['Market Weather','뉴스 ▾','관광지표','소개']);const compact=await page.locator('#header-menu-toggle').isVisible();
+   assert.deepEqual((await top.allTextContents()).map(t=>t.trim()),['한국 관광의 날씨는? ▾','뉴스 ▾','관광지표','소개']);const compact=await page.locator('#header-menu-toggle').isVisible();
    if(compact){assert.equal(await page.locator('.primary-navigation').isVisible(),false);await page.locator('#header-menu-toggle').click();}
    for(const n of await top.all()){assert.ok(await n.isVisible());const r=await n.boundingBox();assert.ok(r.height>=44&&r.x>=0&&r.x+r.width<=width);}
    assert.equal(await toggle.getAttribute('aria-controls'),'news-submenu');assert.equal(await toggle.getAttribute('aria-expanded'),'false');
