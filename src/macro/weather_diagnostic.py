@@ -10,7 +10,7 @@ from . import tourgo, balance, kto
 from .model import valid_period, decimal_comparisons
 
 ROOT=Path(__file__).resolve().parents[2]
-VERSION='weather-diagnostic-v0.1'
+VERSION='weather-diagnostic-v0.1.1'
 CORE=('kto_inbound','kto_tourism_receipts')
 CONTRACT=ROOT/'fixtures/weather_contract_v01.json'
 PIN='0143b5f51af491ab864ef1ba395088c85d4040823e37ebf58e682934ff1a4f76'
@@ -34,6 +34,12 @@ def stamp(s):
     t=dt.datetime.fromisoformat(s.replace('Z','+00:00'))
     if t.tzinfo is None:raise ValueError('timezone_required')
     return t
+
+
+def direction(current, base):
+    """Direction of exact integer observations, independent of display rounding."""
+    if base is None or base == 0:return 'unavailable'
+    return 'increase' if current > base else 'decrease' if current < base else 'unchanged'
 
 
 def eligible(config,archive,policy,key,contracts,cutoff,now):
@@ -111,13 +117,15 @@ def diagnose(config,archive,policy,target,cutoff,now):
         # No economic cutoff: warn whenever a YoY uses a pandemic-era baseline.
         if rates['yoy_base_period'][:4] in ('2020','2021','2022'):warnings.append('pandemic_baseline_context_required')
         if o.get('revision_status')=='revised' or any(r.get('period')==aligned for r in archive['indicators'][key].get('revisions',[])):warnings.append('revised_observation')
+        bases=(rates['mom_base_period'],rates['yoy_base_period'])
+        if any(obs.get(p,{}).get('revision_status')=='revised' or any(r.get('period')==p for r in archive['indicators'][key].get('revisions',[])) for p in bases):warnings.append('revised_comparison_baseline')
         provenance={k:copy.deepcopy(o.get(k)) for k in ('source_url','publisher','file_sha256','file_url','first_collected_at','last_collected_at','original_publication_at','release_published_at','finality','revision_status')}
         bucket[key]=dict(status='observed',period=aligned,value=o['value'],unit=o['unit'],comparisons=rates,
             comparison_observations={p:copy.deepcopy(obs[p]) for p in (rates['mom_base_period'],rates['yoy_base_period']) if p in obs},
             provenance=provenance,warnings=warnings)
         if key in CORE:
             out['evidence'].append(dict(indicator=key,period=aligned,text=key+'의 원자료 및 동일 기준월 비교',
-                direction='unavailable' if rates['yoy_pct'] is None else 'increase' if rates['yoy_pct'][0]!='-' and rates['yoy_pct']!='0.000000' else 'decrease' if rates['yoy_pct'][0]=='-' else 'unchanged',
+                direction=direction(o['value'],obs.get(rates['yoy_base_period'],{}).get('value')),
                 source=provenance))
     if aligned==target:
         out['status']='partial_monitor';out['target_ready']=True
