@@ -33,5 +33,35 @@
     "collector_state/run_summary.json",
     "collector_state/source_metrics.json",
     "collector_state/v02_snapshot.json"
+  ],
+  "optional_public_files": [
+    "site/data/market_weather_index.json",
+    "site/data/market_weather_archive.json"
+  ],
+  "static_public_files": [
+    "assets/.gitkeep",
+    "assets/README.md",
+    "assets/content-localization.json",
+    "assets/currentourism-logo.png",
+    "assets/currentourism-new-airplane-logo.png",
+    "assets/currentourism_logo_transparent_3x.png",
+    "briefing.js",
+    "content-locale.js",
+    "currentourism.css",
+    "currentourism.js",
+    "currentourism.polish.css",
+    "index.html",
+    "macro.css",
+    "macro.js",
+    "market-observation.js",
+    "monthly-market-weather.css",
+    "monthly-market-weather.js",
+    "navigation-research-v21.css",
+    "observation.js",
+    "percentage.css",
+    "percentage.js",
+    "research.css",
+    "research.js",
+    "ui-2.css"
   ]
 }

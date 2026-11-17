@@ -25,7 +25,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
       assert.deepEqual(await page.locator('#macro-kpis [data-value]').evaluateAll(ns=>ns.map(n=>n.dataset.value)),original);
       assert.match(await page.locator('#macro-status').textContent(),/이전 검증값 보존/);
       await page.unroute('**/data/macro.json?*');await page.evaluate(()=>MacroMonitor.load());
-      await page.evaluate(()=>navigate('weather'));await page.locator('#s-arrivals').focus();await page.keyboard.press('ArrowRight');
+      await page.evaluate(()=>navigate('weather-simulator'));await page.locator('#s-arrivals').focus();await page.keyboard.press('ArrowRight');
       assert.notEqual(await page.locator('#weather-score').textContent(),score);
       await page.locator('#reset-weather').click();assert.equal(await page.locator('#weather-score').textContent(),score);
       await page.locator('.scenario-formula summary').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('.scenario-formula').evaluate(e=>e.open),true);

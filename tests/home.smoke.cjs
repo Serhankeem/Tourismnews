@@ -44,7 +44,7 @@ const crypto=require('node:crypto');
    assert.equal(await page.locator(`.primary-navigation [data-nav="${route}"]`).getAttribute('aria-current'),'page');
    await page.locator('.brand-home').click();assert.equal(await page.locator('#page-overview').isVisible(),true);
   }
-  await clickNav(page,'weather');
+  await page.evaluate(()=>navigate('weather-simulator'));
   const before=await page.locator('#weather-score').textContent();
   await page.locator('#s-spend').fill('-30');await page.locator('#s-spend').dispatchEvent('input');
   assert.notEqual(await page.locator('#weather-score').textContent(),before);

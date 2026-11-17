@@ -10,7 +10,7 @@ import os
 import shutil
 import tempfile
 from pathlib import Path
-from .layout import ROOT, CONTROL, MANIFEST, configuration, files, hashes, copy_data, read, owner, DataError
+from .layout import ROOT, CONTROL, MANIFEST, configuration, files, hashes, copy_data, read, owner, DataError, optional
 from .store import Store, StoreError, Conflict, git
 from .validation import validate, ValidationError
 from .schedule import pending
@@ -30,25 +30,48 @@ def invoke(engine, stage, force, days):
     return result.returncode==0
 
 
-def compose(code, snapshot, output, cfg, macro_config=None):
+def compose(code, snapshot, output, cfg, macro_config=None,monthly_authority=None,at=None):
     # Code's frozen main data is excluded, even if newer files were added there.
-    validate(snapshot,cfg)
-    verify_public(snapshot,code,macro_config=macro_config)
-    output=Path(output)
-    if output.exists():shutil.rmtree(output)
-    shutil.copytree(Path(code)/'site',output,ignore=shutil.ignore_patterns('data','collector_state','*.pyc','__pycache__'))
-    for name in cfg['public_files']:
-        dest=output/Path(name).relative_to('site');dest.parent.mkdir(parents=True,exist_ok=True)
-        shutil.copyfile(Path(snapshot)/name,dest)
-    if (output/'collector_state').exists() or set(p.name for p in (output/'data').iterdir())!={Path(p).name for p in cfg['public_files']}:
-        raise ValidationError('unexpected_pages_tree')
-    # No unapproved extra files, symlinks or internal ledgers in the artifact.
-    if any(p.is_symlink() for p in output.rglob('*')):
-        raise ValidationError('pages_symlink_forbidden')
+    cfg=optional(cfg,snapshot);validate(snapshot,cfg)
+    verify_public(snapshot,code,macro_config=macro_config,monthly_authority=monthly_authority,at=at)
+    output=Path(output).resolve();snapshot=Path(snapshot).resolve()
+    code_path=Path(code).resolve()
+    if output==snapshot or output in snapshot.parents or snapshot in output.parents or output==code_path or code_path in output.parents or output in code_path.parents:
+        raise ValidationError('isolated_pages_output_required')
+    output.parent.mkdir(parents=True,exist_ok=True)
+    temporary=Path(tempfile.mkdtemp(prefix='.pages-build-',dir=output.parent));candidate=temporary/'pages';backup=temporary/'previous'
+    try:
+        shutil.copytree(Path(code)/'site',candidate,ignore=shutil.ignore_patterns('data','collector_state','*.pyc','__pycache__'))
+        for name in cfg['public_files']:
+            dest=candidate/Path(name).relative_to('site');dest.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(Path(snapshot)/name,dest)
+        if (candidate/'collector_state').exists() or set(p.name for p in (candidate/'data').iterdir())!={Path(p).name for p in cfg['public_files']}:
+            raise ValidationError('unexpected_pages_tree')
+        if any(p.is_symlink() for p in candidate.rglob('*')):raise ValidationError('pages_symlink_forbidden')
+        static={str(p.relative_to(candidate)) for p in candidate.rglob('*') if p.is_file() and p.relative_to(candidate).parts[0]!='data'}
+        if static!=set(cfg['static_public_files']):raise ValidationError('unexpected_static_asset')
+        actual_json={str(p.relative_to(candidate)) for p in candidate.rglob('*.json')}
+        if actual_json!={str(Path(n).relative_to('site')) for n in cfg['public_files']}|{'assets/content-localization.json'}:
+            raise ValidationError('unexpected_static_json_asset')
+        if any(p.suffix=='.md' and str(p.relative_to(candidate))!='assets/README.md' for p in candidate.rglob('*')):
+            raise ValidationError('private_manuscript_asset_forbidden')
+        # Recheck fresh authority/rights immediately before promotion, after copying.
+        verify_public(snapshot,code,macro_config=macro_config,monthly_authority=monthly_authority,at=at)
+        if hashes(candidate,[str(Path(n).relative_to('site')) for n in cfg['public_files']])!={str(Path(n).relative_to('site')):v for n,v in hashes(snapshot,cfg['public_files']).items()}:
+            raise ValidationError('pages_copy_changed')
+        if output.exists():os.replace(output,backup)
+        try:os.replace(candidate,output)
+        except Exception:
+            if backup.exists():os.replace(backup,output)
+            raise
+    finally:
+        # Never delete the previous artifact if an OS-level rollback also fails.
+        if not backup.exists():shutil.rmtree(temporary)
+        elif output.exists():shutil.rmtree(temporary)
     return hashes(snapshot,cfg['public_files'])
 
 
-def transact(code, remote, work, output, requested='none', force=False, days=90, collector=invoke, at=None, max_attempts=3, result=None, tourgo_request=None):
+def transact(code, remote, work, output, requested='none', force=False, days=90, collector=invoke, at=None, max_attempts=3, result=None, tourgo_request=None,monthly_request=None,monthly_authority=None):
     code,work=Path(code),Path(work);cfg=configuration(code);work.mkdir(parents=True,exist_ok=True)
     code_commit=git(code,'rev-parse','HEAD').stdout.strip()
     if result is None:result={}
@@ -61,6 +84,7 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
         if store.tip('main')!=code_commit:
             raise StoreError('main_changed_retry_latest_code')
         initialized=store.load(code,code_commit)
+        cfg=store.cfg
         stage=attempt_dir/'stage';copy_data(store.path,stage,cfg)
         shutil.copyfile(store.path/CONTROL,stage/CONTROL)
         before=attempt_dir/'before';copy_data(stage,before,cfg)
@@ -101,6 +125,8 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
                 else:
                     success=collector(engine,stage,force and engine==requested,days)
                 after=hashes(stage,files(cfg))
+                if optional(cfg,stage)['public_files']!=cfg['public_files']:
+                    raise ValidationError('engine_wrote_other_dataset')
                 if any(pre[p]!=after[p] and owner(p)!=engine for p in pre):
                     raise ValidationError('engine_wrote_other_dataset')
                 validate(stage,cfg,before=checkpoint)
@@ -123,7 +149,13 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
         result['phase']='validate'
         projection_clock=at or now_kst()
         project(stage,code,projection_clock)
-        counts=validate(stage,cfg,before=before);verify_public(stage,code)
+        if monthly_request is not None:
+            if monthly_authority is not monthly_request.authority:raise DataError('monthly_authority_mismatch')
+            pre=hashes(stage,files(cfg));monthly_request.apply(stage,code,projection_clock)
+            if any(hashes(stage,[n])[n]!=h for n,h in pre.items() if owner(n)!='weather'):
+                raise ValidationError('monthly_request_wrote_other_dataset')
+            cfg=optional(cfg,stage);store.cfg=cfg
+        counts=validate(stage,cfg,before=before);verify_public(stage,code,monthly_authority=monthly_authority,at=projection_clock)
         old_ids={a['id'] for a in read(before/'collector_state/archive.json')['articles']}
         old_reports={a['id'] for a in read(before/'collector_state/reports_archive.json')['reports']}
         old_macro=read(before/'collector_state/macro_archive.json')['indicators']
@@ -135,7 +167,10 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
             raise StoreError('main_changed_retry_latest_code')
         result['phase']='persist'
         try:
-            data_commit,changed=store.commit(stage,code_commit,before)
+            monthly_present=any(n.startswith('site/data/market_weather_') for n in cfg['public_files'])
+            recheck=(lambda:verify_public(stage,code,monthly_authority=monthly_authority,at=at or now_kst())) if monthly_present else None
+            if recheck is None:data_commit,changed=store.commit(stage,code_commit,before)
+            else:data_commit,changed=store.commit(stage,code_commit,before,precommit=recheck)
         except Conflict:
             if attempt+1==max_attempts:raise
             continue  # Reload latest snapshot, then recollect. No JSON overwrite.
@@ -143,8 +178,10 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
         if store.tip('main')!=code_commit or store.tip()!=data_commit:
             raise StoreError('newer_code_or_data_no_stale_deployment')
         result['phase']='assemble'
-        public_hashes=compose(code,store.path,output,cfg)
-        write_atomic(work/'deployment.json',{'code_commit':code_commit,'data_commit':data_commit,'public_files':public_hashes,'policy_evaluated_on':projection_clock.date().isoformat()})
+        public_hashes=compose(code,store.path,output,cfg,monthly_authority=monthly_authority,at=at)
+        artifact_names=[str(p.relative_to(output)) for p in Path(output).rglob('*') if p.is_file()]
+        write_atomic(work/'deployment.json',{'code_commit':code_commit,'data_commit':data_commit,'public_files':public_hashes,'policy_evaluated_on':projection_clock.date().isoformat(),
+                                           'artifact_directory':str(Path(output).resolve()),'artifact_file_sha256':hashes(output,artifact_names)})
         result.update(phase='ready_for_pages',ready=True,data_commit=data_commit,data_committed=changed,counts=counts)
         result['collection_ok']=all(r['status'] in ('ok','partial','not_due') for r in result['engines'].values())
         return result
@@ -168,10 +205,18 @@ def main():
     p.add_argument('--tourgo-receipt',type=Path);p.add_argument('--tourgo-receipt-sha256')
     p.add_argument('--tourgo-input-dir',type=Path)
     p.add_argument('--tourgo-update-input-dir',type=Path)
+    p.add_argument('--monthly-authority-dir',type=Path)
+    p.add_argument('--monthly-release-key')
     args=p.parse_args();args.work.mkdir(parents=True,exist_ok=True)
     result={'phase':'authorization','ready':False,'main_auto_commit':False}
     try:
         require_main()
+        from ..macro import weather_release
+        authority=weather_release.directory(args.monthly_authority_dir) if args.monthly_authority_dir else weather_release.environment()
+        monthly=None
+        if args.monthly_release_key:
+            if args.operation!='run' or authority is None:raise DataError('monthly_authority_required')
+            monthly=weather_release.PublicationRequest(authority,args.monthly_release_key)
         manual=(args.tourgo_ledger,args.tourgo_ledger_sha256,args.tourgo_receipt,args.tourgo_receipt_sha256)
         request=None
         if args.tourgo_update_input_dir is not None:
@@ -200,8 +245,20 @@ def main():
             found={line.split()[1]:line.split()[0] for line in tip.splitlines()}
             if found.get('refs/heads/main')!=proof['code_commit'] or found.get('refs/heads/data/live')!=proof['data_commit']:
                 raise StoreError('newer_snapshot_do_not_deploy_stale_artifact')
+            if any(name in proof['public_files'] for name in weather_release.PUBLIC_FILES):
+                snapshots=list(args.work.glob('attempt-*/snapshot'))
+                if not snapshots:raise StoreError('monthly_guard_snapshot_missing')
+                snapshot=max(snapshots,key=lambda p:int(p.parent.name.split('-')[-1]))
+                cfg=optional(configuration(ROOT),snapshot)
+                if hashes(snapshot,cfg['public_files'])!=proof['public_files']:raise StoreError('monthly_guard_snapshot_changed')
+                verify_public(snapshot,ROOT,monthly_authority=authority,at=now_kst())
+                artifact=Path(proof['artifact_directory'])
+                if any(p.is_symlink() for p in artifact.rglob('*')):raise StoreError('monthly_guard_artifact_symlink')
+                actual=[str(p.relative_to(artifact)) for p in artifact.rglob('*') if p.is_file()]
+                if set(actual)!=set(proof['artifact_file_sha256']) or hashes(artifact,actual)!=proof['artifact_file_sha256']:
+                    raise StoreError('monthly_guard_artifact_changed')
             return 0
-        result=transact(ROOT,remote,args.work,args.output,args.requested,args.force,args.days,result=result,tourgo_request=request)
+        result=transact(ROOT,remote,args.work,args.output,args.requested,args.force,args.days,result=result,tourgo_request=request,monthly_request=monthly,monthly_authority=authority)
         write_atomic(args.work/'result.json',result)
         if result['ready'] and os.environ.get('GITHUB_OUTPUT'):
             with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('ready=true\n')

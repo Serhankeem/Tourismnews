@@ -20,7 +20,8 @@ with tempfile.TemporaryDirectory() as tmp:
    const page=await browser.newPage({viewport:{width,height:1000}});page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/know\.tour\.go\.kr|ecos\.bok\.or\.kr/.test(r.url()))external.push(r.url());});
    await page.goto(base+'/#macro');await page.waitForFunction(()=>window.MacroMonitor?.database);
    const real=await page.evaluate(()=>MacroMonitor.database),originalVisitors=real.indicators.filter(i=>i.unit==='명');
-   assert.equal(await page.locator('#macro-kpis [data-value]').count(),2);assert.equal(await page.locator('.macro-derived-balance').count(),0);
+   const core=['kto_inbound','kto_outbound','kto_tourism_receipts','kto_tourism_expenditure'];
+   assert.equal(await page.locator('#macro-kpis [data-value]').count(),real.indicators.filter(i=>core.includes(i.id)&&i.connected&&i.latest).length);assert.equal(await page.locator('#macro-kpis .macro-derived-balance').count(),real.tourism_balance?1:0);
    if([390,1440].includes(width)){await page.waitForTimeout(350);await page.screenshot({path:`${out}/default-unconnected-${width}.png`,fullPage:true});}
    const score=await page.locator('#weather-score').textContent();
    const fixture=structuredClone(real);fixture.indicators=fixture.indicators.map(i=>generated.indicators.find(g=>g.id===i.id)||i);fixture.tourism_balance=generated.tourism_balance;

@@ -34,9 +34,9 @@ try{for(const width of [320,390,768,1024,1280,1440]){
   await nav(page,route);assert.equal(await page.locator('#page-'+route).isVisible(),true);assert.equal(await menu.getAttribute('aria-expanded'),'false');assert.equal(await news.getAttribute('aria-expanded'),'false');
  }
  await nav(page,'news');await nav(page,'research');await page.goBack();assert.ok(await page.locator('#page-news').isVisible());await page.goForward();assert.ok(await page.locator('#page-research').isVisible());
- await page.goto(base+'/#weather');await page.waitForFunction(()=>MacroMonitor?.database&&document.querySelector('#market-demand-chart svg'));
+ await page.goto(base+'/#weather-simulator');await page.waitForFunction(()=>MacroMonitor?.database&&document.querySelector('#market-demand-chart svg'));
  assert.equal(await page.evaluate(()=>scrollY),0);
- const sequence=await page.locator('#page-weather>section').evaluateAll(ns=>ns.map(n=>n.className));assert.deepEqual(sequence,['scenario-section','market-observation-section']);
+ const sequence=await page.locator('#weather-legacy>section').evaluateAll(ns=>ns.map(n=>n.className));assert.deepEqual(sequence,['scenario-section','market-observation-section']);
  const scenario=await page.locator('.scenario-section').boundingBox(),observation=await page.locator('.market-observation-section').boundingBox();
  assert.ok(scenario.y>=header.height);assert.ok(scenario.y+scenario.height<=observation.y);assert.ok(scenario.y<500);
  const original=await page.locator('#weather-score').textContent();await page.locator('#s-arrivals').focus();await page.keyboard.press('ArrowRight');
@@ -45,7 +45,7 @@ try{for(const width of [320,390,768,1024,1280,1440]){
  await page.locator('.brand-home').click();
  assert.deepEqual(await page.locator('.market-home-card').evaluate(n=>[...n.children].map(c=>c.id||c.className)),['weather-panel scenario-preview','home-market-observation']);
  assert.match(await page.locator('.scenario-preview').textContent(),/시뮬레이션 · 실제 관광시장 종합지수 아님/);
- await page.locator('.scenario-preview [data-goto="weather"]').click();assert.equal(await page.evaluate(()=>scrollY),0);
+ await page.locator('.scenario-preview [data-goto="weather-simulator"]').click();assert.equal(await page.evaluate(()=>scrollY),0);
  assert.ok(await page.locator('#market-demand-chart svg').count());assert.ok(await page.locator('#market-country-cards .market-observation-card').count());
  if([390,1440].includes(width)){
   await page.screenshot({path:`${dir}/weather-${width}.png`,fullPage:true});
