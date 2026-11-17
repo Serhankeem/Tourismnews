@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-17T18:29:38+09:00",
-  "last_successful_fetch": "2026-11-17T18:29:38+09:00",
-  "count": 119,
+  "generated_at": "2026-11-17T20:26:55+09:00",
+  "last_successful_fetch": "2026-11-17T20:26:55+09:00",
+  "count": 121,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,26 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "일본인은 ‘맛’, 대만·홍콩은 ‘가성비’... 외국인 관광객이 꼽은 한국의 매력",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-17T17:52:50+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3163416",
+      "category": "인바운드",
+      "keywords": [
+        "외국인관광객"
+      ]
+    },
+    {
+      "title": "곡성군 유평마을, 주민 주도형 웰니스 관광 첫발...‘돌실나이 팜파티’",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-17T17:00:53+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3163426",
+      "category": "문화·트렌드",
+      "keywords": [
+        "웰니스관광"
+      ]
+    },
     {
       "title": "롯데리아, 농촌 관광 활성화 캠페인 ‘전국 떼닝왕 선발전’ 성료",
       "source": "퍼블릭뉴스통신(TTL)",
