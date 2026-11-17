@@ -47,8 +47,17 @@ def load_preview(bundle):
                 revision_count=len(manifest['revision_history']))
 
 
-def create_server(bundle=None, port=0):
+def create_server(bundle=None, port=0, editorial_record=None, trust_policy=None):
     payload = load_preview(bundle)
+    if editorial_record is not None:
+        from src.macro import weather_publication as gate
+        if bundle is None or trust_policy is None:raise ValueError('private_editorial_inputs_required')
+        now=dt.datetime.now(dt.timezone.utc);trust=gate.trust_file(trust_policy)
+        ctx=gate.load_context(editorial_record,trust,now)
+        report=gate.audit(ctx,None,trust,now,engine.read(engine.ROOT/'macro_sources.json'),engine.read(engine.ROOT/'operating_policy.json'))
+        if not report['editorial_verified']:raise ValueError('editorial_verification_required')
+        if engine.digest(payload['diagnostic'])!=engine.digest({k:v for k,v in ctx.diagnostic.items() if k!='supporting'}):raise ValueError('preview_snapshot_mismatch')
+        payload['editorial_private']={'article':gate.parse_manuscript(ctx.manuscript,ctx.diagnostic),'gate':report}
     session = secrets.token_urlsafe(32)
 
     class Handler(BaseHTTPRequestHandler):
@@ -93,9 +102,11 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--bundle',type=Path)
     parser.add_argument('--port',type=int,default=8044)
+    parser.add_argument('--editorial-record',type=Path)
+    parser.add_argument('--trust-policy',type=Path)
     args=parser.parse_args()
     try:
-        server=create_server(args.bundle,args.port)
+        server=create_server(args.bundle,args.port,args.editorial_record,args.trust_policy)
         print(f'Local private review: http://127.0.0.1:{server.server_port}/',flush=True)
         server.serve_forever()
     except KeyboardInterrupt:return 0
