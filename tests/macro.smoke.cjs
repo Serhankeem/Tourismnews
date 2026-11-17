@@ -5,15 +5,22 @@ const {chromium}=require('playwright');const assert=require('node:assert/strict'
  try{
   const request=await browser.newContext();const snap=await(await request.request.get(base+'/data/macro.json')).json();
   const inbound=snap.indicators.find(i=>i.id==='kto_inbound'),outbound=snap.indicators.find(i=>i.id==='kto_outbound');assert.ok(inbound.months>=36&&outbound.months>=36);
-  assert.equal(snap.indicators.filter(i=>i.connected&&i.priority===1).length,2);assert.equal(snap.indicators.filter(i=>i.connected&&i.country).length,5);
-  assert.ok(snap.indicators.filter(i=>i.connected).every(i=>i.observations.every(o=>/^[a-f0-9]{64}$/.test(o.file_sha256)&&o.verification_status==='official_file_validated')));
+  const coreIds=['kto_inbound','kto_outbound','kto_tourism_receipts','kto_tourism_expenditure'];
+  const activeCore=coreIds.map(id=>snap.indicators.find(i=>i.id===id&&i.connected));assert.ok(activeCore.every(Boolean));
+  assert.equal(snap.indicators.filter(i=>i.connected&&i.priority===1).length,4);assert.equal(snap.indicators.filter(i=>i.connected&&i.country).length,5);
+  for(const i of snap.indicators.filter(i=>i.connected))for(const o of i.observations){
+   if(i.source_id==='tourgo_tourism_balance'){
+    // TOURGO's public contract intentionally omits private file hashes.
+    assert.equal(o.verification_status,'official_tourgo_file_validated');assert.equal(o.collection_method,'operator_supplied_official_excel_export');assert.equal(o.file_sha256,undefined);assert.equal(o.source_url,'https://know.tour.go.kr/stat/koreaTourIncomeDis19Re.do');
+   }else{assert.match(o.file_sha256,/^[a-f0-9]{64}$/);assert.equal(o.verification_status,'official_file_validated');}
+  }
   for(const path of ['/data/macro_archive.json','/macro_sources.json','/collector_state/macro_archive.json'])assert.equal((await request.request.get(base+path)).status(),404);
   const wait=async p=>p.waitForFunction(()=>window.MacroMonitor?.database&&/핵심 월간/.test(document.getElementById('macro-status').textContent));
   for(const width of [1440,1024,768,390]){
    const page=await browser.newPage({viewport:{width,height:1000},isMobile:width===390});page.on('pageerror',e=>errors.push(e.message));await page.goto(base);await wait(page);
-   const home=await page.locator('#home-macro-kpis [data-value]').evaluateAll(nodes=>nodes.map(n=>Number(n.dataset.value)));assert.deepEqual(home,[inbound.latest.value,outbound.latest.value]);
-   assert.equal(await page.locator('#home-macro-kpis').getByText('미연동',{exact:true}).count(),2);
-   assert.match(await page.locator('#home-macro-status').textContent(),/핵심 월간 2\/4개/);
+   const home=await page.locator('#home-macro-kpis [data-value]').evaluateAll(nodes=>nodes.map(n=>Number(n.dataset.value)));assert.deepEqual(home,activeCore.map(i=>i.latest.value));
+   assert.equal(await page.locator('#home-macro-kpis').getByText('미연동',{exact:true}).count(),0);
+   assert.match(await page.locator('#home-macro-status').textContent(),/핵심 월간 4\/4개/);
    assert.equal(await page.locator('#chart-overview rect').count(),12);assert.equal(await page.locator('#chart-overview rect').last().getAttribute('data-value'),String(inbound.latest.value));
    const weather=await page.locator('#weather-score').textContent();assert.equal(weather,'68');
    if(width===1440||width===390){await page.evaluate(()=>document.activeElement?.blur());await page.screenshot({path:`${dir}/home-${width}.png`,fullPage:true});}

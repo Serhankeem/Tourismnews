@@ -17,10 +17,11 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
     await page.evaluate(r=>navigate(r),route);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),width+'/'+route);
     if([390,1440].includes(width))await page.screenshot({path:`${dir}/after-${route}-${width}.png`,fullPage:true});
    }
-   for(const i of db.indicators.filter(i=>i.connected)){
+   for(const i of db.indicators.filter(i=>i.connected&&i.unit==='명')){
     const card=page.locator(`[data-observation-id="${i.id}"]`);assert.equal(await card.locator('[data-value]').getAttribute('data-value'),String(i.latest.value));
     assert.match(await card.textContent(),new RegExp(i.latest.period));assert.equal(await card.locator('a').getAttribute('href'),i.source_url);
    }
+   for(const i of db.indicators.filter(i=>i.connected&&i.unit==='US$'))assert.equal(await page.locator(`[data-observation-id="${i.id}"]`).count(),0,'Financial series stay in Macro, outside population observations');
    assert.equal(await page.locator('#market-country-cards [data-observation-id]').count(),5);
    assert.equal(await page.locator('#market-demand-chart rect').count(),12);
    const originalScore=await page.locator('#weather-score').textContent();
