@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T17:11:05+09:00",
+  "generated_at": "2026-11-17T18:29:38+09:00",
   "mode": "live_rss",
   "decisions": [
     {
@@ -43,12 +43,6 @@
       "decision": "editorial_ineligible",
       "tier": "reference",
       "published_at": "2026-11-16T20:27:22+09:00"
-    },
-    {
-      "article_id": "553648132644ade06c",
-      "decision": "editorial_ineligible",
-      "tier": "reference",
-      "published_at": "2026-11-16T17:33:29+09:00"
     }
   ]
 }
