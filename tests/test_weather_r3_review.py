@@ -75,3 +75,12 @@ class R3DraftTests(unittest.TestCase):
         changed=self.raw.replace('2026년 11월 Market Weather'.encode(),'2026년 12월 Market Weather'.encode())
         (self.root/'draft.md').write_bytes(changed);self.doc['manuscript_sha256']=gate.sha(changed);self.write()
         with self.assertRaisesRegex(ValueError,'draft_cover_mismatch'):self.load()
+
+    def test_issue_label_revision_preserves_legacy_draft_and_gate_compatibility(self):
+        legacy=self.load()['pending_editorial']['article']
+        updated=self.raw.replace('발행: 2026년 11월'.encode(),'발행호: 2026년 11월'.encode())
+        (self.root/'draft.md').write_bytes(updated);self.doc['manuscript_sha256']=gate.sha(updated);self.write()
+        candidate=self.load()['pending_editorial']['article']
+        self.assertEqual(candidate['sections'][1:],legacy['sections'][1:])
+        self.assertEqual(candidate['sections'][0]['markdown'].replace('발행호:','발행:',1),legacy['sections'][0]['markdown'])
+        self.assertFalse(self.load()['publication_approved']);self.assertIsNone(self.load()['pending_editorial']['actual_publication_date'])

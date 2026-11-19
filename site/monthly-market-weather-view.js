@@ -16,7 +16,8 @@ export function edition(article,reference){
  if(blocks[0]!=='한국 관광의 날씨는? / MONTHLY REPORT')return null;
  const series=blocks[1]?.match(/^(\d{4})년 (\d{1,2})월 Market Weather$/);
  const [y,m]=String(reference).split('-').map(Number);
- if(!series||Number(series[2])<1||Number(series[2])>12||blocks[2]!==`${y}년 ${m}월 검증 자료 기반`||blocks[3]!==`${series[1]}.${series[2].padStart(2,'0')} · VOL. 01`||blocks[4]!==`발행: ${series[1]}년 ${Number(series[2])}월\n통계 기준: ${y}년 ${m}월`||typeof blocks[5]!=='string'||blocks[5].length===0||blocks.length<7)return null;
+ const metadata=series?['발행호','발행'].map(label=>`${label}: ${series[1]}년 ${Number(series[2])}월\n통계 기준: ${y}년 ${m}월`):[];
+ if(!series||Number(series[2])<1||Number(series[2])>12||blocks[2]!==`${y}년 ${m}월 검증 자료 기반`||blocks[3]!==`${series[1]}.${series[2].padStart(2,'0')} · VOL. 01`||!metadata.includes(blocks[4])||typeof blocks[5]!=='string'||blocks[5].length===0||blocks.length<7)return null;
  return {brand:blocks[0],series:blocks[1],description:blocks[2],issue:blocks[3],metadata:blocks[4],lead:blocks[5],body:blocks.slice(6).join('\n\n')};
 }
 export function renderArticle(root,p,heading='h3'){

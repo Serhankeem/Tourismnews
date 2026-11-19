@@ -65,9 +65,9 @@ def load_pending(payload,path,bundle):
     if doc['reference_period']!=payload['diagnostic']['target_period']:raise ValueError('draft_period_mismatch')
     article=gate.parse_manuscript(raw,payload['diagnostic'])
     if doc['issue_month']!='2026-11' or doc['reference_period']!='2026-09':raise ValueError('draft_edition_mismatch')
-    expected_cover='\n\n'.join(['한국 관광의 날씨는? / MONTHLY REPORT','2026년 11월 Market Weather',
-        '2026년 9월 검증 자료 기반','2026.11 · VOL. 01','발행: 2026년 11월\n통계 기준: 2026년 9월'])
-    if article['title']!='2026년 11월 관광시장 진단' or not article['sections'][0]['markdown'].startswith(expected_cover+'\n\n') or len(article['sections'][0]['markdown'].split('\n\n'))<7:
+    expected_covers=['\n\n'.join(['한국 관광의 날씨는? / MONTHLY REPORT','2026년 11월 Market Weather',
+        '2026년 9월 검증 자료 기반','2026.11 · VOL. 01',label+': 2026년 11월\n통계 기준: 2026년 9월']) for label in ('발행호','발행')]
+    if article['title']!='2026년 11월 관광시장 진단' or not any(article['sections'][0]['markdown'].startswith(cover+'\n\n') for cover in expected_covers) or len(article['sections'][0]['markdown'].split('\n\n'))<7:
         raise ValueError('draft_cover_mismatch')
     payload['pending_editorial']={**doc,'article':article}
     return payload
