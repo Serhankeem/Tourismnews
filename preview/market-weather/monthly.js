@@ -1,3 +1,4 @@
+import {renderArticle} from '/monthly-market-weather-view.js';
 // Private UI only. No production integration, external assets, storage, or export.
 const CORES = ['kto_inbound','kto_tourism_receipts'];
 const LABELS = ['방한 외래관광객','일반여행수입'];
@@ -79,9 +80,23 @@ function approvedArticle(article){
   }
   return node;
 }
+function pendingArticle(root,payload){
+ const draft=payload.pending_editorial;
+ if(!draft||payload.publication_approved!==false||draft.editorial_status!=='pending'||draft.publication_status!=='not_requested')return blocked(root);
+ const diagnostic=payload.diagnostic,metrics={};
+ for(const key of CORES){const row=diagnostic.axes[key],c=row.comparisons;
+  metrics[key]={value:row.value,unit:row.unit,comparisons:{mom:{period:c.mom_base_period,pct:c.mom_pct},yoy:{period:c.yoy_base_period,pct:c.yoy_pct}}};
+ }
+ const article=el('article',{id:'monthly-article'});
+ root.replaceChildren(el('p',{id:'publication-gate-status',class:'warning',role:'status'},'r3 편집 승인 대기 · 게시 승인 미요청 · 미발행 · 실제 발행일 미정'),article);
+ renderArticle(article,{title:draft.article.title,article:{subtitle:draft.article.subtitle,sections:draft.article.sections},metrics,reference_period:diagnostic.target_period,data_cutoff:diagnostic.input_cutoff},'h1');
+ const charts=el('section',{'aria-labelledby':'verification-charts'},el('h2',{id:'verification-charts'},'검수용 차트 · 원고와 같은 입력'),el('p',{},'아래 추이는 검수 보조자료입니다. 단월 분석이며 3분기 전체 분석이 아닙니다.'),el('div',{class:'axes'},CORES.map((k,i)=>axis(k,i,payload))));
+ root.append(charts,el('p',{class:'context',id:'context'},'r3 원고 SHA-256: ',el('code',{},draft.manuscript_sha256)),el('p',{class:'context'},'r2 승인은 이 원고에 승계되지 않습니다. 공개 JSON 및 실제 발행일은 생성하지 않았습니다.'));
+}
 export function renderReport(root,payload={},context='public'){
   // Public integration is deliberately closed in Step 14, including flag-only edits.
   if(context!=='private-preview'){blocked(root);return;}
+  if(payload.state==='private_review'&&payload.pending_editorial){pendingArticle(root,payload);return;}
   if(payload.state!=='private_review')payload={state:payload.state};
   const diagnostic=payload.diagnostic||{},ready=payload.state==='private_review'&&diagnostic.target_ready===true;
   const target=period(diagnostic.target_period),meta=el('dl',{class:'metadata'});
