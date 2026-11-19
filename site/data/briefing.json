@@ -1,38 +1,28 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-18T08:17:40+09:00",
-  "briefing_date": "2026-11-18",
-  "last_successful_fetch": "2026-11-18T08:17:40+09:00",
+  "generated_at": "2026-11-19T13:24:51+09:00",
+  "briefing_date": "2026-11-19",
+  "last_successful_fetch": "2026-11-19T13:24:51+09:00",
   "status": "candidates_ready",
-  "recent_news_count": 10,
-  "selected_count": 2,
+  "recent_news_count": 3,
+  "selected_count": 1,
   "collection": {
     "status": "partial",
-    "successful_sources": 51,
+    "successful_sources": 50,
     "source_count": 60,
-    "failed_sources": 9
+    "failed_sources": 10
   },
   "mode": "live_rss",
   "title": "관광산업 주요 뉴스 브리핑 후보",
   "items": [
     {
-      "title": "K-관광, 사상 첫 방한객 2천만 시대 개막 ... “대체불가 관광대국 닻 올려”",
+      "title": "한국여행업협회, 한-중 FTA 서비스·투자 후속협상 타결 환영",
       "source": "퍼블릭뉴스통신(TTL)",
-      "published_at": "2026-11-17T23:06:51+09:00",
-      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3163533",
-      "category": "인바운드",
-      "keywords": [
-        "방한객"
-      ]
-    },
-    {
-      "title": "노랑풍선, 3분기 영업이익 4.9억원",
-      "source": "트래블데일리",
-      "published_at": "2026-11-17T21:52:07+09:00",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72718",
+      "published_at": "2026-11-18T19:12:12+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3164019",
       "category": "여행산업",
       "keywords": [
-        "영업이익"
+        "여행업"
       ]
     }
   ],

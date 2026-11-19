@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-18T08:17:40+09:00",
-  "last_successful_fetch": "2026-11-18T08:17:40+09:00",
-  "count": 128,
+  "generated_at": "2026-11-19T13:24:51+09:00",
+  "last_successful_fetch": "2026-11-19T13:24:51+09:00",
+  "count": 131,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,37 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Travel Media Group Continues to Expand its Respond & Resolve™ Guest Review Response Solution in the Luxury Hotel Segment",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-18T23:27:43+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135549/travel-media-group-continues-to-expand-its-respond-resolve-guest-review-response-solution-in-the-luxury-hotel-segment",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "Preferred Hotels & Resorts Reveals Its New Independent Hotel Openings for 2027",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-18T19:29:09+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135542/preferred-hotels-resorts-reveals-its-new-independent-hotel-openings-for-2027",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels",
+        "Hotel"
+      ]
+    },
+    {
+      "title": "한국여행업협회, 한-중 FTA 서비스·투자 후속협상 타결 환영",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-18T19:12:12+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3164019",
+      "category": "여행산업",
+      "keywords": [
+        "여행업"
+      ]
+    },
     {
       "title": "'롤러코스터' 탄 국제선 유류할증료, 12월 소폭 하락",
       "source": "여행신문",
