@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-19T17:10:28+09:00",
-  "last_successful_fetch": "2026-11-19T17:10:28+09:00",
-  "count": 132,
+  "generated_at": "2026-11-19T18:33:42+09:00",
+  "last_successful_fetch": "2026-11-19T18:33:42+09:00",
+  "count": 133,
   "public_fields": [
     "title",
     "source",
@@ -20,6 +20,16 @@
       "url": "https://www.hospitalitynet.org/opinion/4135404/tourist-tax-is-coming-wheres-the-plan",
       "category": "관광정책",
       "keywords": []
+    },
+    {
+      "title": "KB증권, 지역 관광 AI 벤처투자조합에 20억원 출자",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-19T16:03:27+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3164153",
+      "category": "문화·트렌드",
+      "keywords": [
+        "지역관광"
+      ]
     },
     {
       "title": "Travel Media Group Continues to Expand its Respond & Resolve™ Guest Review Response Solution in the Luxury Hotel Segment",
