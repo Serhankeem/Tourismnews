@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-19T22:45:12+09:00",
-  "last_successful_fetch": "2026-11-19T22:45:12+09:00",
-  "count": 140,
+  "generated_at": "2026-11-20T00:24:33+09:00",
+  "last_successful_fetch": "2026-11-20T00:24:33+09:00",
+  "count": 143,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,36 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Q3 2026 Hotel Profitability Report: What's Driving the Gains?",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T23:45:00+09:00",
+      "url": "https://www.hospitalitynet.org/report/4135564/q3-2026-hotel-profitability-report-whats-driving-the-gains",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "HotelData.com Q3 2026 Profitability Report Shows US Hotels Beat Budget as Profits Rise",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T23:41:00+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135563/hoteldatacom-q3-2026-profitability-report-shows-us-hotels-beat-budget-as-profits-rise",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels"
+      ]
+    },
+    {
+      "title": "BirchStreet Launches Smart Inventory to Give Hospitality Operators Real-Time Stock Control",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T23:19:25+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135593/birchstreet-launches-smart-inventory-to-give-hospitality-operators-real-time-stock-control",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hospitality"
+      ]
+    },
     {
       "title": "에어부산, 나가사키 재운항·시즈오카 증편",
       "source": "트래블데일리",
