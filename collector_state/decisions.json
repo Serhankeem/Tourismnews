@@ -1,8 +1,26 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-20T06:18:27+09:00",
+  "checked_at": "2026-11-20T08:12:40+09:00",
   "scope": "successful_sources_this_run",
   "items": [
+    {
+      "id": "5a23b8fa10b2f5f670",
+      "title": "옥스퍼드대에 ‘케이-컬처’ 연구 거점 마련, 세계와 함께 본격적으로 ‘케이-컬처’ 미래 연구",
+      "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22863",
+      "source_id": "mcst_press",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
     {
       "id": "c6f8eb5ef7896c075b",
       "title": "문체부, 현장 목소리 담아 인디음악인 첫 무대인 라이브클럽 제도 개선 추진",
@@ -151,24 +169,6 @@
       "id": "f67885514c91c324fb",
       "title": "제9기 국가도서관위원회, 서울에서 제2차 도서관 현장 소통 이어간다",
       "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22854",
-      "source_id": "mcst_press",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "93c84fb9b6ad0c5500",
-      "title": "사상 첫 ‘방한 관광 2천만 명 시대’ 개막… ‘대체불가 관광대국 대한민국’ 향해 민·관·정 뜻 모아",
-      "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22853",
       "source_id": "mcst_press",
       "relevance_evidence": {
         "rule_version": "0.2",
