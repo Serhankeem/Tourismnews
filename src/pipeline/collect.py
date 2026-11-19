@@ -10,7 +10,9 @@ def collect(engine, stage, force, days):
         from ..engine import execute
         result=execute(read(ROOT/'sources.json')['sources'],data,state,
                        read(ROOT/'relevance_reviews.json').get('approvals',{}),days=days)
-        return result['publication_result']!='failed'
+        return (result['publication_result']!='failed' and result.get('discovery_status')!='failed'
+                and result.get('briefing',{}).get('status')!='failed'
+                and result.get('publication_visibility',{}).get('status')!='failed')
     if engine=='reports':
         from ..reports.engine import collect
         result=collect(read(ROOT/'reports_sources.json')['sources'],data,state,force=force)

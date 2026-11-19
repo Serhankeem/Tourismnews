@@ -9,6 +9,36 @@ from .layout import MANIFEST, CONTROL, files, hashes, copy_data, read, optional
 from .validation import validate
 from ..collector import write_atomic, now_kst, iso
 
+COMPACT_AT_BYTES=8*1024*1024
+MAX_BLOB_BYTES=100*1024*1024
+
+
+def push_reason(stderr):
+    """Classify in memory; never retain Git output, credentials or remote URLs."""
+    value=(stderr or '').lower()
+    if 'gh001' in value or 'exceeds github' in value or 'file size limit' in value:return 'git_remote_blob_limit'
+    if any(s in value for s in ('permission denied','authentication failed','write access','error: 403','error: 401')):return 'git_permission_denied'
+    if any(s in value for s in ('gh013','protected branch','repository rule','pre-receive hook declined')):return 'git_remote_policy_rejected'
+    if any(s in value for s in ('could not resolve','timed out','connection reset','http 502','http 503','remote end hung')):return 'git_transport_failure'
+    return 'git_push_rejected_unknown'
+
+
+def prepare_storage(stage,cfg):
+    """Encoding only: preserve every candidate and field; fail before Git add."""
+    from ..discovery_storage import encode,decode
+    path=Path(stage)/'collector_state/discovery.json';changes=[]
+    if path.stat().st_size>=COMPACT_AT_BYTES:
+        logical=read(path);packed=encode(logical)
+        if decode(packed)!=logical:raise StoreError('discovery_storage_roundtrip_failed')
+        before=path.stat().st_size;write_atomic(path,packed)
+        changes.append(dict(file='collector_state/discovery.json',before_bytes=before,after_bytes=path.stat().st_size,
+                            logical_bytes=packed['uncompressed_bytes'],candidates=len(logical.get('candidates',{})),lossless=True))
+    sizes=[dict(file=n,bytes=(Path(stage)/n).stat().st_size) for n in files(cfg)+[CONTROL]]
+    if any(v['bytes']>MAX_BLOB_BYTES for v in sizes):raise StoreError('git_blob_size_limit_preflight')
+    return dict(encoding_changes=changes,largest=sorted(sizes,key=lambda v:v['bytes'],reverse=True)[:3],
+                logical_warning=any(v['logical_bytes']>=256*1024*1024 for v in changes),
+                warning_files=[v for v in sizes if v['bytes']>=50*1024*1024])
+
 
 class StoreError(RuntimeError):
     pass
@@ -44,6 +74,7 @@ class Store:
         git(self.path,'config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
         git(self.path,'remote','add','origin',remote)
         self.base = None
+        self.storage_diagnostics={}
 
     def tip(self, branch='data/live'):
         r=git(self.path,'ls-remote','--exit-code','origin','refs/heads/'+branch,ok=(0,2))
@@ -78,6 +109,7 @@ class Store:
     def commit(self, stage, code_commit, before,precommit=None):
         if precommit is not None:precommit()
         self.cfg=optional(self.cfg,stage)
+        self.storage_diagnostics=prepare_storage(stage,self.cfg)
         validate(stage,self.cfg,before=before)
         if self.tip()!=self.base:
             raise Conflict('remote_data_changed_retry_collection')
@@ -97,10 +129,15 @@ class Store:
         # Normal push has server-side fast-forward protection even after tip().
         pushed=git(self.path,'push','origin','HEAD:refs/heads/data/live',ok=(0,1,128))
         if pushed.returncode:
-            actual=self.tip()  # Also handles an interrupted acknowledgement.
+            try:actual=self.tip()  # Also handles an interrupted acknowledgement.
+            except StoreError:
+                error=StoreError('git_push_outcome_unverified');error.reason_code='git_push_confirmation_failed'
+                raise error from None
             if actual==commit:
                 return commit,True
             if actual!=self.base:
                 raise Conflict('remote_data_changed_retry_collection')
-            raise StoreError('data_push_failed_no_deployment')
+            error=StoreError('data_push_failed_no_deployment')
+            error.reason_code=push_reason(pushed.stderr)
+            raise error
         return commit,True

@@ -15,6 +15,7 @@ from .store import Store, StoreError, Conflict, git
 from .validation import validate, ValidationError
 from .schedule import pending
 from .policy import project, verify_public
+from . import diagnostics
 from ..collector import write_atomic, now_kst, iso
 
 
@@ -76,7 +77,9 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
     code_commit=git(code,'rev-parse','HEAD').stdout.strip()
     if result is None:result={}
     if tourgo_request is not None and requested!='macro':raise DataError('tourgo_manual_import_requires_macro_transaction')
-    result.update(phase='load',main_auto_commit=False,code_commit=code_commit,engines={},ready=False,requested=requested)
+    result.update(phase='load',main_auto_commit=False,code_commit=code_commit,engines={},ready=False,requested=requested,
+                  collection_ok=None,collection_status='not_started',storage_status='not_attempted',data_committed=False,
+                  new_records={k:0 for k in ('news','reports','macro_observations')},previous_public_preserved=True)
     for attempt in range(max_attempts):
         attempt_dir=work/('attempt-'+str(attempt));attempt_dir.mkdir()
         write_atomic(work/'result.json',result)
@@ -84,6 +87,7 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
         if store.tip('main')!=code_commit:
             raise StoreError('main_changed_retry_latest_code')
         initialized=store.load(code,code_commit)
+        result.update(data_base_commit=store.base,data_commit=store.base,data_committed=False,storage_status='not_attempted')
         cfg=store.cfg
         stage=attempt_dir/'stage';copy_data(store.path,stage,cfg)
         shutil.copyfile(store.path/CONTROL,stage/CONTROL)
@@ -133,8 +137,8 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
             except Exception as exc:
                 shutil.rmtree(stage)
                 copy_data(checkpoint,stage,cfg)
-                result['engines'][engine]={'status':'failed','error_kind':type(exc).__name__,
-                    'error':str(exc) if isinstance(exc,DataError) else 'collector_failed_or_timed_out',
+                result['engines'][engine]={'status':'failed','error_kind':type(exc).__name__ if type(exc).__name__ in ('DataError','ValidationError','TimeoutExpired','RuntimeError','OSError','ValueError') else 'ExecutionError',
+                    'error':diagnostics.error_code(exc),
                     'previous_data_preserved':True}
                 continue
             health_name={'news':'health','reports':'reports_health','macro':'macro_health'}[engine]
@@ -142,7 +146,11 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
             observed=health.get('discovery',{}).get('discovery_status') if engine=='news' else health.get('status')
             status=(observed if observed in ('partial','not_due') else 'ok') if success else 'failed'
             result['engines'][engine]={'status':status,'slot':slot,'health_file':'site/data/'+health_name+'.json'}
+            if engine=='news':
+                result['engines'][engine]['source_summary']=diagnostics.sources(health,{s['id'] for s in read(code/'sources.json')['sources']})
             if success:control['completed_slots'][engine]=slot
+        result['collection_status']=diagnostics.collection(result)
+        result['collection_ok']=all(r['status'] in ('ok','partial','not_due') for r in result['engines'].values())
         if tourgo_request is not None and result['engines'].get('macro',{}).get('status')=='failed':
             raise DataError('tourgo_manual_transaction_failed_no_data_committed')
         write_atomic(stage/CONTROL,control)
@@ -163,18 +171,26 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
             'news':sum(a['id'] not in old_ids and a.get('record_type','news')=='news' for a in read(stage/'collector_state/archive.json')['articles']),
             'reports':sum(a['id'] not in old_reports for a in read(stage/'collector_state/reports_archive.json')['reports']),
             'macro_observations':sum(len(set(a['observations'])-set(old_macro.get(i,{}).get('observations',{}))) for i,a in read(stage/'collector_state/macro_archive.json')['indicators'].items())}
+        result.update(counts=counts,attempted_new_records=new_records)
         if store.tip('main')!=code_commit:
             raise StoreError('main_changed_retry_latest_code')
         result['phase']='persist'
+        result['storage_status']='pending'
         try:
             monthly_present=any(n.startswith('site/data/market_weather_') for n in cfg['public_files'])
             recheck=(lambda:verify_public(stage,code,monthly_authority=monthly_authority,at=at or now_kst())) if monthly_present else None
             if recheck is None:data_commit,changed=store.commit(stage,code_commit,before)
             else:data_commit,changed=store.commit(stage,code_commit,before,precommit=recheck)
         except Conflict:
+            result.setdefault('retry_events',[]).append(dict(attempt=attempt+1,code='remote_data_changed_retry_collection'))
             if attempt+1==max_attempts:raise
             continue  # Reload latest snapshot, then recollect. No JSON overwrite.
-        result.update(data_commit=data_commit,data_committed=changed,counts=counts,new_records=new_records)
+        except Exception as exc:
+            result['storage_diagnostics']=store.storage_diagnostics
+            diagnostics.failure(result,exc)
+            raise
+        result.update(data_commit=data_commit,data_committed=changed,counts=counts,new_records=new_records,
+                      storage_status='committed' if changed else 'unchanged',storage_diagnostics=store.storage_diagnostics)
         if store.tip('main')!=code_commit or store.tip()!=data_commit:
             raise StoreError('newer_code_or_data_no_stale_deployment')
         result['phase']='assemble'
@@ -184,6 +200,7 @@ def transact(code, remote, work, output, requested='none', force=False, days=90,
                                            'artifact_directory':str(Path(output).resolve()),'artifact_file_sha256':hashes(output,artifact_names)})
         result.update(phase='ready_for_pages',ready=True,data_commit=data_commit,data_committed=changed,counts=counts)
         result['collection_ok']=all(r['status'] in ('ok','partial','not_due') for r in result['engines'].values())
+        result.update(operator_action=diagnostics.action(result),retry_required=not result['collection_ok'])
         return result
     raise StoreError('conflict_retry_exhausted')
 
@@ -265,7 +282,7 @@ def main():
         return 0 if result['collection_ok'] else 1
     except Exception as exc:
         # Never expose endpoint queries/credential-bearing exception payloads.
-        result.update(error_kind=type(exc).__name__,error=str(exc) if isinstance(exc,(StoreError,DataError)) else 'validation_or_execution_failed',ready=False)
+        diagnostics.failure(result,exc)
         write_atomic(args.work/'result.json',result)
         return 1
 
