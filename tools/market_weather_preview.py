@@ -47,8 +47,38 @@ def load_preview(bundle):
                 revision_count=len(manifest['revision_history']))
 
 
-def create_server(bundle=None, port=0, editorial_record=None, trust_policy=None):
+def load_pending(payload,path,bundle):
+    """Compatibility only. A draft manifest is never an approval or Trust pin."""
+    from src.macro import weather_publication as gate
+    path=Path(path).resolve()
+    if engine.ROOT==path or engine.ROOT in path.parents or path.is_symlink():raise ValueError('external_draft_required')
+    doc=engine.read(path)
+    expected={'version','revision','reference_period','issue_month','actual_publication_date','manuscript_file','manuscript_sha256',
+              'parent_manuscript_sha256','source_bundle_manifest_sha256','editorial_status','publication_status'}
+    if (set(doc)!=expected or doc['version']!=1 or doc['revision']!='r3' or doc['editorial_status']!='pending'
+            or doc['publication_status']!='not_requested' or doc['actual_publication_date'] is not None):raise ValueError('pending_draft_only')
+    candidate=path.parent/doc['manuscript_file']
+    if candidate.resolve().parent!=path.parent or candidate.is_symlink():raise ValueError('draft_path_invalid')
+    raw=candidate.read_bytes()
+    if gate.sha(raw)!=doc['manuscript_sha256']:raise ValueError('draft_hash_mismatch')
+    if gate.sha((Path(bundle)/'manifest.json').read_bytes())!=doc['source_bundle_manifest_sha256']:raise ValueError('draft_snapshot_mismatch')
+    if doc['reference_period']!=payload['diagnostic']['target_period']:raise ValueError('draft_period_mismatch')
+    article=gate.parse_manuscript(raw,payload['diagnostic'])
+    if doc['issue_month']!='2026-11' or doc['reference_period']!='2026-09':raise ValueError('draft_edition_mismatch')
+    expected_cover='\n\n'.join(['한국 관광의 날씨는? / MONTHLY REPORT','2026년 11월 Market Weather',
+        '2026년 9월 검증 자료 기반','2026.11 · VOL. 01','발행: 2026년 11월\n통계 기준: 2026년 9월',
+        '공식 관광통계를 바탕으로 시장의 주요 변화 신호를 살펴봅니다. 산업 전체의 종합 경기 판정은 보류합니다.'])
+    if article['title']!='2026년 11월 관광시장 진단' or not article['sections'][0]['markdown'].startswith(expected_cover+'\n\n'):
+        raise ValueError('draft_cover_mismatch')
+    payload['pending_editorial']={**doc,'article':article}
+    return payload
+
+
+def create_server(bundle=None, port=0, editorial_record=None, trust_policy=None, review_manifest=None):
     payload = load_preview(bundle)
+    if review_manifest is not None:
+        if bundle is None or editorial_record is not None:raise ValueError('draft_inputs_invalid')
+        payload=load_pending(payload,review_manifest,bundle)
     if editorial_record is not None:
         from src.macro import weather_publication as gate
         if bundle is None or trust_policy is None:raise ValueError('private_editorial_inputs_required')
@@ -81,11 +111,14 @@ def create_server(bundle=None, port=0, editorial_record=None, trust_policy=None)
                 return self.respond(403,b'loopback_host_required')
             if self.headers.get('Origin',origin) != origin or self.headers.get('Sec-Fetch-Site','same-origin') not in ('same-origin','none'):
                 return self.respond(403,b'same_origin_required')
-            paths = {'/':'index.html','/monthly.css':'monthly.css','/monthly.js':'monthly.js'}
+            paths = {'/':'index.html','/monthly.css':'monthly.css','/monthly.js':'monthly.js',
+                     '/monthly-market-weather.css':'shared_css','/monthly-market-weather-view.js':'shared_view'}
             if self.path in paths:
-                suffix = Path(paths[self.path]).suffix
+                asset={'shared_css':engine.ROOT/'site/monthly-market-weather.css',
+                       'shared_view':engine.ROOT/'site/monthly-market-weather-view.js'}.get(paths[self.path],ASSETS/paths[self.path])
+                suffix = asset.suffix
                 kind = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8'}[suffix]
-                return self.respond(200,(ASSETS/paths[self.path]).read_bytes(),kind,cookie=self.path=='/')
+                return self.respond(200,asset.read_bytes(),kind,cookie=self.path=='/')
             if self.path == '/api/preview':
                 try:
                     cookies=SimpleCookie(self.headers.get('Cookie',''))
@@ -104,9 +137,10 @@ def main():
     parser.add_argument('--port',type=int,default=8044)
     parser.add_argument('--editorial-record',type=Path)
     parser.add_argument('--trust-policy',type=Path)
+    parser.add_argument('--review-manifest',type=Path)
     args=parser.parse_args()
     try:
-        server=create_server(args.bundle,args.port,args.editorial_record,args.trust_policy)
+        server=create_server(args.bundle,args.port,args.editorial_record,args.trust_policy,args.review_manifest)
         print(f'Local private review: http://127.0.0.1:{server.server_port}/',flush=True)
         server.serve_forever()
     except KeyboardInterrupt:return 0

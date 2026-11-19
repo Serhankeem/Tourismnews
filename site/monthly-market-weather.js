@@ -1,3 +1,4 @@
+import {renderArticle,edition} from './monthly-market-weather-view.js';
 /* Public minimal-contract reader only. Never fetches private drafts or approvals.
  * Authentication is enforced by the producer/Pages gate, not these client checks.
  */
@@ -22,26 +23,12 @@
  }
  function canonical(v){if(Array.isArray(v))return '['+v.map(canonical).join(',')+']';if(v&&typeof v==='object')return '{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}';return JSON.stringify(v);}
  async function digest(p){const raw=new TextEncoder().encode(canonical(p));return [...new Uint8Array(await crypto.subtle.digest('SHA-256',raw))].map(b=>b.toString(16).padStart(2,'0')).join('');}
- function el(tag,attrs={},...children){const n=document.createElement(tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);for(const c of children.flat())n.append(c instanceof Node?c:document.createTextNode(String(c)));return n;}
- function inline(parent,raw){for(const s of raw.split(/(\*\*[^*]+\*\*|\*[^*\n]+\*|\[[^\]]+\]\(https:\/\/[^\s)]+\))/g)){
-  const m=s.match(/^\[([^\]]+)\]\((https:\/\/[^\s)]+)\)$/);
-  if(m&&url(m[2]))parent.append(el('a',{href:m[2],target:'_blank',rel:'noopener noreferrer'},m[1]+' ↗'));
-  else if(s.startsWith('**'))parent.append(el('strong',{},s.slice(2,-2)));
-  else if(s.startsWith('*'))parent.append(el('em',{},s.slice(1,-1)));
-  else parent.append(document.createTextNode(s));
- }return parent;}
- function rate(raw){if(raw===null)return '비교 불가';const negative=raw.startsWith('-');const [a,b]=raw.replace('-','').split('.');let n=BigInt(a)*100n+BigInt(b.slice(0,2));if(Number(b[2])>=5)n++;return (n===0n?'':negative?'-':'+')+(n/100n)+'.'+String(n%100n).padStart(2,'0')+'%';}
  function clear(){get('monthly-state').textContent='아직 발행된 월간 진단 없음';get('monthly-article').replaceChildren();get('monthly-picker').hidden=true;cached=null;}
  function render(k){
   const p=cached.archive.contents[k],entry=cached.index.entries.find(e=>e.key===k);
   if(!entry||Date.parse(entry.not_after)<Date.now()){clear();return;}
   const root=get('monthly-article');root.replaceChildren();get('monthly-state').textContent='통계 기준월 '+p.reference_period+' · 편집 '+p.editorial_revision+' · 공개 판본 '+p.revision;
-  root.append(el('h3',{class:'monthly-title',tabindex:'-1'},p.title),el('p',{class:'monthly-subtitle'},p.article.subtitle),el('p',{class:'monthly-notice'},'산업 활동 입력 부족 · 관광시장 전체 종합 판정 보류'));
-  const data=el('div',{class:'monthly-metrics'});
-  for(const [i,k] of core.entries()){const m=p.metrics[k];data.append(el('section',{},el('h4',{},i===0?'방한 외래관광객':'일반여행수입'),el('p',{class:'monthly-value'},new Intl.NumberFormat('ko-KR').format(m.value)+' '+m.unit),el('p',{},'전년 동월 '+m.comparisons.yoy.period+' 대비 '+rate(m.comparisons.yoy.pct)),el('p',{},'전월 '+m.comparisons.mom.period+' 대비 '+rate(m.comparisons.mom.pct))));}
-  root.append(data);
-  for(const s of p.article.sections){const section=el('section',{},el('h4',{},s.heading));for(const block of s.markdown.split('\n\n'))section.append(block.startsWith('- ')?el('ul',{},block.split('\n').map(line=>inline(el('li'),line.replace(/^- /,'')))):inline(el('p'),block));root.append(section);}
-  root.append(el('p',{class:'tiny'},'자료 마감 '+new Date(p.data_cutoff).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})+' KST · 현재 빈티지 회고 분석'),el('a',{href:'#macro',class:'text-link'},'Macro Monitor 상세 통계 →'));
+  renderArticle(root,p);
  }
  async function load(){
   if(loading)return;if(cached){render(get('monthly-edition').value||cached.index.latest);return;}
@@ -52,7 +39,7 @@
    if(!exact(index,['schema_version','kind','latest','entries'])||index.schema_version!==1||index.kind!=='approved_market_weather_index'||!Array.isArray(index.entries)||!index.entries.length||!exact(archive,['schema_version','kind','contents'])||archive.schema_version!==1||archive.kind!=='approved_market_weather_archive')throw Error('invalid');
    const keys=new Set();for(const e of index.entries){const p=archive.contents?.[e.key];if(!exact(e,['key','content_id','revision','editorial_revision','reference_period','title','issued_at','not_after','content_sha256'])||keys.has(e.key)||!valid(p)||e.key!==p.content_id+':'+p.revision||e.content_id!==p.content_id||e.revision!==p.revision||e.editorial_revision!==p.editorial_revision||e.reference_period!==p.reference_period||e.title!==p.title||e.issued_at!==p.issued_at||!date(e.not_after)||Date.parse(e.not_after)<Date.now()||Date.parse(e.issued_at)>Date.now()||await digest(p)!==e.content_sha256)throw Error('invalid');keys.add(e.key);}
    if(keys.size!==Object.keys(archive.contents).length||!keys.has(index.latest)||index.latest!==index.entries[0].key)throw Error('invalid');
-   cached={index,archive};const select=get('monthly-edition');select.replaceChildren(...index.entries.map(e=>el('option',{value:e.key},e.reference_period+' · 공개 판본 '+e.revision)));select.value=index.latest;get('monthly-picker').hidden=false;render(index.latest);
+   cached={index,archive};const select=get('monthly-edition');select.replaceChildren(...index.entries.map(e=>{const cover=edition(archive.contents[e.key].article,e.reference_period);return new Option((cover?cover.issue+' · 통계 ':'통계 ')+e.reference_period+' · 공개 판본 '+e.revision,e.key);}));select.value=index.latest;get('monthly-picker').hidden=false;render(index.latest);
   }catch{clear();}finally{loading=false;}
  }
  get('monthly-edition')?.addEventListener('change',()=>{render(get('monthly-edition').value);get('monthly-article').querySelector('.monthly-title')?.focus();});
