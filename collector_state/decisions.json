@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-19T14:33:35+09:00",
+  "checked_at": "2026-11-19T16:45:49+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -170,6 +170,78 @@
       "title": "이천선수촌에서 장애인체육의 미래 키운다",
       "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22852",
       "source_id": "mcst_press",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "c4c7c486f289ce42f7",
+      "title": "서울의 밤이 이렇게 예뻤나? 하늘에서 본 눈부신 밤 풍경",
+      "url": "https://mediahub.seoul.go.kr/archives/2020118",
+      "source_id": "seoul_culture",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "6ecd8c6ba16c1aee46",
+      "title": "금손 모여라! 서울미래인재재단 캐릭터 공모전…총상금 440만 원",
+      "url": "https://mediahub.seoul.go.kr/archives/2020117",
+      "source_id": "seoul_culture",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "df8e6fcf79b0603693",
+      "title": "외식할 때도 현미밥으로! '통쾌한 한끼' 참여하고 손목닥터9988 포인트까지",
+      "url": "https://mediahub.seoul.go.kr/archives/2020057",
+      "source_id": "seoul_culture",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "701e68f4f761d4ac4d",
+      "title": "남산 단풍길 걷다 만난 숨은 명소! 전망 좋은 무료 '주한독일문화원 도서관'",
+      "url": "https://mediahub.seoul.go.kr/archives/2020097",
+      "source_id": "seoul_culture",
       "relevance_evidence": {
         "rule_version": "0.2",
         "label": "Irrelevant",
@@ -476,64 +548,10 @@
       "decision": "exclude"
     },
     {
-      "id": "5a11ec5f6fae44c9c1",
-      "title": "'서울별빛명소'로 선정! 윤슬과 먹거리가 매력적인 '별빛내린천'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020064",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "678a74c8ea8a29263d",
-      "title": "차 한 잔, 음악 한 곡으로 나를 발견하다! 웰니스 학습라운지 '다감' 가보니",
-      "url": "https://mediahub.seoul.go.kr/archives/2020009",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "e9bb7d818c8f8d73cb",
-      "title": "시간과 낙엽 쌓인 홍릉숲, 가을 숲해설과 스탬프 투어 놓치지 마세요!",
-      "url": "https://mediahub.seoul.go.kr/archives/2019986",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "4021d3a368510fd9ac",
-      "title": "멀리 갈 필요 없네! 북한산 단풍 데이트 코스 '내시묘역길'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020039",
-      "source_id": "seoul_culture",
+      "id": "c2d9b8bd740bef4c0d",
+      "title": "출퇴근길에 득템하는 제철 먹거리! '서로잇다 로컬마켓' 열렸다",
+      "url": "https://mediahub.seoul.go.kr/archives/2020105",
+      "source_id": "seoul_economy",
       "relevance_evidence": {
         "rule_version": "0.2",
         "label": "Irrelevant",
@@ -877,24 +895,6 @@
       "id": "97e1b07c8a4a64be4f",
       "title": "최대 반값! 김장재료 6종 저렴하게! '농산물 착한가격 프로젝트'",
       "url": "https://mediahub.seoul.go.kr/archives/2019910",
-      "source_id": "seoul_economy",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "072068112f0370825e",
-      "title": "잠자고 있는 지방세 환급금 210억 원…11월에 찾아가세요!",
-      "url": "https://mediahub.seoul.go.kr/archives/2019879",
       "source_id": "seoul_economy",
       "relevance_evidence": {
         "rule_version": "0.2",
