@@ -227,9 +227,14 @@ def deduplicate(items):
 
 def read_json(path, fallback):
     try:
-        return json.loads(path.read_text(encoding='utf-8'))
+        doc=json.loads(path.read_text(encoding='utf-8'))
     except (FileNotFoundError, ValueError):
         return fallback
+    if path.name=='discovery.json':
+        try:from .discovery_storage import decode
+        except ImportError:from discovery_storage import decode
+        return decode(doc) # Integrity errors must abort, never become an empty ledger.
+    return doc
 
 
 def write_atomic(path, data):
