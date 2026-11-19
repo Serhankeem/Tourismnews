@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-20T02:31:41+09:00",
+  "checked_at": "2026-11-20T04:27:53+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -170,372 +170,6 @@
       "title": "사상 첫 ‘방한 관광 2천만 명 시대’ 개막… ‘대체불가 관광대국 대한민국’ 향해 민·관·정 뜻 모아",
       "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22853",
       "source_id": "mcst_press",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "41503a4388a031db5c",
-      "title": "겨울에도 찜! 무료 야경명소 '하늘전망대' 운영 확대",
-      "url": "https://mediahub.seoul.go.kr/archives/2020119",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "c4c7c486f289ce42f7",
-      "title": "서울의 밤이 이렇게 예뻤나? 하늘에서 본 눈부신 밤 풍경",
-      "url": "https://mediahub.seoul.go.kr/archives/2020118",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "6ecd8c6ba16c1aee46",
-      "title": "금손 모여라! 서울미래인재재단 캐릭터 공모전…총상금 440만 원",
-      "url": "https://mediahub.seoul.go.kr/archives/2020117",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "df8e6fcf79b0603693",
-      "title": "외식할 때도 현미밥으로! '통쾌한 한끼' 참여하고 손목닥터9988 포인트까지",
-      "url": "https://mediahub.seoul.go.kr/archives/2020057",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "701e68f4f761d4ac4d",
-      "title": "남산 단풍길 걷다 만난 숨은 명소! 전망 좋은 무료 '주한독일문화원 도서관'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020097",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "035e5290cc21d0f011",
-      "title": "도서관부터 옥상정원까지! 올림픽공원의 새 명소 '국립스포츠박물관'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020065",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [
-          "cross_sentence_unproven"
-        ],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "a9d4afb355026609ed",
-      "title": "밤이 되니 더 맛있다! 남대문시장 '서울달빛미식회'부터 명동 야경 산책까지",
-      "url": "https://mediahub.seoul.go.kr/archives/2020098",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "4fb3e5283752980c29",
-      "title": "수고했어, 이제 즐기자! 수능 끝 서울 나들이 추천",
-      "url": "https://mediahub.seoul.go.kr/archives/2020089",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "c5e6e27d30a7dfcd8c",
-      "title": "서울시청에서 미로 탐험하고 기념품까지! '서울탐험대' 어린이 전시",
-      "url": "https://mediahub.seoul.go.kr/archives/2020092",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [
-          "cross_sentence_unproven"
-        ],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "ebfb8403c905ea3800",
-      "title": "이제 남산은 밤에 가세요! 야간정원으로 새 단장한 '한국숲정원'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020081",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "8067ff32405bfaa1cf",
-      "title": "책만 읽는 도서관은 옛말! AI와 VR 체험까지 '마곡열린도서관'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020066",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "b3e77b13a58cbb155e",
-      "title": "남대문시장에 셰프의 주막이 떴다! 야간 K-푸드 축제 '서울달빛미식회'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020063",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [
-          "cross_sentence_unproven"
-        ],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "6444cff025dac7b70d",
-      "title": "지금 아니면 또 1년, 남산 하늘숲길에 가을이 내려앉았다",
-      "url": "https://mediahub.seoul.go.kr/archives/2020102",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "9e5433259be5095ace",
-      "title": "밤에도 북적! 남대문시장 야식의 향연 '2026 서울달빛미식회'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020061",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "435a7f1ea5027d0b2e",
-      "title": "고요한 밤의 숲에 깃든 빛과 바람, 향기! 남산 한국숲정원에서 만난 야간정원",
-      "url": "https://mediahub.seoul.go.kr/archives/2020080",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "6a6043ff6b38c90e98",
-      "title": "오롯이 나를 다시 감각하는 곳…오감으로 웰니스 익히는 '다감' 체험기",
-      "url": "https://mediahub.seoul.go.kr/archives/2020005",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "955fcb885d4ef641b3",
-      "title": "낮의 시장에서 밤의 미식 공간으로! 남대문시장 '서울달빛미식회'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020067",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "0010473fdcc2427ffb",
-      "title": "붕어빵·뱅쇼에 마켓까지! 올겨울 낭만 담당 '커튼콜가든'",
-      "url": "https://mediahub.seoul.go.kr/archives/2020086",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "bac846c4f239a535a8",
-      "title": "남산에 반딧불이가? 새롭게 문 연 '남산 한국숲정원' 야간정원",
-      "url": "https://mediahub.seoul.go.kr/archives/2020079",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "7baf962c72c5d3482b",
-      "title": "모노레일 타고 단풍 구경, 유모차로도 가기 편한 서울 가을 명소 2곳",
-      "url": "https://mediahub.seoul.go.kr/archives/2020060",
-      "source_id": "seoul_culture",
       "relevance_evidence": {
         "rule_version": "0.2",
         "label": "Irrelevant",
@@ -4247,6 +3881,24 @@
       "decision": "exclude"
     },
     {
+      "id": "888a8883ffa44c1861",
+      "title": "Curating Wonder the San Vicente Way",
+      "url": "https://www.hospitalitynet.org/opinion/4135599/curating-wonder-the-san-vicente-way",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "aee9f351cc6e2f27cc",
       "title": "What Does a Career in Hospitality Mean to You?, England's Tourist Tax Needs a Spending Plan, 52% of Travelers Plan With AI but 2% Book Through It",
       "url": "https://www.hospitalitynet.org/editorial/4135598/what-does-a-career-in-hospitality-mean-to-you-englands-tourist-tax-needs-a-spending-plan-52-of-travelers-plan-with-ai-but-2-book-through-it",
@@ -4634,35 +4286,6 @@
             "terms": [
               "hilton",
               "expand"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "ea0f48f516179c2c83",
-      "title": "Hotel Revenue Management Has Changed. Has Your RMS?",
-      "url": "https://www.hospitalitynet.org/opinion/4135569/hotel-revenue-management-has-changed-has-your-rms",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hotel",
-              "revenue"
             ]
           }
         ],
