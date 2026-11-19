@@ -30,6 +30,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.confirm_reviewed_initial_publication == true
     permissions:
       contents: write
+      actions: read
       pages: write
       id-token: write
     uses: ./.github/workflows/pipeline.yml

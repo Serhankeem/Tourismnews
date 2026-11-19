@@ -167,7 +167,33 @@ def validate_editorial(ctx, trust, now, config, policy):
     require(record['content_id']=='market-weather-'+period and re.fullmatch(r'r[1-9][0-9]*',record['editorial_revision']),'editorial_scope_invalid')
     scope=record['editorial'].get('scope')
     require(scope=='exact_manuscript_only' or (scope=='exact_r2_manuscript_only' and record['editorial_revision']=='r2'),'editorial_scope_invalid')
-    snapshot=record['input_snapshot']
+    article=validate_inputs(ctx,record['input_snapshot'],period,engine.stamp(record['editorial']['approved_at']),now,config,policy)
+    return record,article
+
+
+def validate_current_rights(config,policy,period,now):
+    """Rights are live even when an already issued edition's numbers are frozen."""
+    contracts=engine.read(engine.CONTRACT)
+    for key in engine.CORE:
+        items=[i for i in config['indicators'] if i['id']==key]
+        require(len(items)==1 and items[0].get('enabled') and all(items[0].get(k)==v for k,v in contracts[key].items()),'statistics_not_currently_eligible')
+        sources=[s for s in config['sources'] if s['id']==items[0]['source_id']]
+        require(len(sources)==1 and sources[0].get('enabled'),'statistics_not_currently_eligible')
+        if sources[0].get('requires_approval') and sources[0]['id']!='tourgo_tourism_balance':
+            require(all(engine.balance.permitted(sources[0],a,now.date()) for a in ('collection','publication')),'statistics_not_currently_eligible')
+    sources=[s for s in config['sources'] if s['id']=='tourgo_tourism_balance']
+    require(len(sources)==1,'statistics_not_currently_eligible')
+    source=sources[0]
+    require(source.get('activation_conditions')==dict(noncommercial=True,free_access=True,no_ads=True,attribution=True),'statistics_not_currently_eligible')
+    require(engine.tourgo.terms_confirmed(source,policy,now.date()),'statistics_not_currently_eligible')
+    for action in ('collection','publication'):
+        allowed=engine.tourgo.approved_range(source,action)
+        require('2021-01'<=allowed['period_from']<=allowed['period_through']<='2026-09','tourgo_scope_expansion_forbidden')
+        require(engine.tourgo.permitted(source,action,now.date()) and allowed['period_from']<=period<=allowed['period_through'],'statistics_not_currently_eligible')
+
+
+def validate_inputs(ctx,snapshot,period,analysis_bound,now,config,policy):
+    """Shared snapshot/statistics/prose checks; this function does NOT authorize."""
     require(snapshot['source_bundle_manifest_sha256']==sha(ctx.bundle_manifest),'snapshot_manifest_mismatch')
     inputs={'config':ctx.snapshot_config,'archive':ctx.archive,'policy':ctx.snapshot_policy}
     require({k:engine.digest(v) for k,v in inputs.items()}==snapshot['canonical_json_input_hashes']==ctx.diagnostic['input_hashes'],'snapshot_input_mismatch')
@@ -182,14 +208,8 @@ def validate_editorial(ctx, trust, now, config, policy):
     public_time(ctx.diagnostic['input_cutoff'])
     require(ctx.diagnostic['input_cutoff']==snapshot['input_cutoff'] and cutoff<=now,'cutoff_mismatch')
     analysis=engine.stamp(ctx.diagnostic['analysis_at'])
-    require(snapshot.get('original_analysis_at')==ctx.diagnostic['analysis_at'] and cutoff<=analysis<=engine.stamp(record['editorial']['approved_at']),'editorial_precedes_analysis')
-    sources=[s for s in config['sources'] if s['id']=='tourgo_tourism_balance']
-    require(len(sources)==1,'statistics_not_currently_eligible')
-    source=sources[0]
-    require(source.get('activation_conditions')==dict(noncommercial=True,free_access=True,no_ads=True,attribution=True),'statistics_not_currently_eligible')
-    for action in ('collection','publication'):
-        allowed=engine.tourgo.approved_range(source,action)
-        require('2021-01'<=allowed['period_from']<=allowed['period_through']<='2026-09','tourgo_scope_expansion_forbidden')
+    require(snapshot.get('original_analysis_at')==ctx.diagnostic['analysis_at'] and cutoff<=analysis<=analysis_bound,'editorial_precedes_analysis')
+    validate_current_rights(config,policy,period,now)
     # Reuses BOTH current collection/publication permissions, terms, definitions,
     # units and data validators. Old editorial approval cannot bypass new revocation.
     current=engine.diagnose(config,ctx.archive,policy,period,cutoff,now)
@@ -203,7 +223,7 @@ def validate_editorial(ctx, trust, now, config, policy):
         require(len(provenance['source_url'])<=2000,'public_source_bounds_invalid')
         if provenance['original_publication_at'] is not None:public_time(provenance['original_publication_at'])
     article=parse_manuscript(ctx.manuscript,ctx.diagnostic)
-    return record,article
+    return article
 
 
 def validate_publication(ctx, raw, trust, now, editorial):

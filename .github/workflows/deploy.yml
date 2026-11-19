@@ -1,4 +1,5 @@
 name: Deploy latest code with durable data
+run-name: ${{ inputs.monthly_manuscript_sha256 && format('Market Weather publish {0} / {1}', inputs.monthly_manuscript_sha256, inputs.monthly_candidate_sha256) || 'Deploy latest code with durable data' }}
 on:
   push:
     branches: [main]
@@ -12,6 +13,15 @@ on:
       - 'relevance_reviews.json'
       - '.github/workflows/**'
   workflow_dispatch:
+    inputs:
+      monthly_manuscript_sha256:
+        description: Leave empty for ordinary deployment. Enter the reviewed manuscript SHA to APPROVE this exact monthly publication.
+        type: string
+        default: ''
+      monthly_candidate_sha256:
+        description: Reviewed candidate SHA (binds manuscript AND frozen statistics). Both hashes required for publication.
+        type: string
+        default: ''
 permissions:
   contents: read
 jobs:
@@ -19,9 +29,12 @@ jobs:
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
+      actions: read
       pages: write
       id-token: write
     uses: ./.github/workflows/pipeline.yml
     with:
       engine: none
+      monthly_manuscript_sha256: ${{ inputs.monthly_manuscript_sha256 || '' }}
+      monthly_candidate_sha256: ${{ inputs.monthly_candidate_sha256 || '' }}
     secrets: inherit

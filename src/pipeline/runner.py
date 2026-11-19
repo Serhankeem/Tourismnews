@@ -224,6 +224,8 @@ def main():
     p.add_argument('--tourgo-update-input-dir',type=Path)
     p.add_argument('--monthly-authority-dir',type=Path)
     p.add_argument('--monthly-release-key')
+    p.add_argument('--monthly-manuscript-sha256')
+    p.add_argument('--monthly-candidate-sha256')
     args=p.parse_args();args.work.mkdir(parents=True,exist_ok=True)
     result={'phase':'authorization','ready':False,'main_auto_commit':False}
     try:
@@ -234,6 +236,10 @@ def main():
         if args.monthly_release_key:
             if args.operation!='run' or authority is None:raise DataError('monthly_authority_required')
             monthly=weather_release.PublicationRequest(authority,args.monthly_release_key)
+        if args.monthly_manuscript_sha256 or args.monthly_candidate_sha256:
+            if args.operation!='run' or args.monthly_release_key or authority is not None or args.requested!='none':raise DataError('monthly_dispatch_arguments_invalid')
+            from ..macro.weather_dispatch import from_environment
+            monthly=from_environment(ROOT,git(ROOT,'rev-parse','HEAD').stdout.strip(),args.monthly_manuscript_sha256,args.monthly_candidate_sha256,now_kst())
         manual=(args.tourgo_ledger,args.tourgo_ledger_sha256,args.tourgo_receipt,args.tourgo_receipt_sha256)
         request=None
         if args.tourgo_update_input_dir is not None:
