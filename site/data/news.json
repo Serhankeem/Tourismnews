@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-19T20:25:16+09:00",
-  "last_successful_fetch": "2026-11-19T20:25:16+09:00",
-  "count": 135,
+  "generated_at": "2026-11-19T22:45:12+09:00",
+  "last_successful_fetch": "2026-11-19T22:45:12+09:00",
+  "count": 140,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,56 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "에어부산, 나가사키 재운항·시즈오카 증편",
+      "source": "트래블데일리",
+      "published_at": "2026-11-19T22:09:07+09:00",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72745",
+      "category": "항공·숙박",
+      "keywords": [
+        "증편"
+      ]
+    },
+    {
+      "title": "A Welcome in Every Language: Hilton Expands No‑Cost Language Learning to All Team Members",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T22:01:41+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135579/a-welcome-in-every-language-hilton-expands-nocost-language-learning-to-all-team-members",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hilton"
+      ]
+    },
+    {
+      "title": "Hotel Revenue Management Has Changed. Has Your RMS?",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T22:00:00+09:00",
+      "url": "https://www.hospitalitynet.org/opinion/4135569/hotel-revenue-management-has-changed-has-your-rms",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "Choice Hotels International Launches Access by Choice Privileges®, Allowing Members to Earn and Redeem Points on Concerts, Sports, and Live Events",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T21:19:57+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135577/choice-hotels-international-launches-access-by-choice-privileges-allowing-members-to-earn-and-redeem-points-on-concerts-sports-and-live-events",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels"
+      ]
+    },
+    {
+      "title": "Newmark Investor Solutions Launches Hotel Asset Management Business Led by Industry Veterans Dan Falvey and Steve Kakaty",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T20:22:54+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135575/newmark-investor-solutions-launches-hotel-asset-management-business-led-by-industry-veterans-dan-falvey-and-steve-kakaty",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
     {
       "title": "At HITEC Tokyo, Women in Hotel Technology Share the Stories That Open Doors",
       "source": "Hospitality Net",

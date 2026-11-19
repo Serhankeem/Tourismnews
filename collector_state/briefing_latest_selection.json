@@ -1,7 +1,37 @@
 {
-  "generated_at": "2026-11-19T20:25:16+09:00",
+  "generated_at": "2026-11-19T22:45:12+09:00",
   "mode": "live_rss",
   "decisions": [
+    {
+      "article_id": "f0df318b397bd0025e",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-19T22:09:07+09:00"
+    },
+    {
+      "article_id": "37a4055a6a53e9b613",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-19T22:01:41+09:00"
+    },
+    {
+      "article_id": "ea0f48f516179c2c83",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-19T22:00:00+09:00"
+    },
+    {
+      "article_id": "cb646aefbe6a75a069",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-19T21:19:57+09:00"
+    },
+    {
+      "article_id": "7fdf6c3e9ba7cb4f18",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-19T20:22:54+09:00"
+    },
     {
       "article_id": "21d017fbea71ff85c6",
       "decision": "editorial_ineligible",

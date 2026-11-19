@@ -1,11 +1,412 @@
 {
   "schema_version": 3,
   "rule_version": "0.2",
-  "generated_at": "2026-11-19T20:25:16+09:00",
-  "last_successful_fetch": "2026-11-19T20:25:16+09:00",
-  "count": 148,
+  "generated_at": "2026-11-19T22:45:12+09:00",
+  "last_successful_fetch": "2026-11-19T22:45:12+09:00",
+  "count": 153,
   "mode": "live_rss",
   "articles": [
+    {
+      "id": "f0df318b397bd0025e",
+      "published_at": "2026-11-19T22:09:07+09:00",
+      "date": "2026.11.19",
+      "category": "항공·숙박",
+      "source": "트래블데일리",
+      "source_id": "traveldaily",
+      "title": "에어부산, 나가사키 재운항·시즈오카 증편",
+      "desc": "원문 링크에서 보도자료 또는 기사 내용을 확인하세요. (본문 자동 분석 전)",
+      "insight": "원문을 확인한 후 산업적 시사점을 판단해 주세요.",
+      "summary_type": "metadata_only",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72745",
+      "relevance": 7,
+      "relevance_label": "Direct",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "항공·숙박",
+        "score": 7,
+        "rules": [
+          "air_route_capacity_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "운항",
+              "증편",
+              "부산"
+            ]
+          }
+        ],
+        "impact_targets": [
+          "관광기업"
+        ],
+        "reason": "제목에 관광산업의 수요·공급·사업·정책 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "related_sources": [
+        "트래블데일리"
+      ],
+      "first_discovered_at": "2026-11-19T22:45:12+09:00",
+      "publication_date_basis": "feed_publication_date",
+      "date_precision": "timestamp",
+      "record_type": "news",
+      "korea_priority": false,
+      "is_backfill": false,
+      "publication_policy": {
+        "status": "approved",
+        "scope": "metadata_only",
+        "noncommercial_only": true,
+        "terms_url": "https://www.traveldaily.co.kr/rssIndex.html",
+        "additional_terms": [
+          "https://www.traveldaily.co.kr/com/service.html",
+          "https://www.traveldaily.co.kr/com/copyright.html"
+        ],
+        "basis": "Publisher RSS guide explicitly describes external websites collecting and displaying feed titles/links. Limited to owner-confirmed free, ad-free noncommercial link curation of supplied metadata; not article reuse. General copyright/terms reviewed separately; no full text, images, excerpts, framing or AI summaries. No article-list/archive crawling or RSS mirrors combined. Disable before commercial use.",
+        "checked_at": "2026-10-28",
+        "body_reuse": "not_authorized",
+        "database_scope": "Only provider-returned current feed; relevant incremental links; no full database/archive reproduction."
+      },
+      "first_published_by_engine_at": "2026-11-19T22:45:12+09:00",
+      "editorial": {
+        "version": "0.3-editorial-1",
+        "tier": "reference",
+        "rank": 2,
+        "label": "산업 참고 자료",
+        "korea_connection": "not_established",
+        "evidence": [],
+        "reason": "한국 관광시장 직접 연계 또는 세계 산업 전체의 주요 변화가 충분히 입증되지 않은 산업 참고 자료입니다. 국내·해외 자료 모두 포함할 수 있습니다."
+      }
+    },
+    {
+      "id": "37a4055a6a53e9b613",
+      "published_at": "2026-11-19T22:01:41+09:00",
+      "date": "2026.11.19",
+      "category": "항공·숙박",
+      "source": "Hospitality Net",
+      "source_id": "hospitalitynet",
+      "title": "A Welcome in Every Language: Hilton Expands No‑Cost Language Learning to All Team Members",
+      "desc": "원문 링크에서 보도자료 또는 기사 내용을 확인하세요. (본문 자동 분석 전)",
+      "insight": "원문을 확인한 후 산업적 시사점을 판단해 주세요.",
+      "summary_type": "metadata_only",
+      "url": "https://www.hospitalitynet.org/news/4135579/a-welcome-in-every-language-hilton-expands-nocost-language-learning-to-all-team-members",
+      "relevance": 8,
+      "relevance_label": "Direct",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "항공·숙박",
+        "score": 8,
+        "rules": [
+          "english_industry_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "hilton",
+              "expand"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "related_sources": [
+        "Hospitality Net"
+      ],
+      "first_discovered_at": "2026-11-19T22:45:12+09:00",
+      "publication_date_basis": "feed_publication_date",
+      "date_precision": "timestamp",
+      "record_type": "news",
+      "korea_priority": false,
+      "is_backfill": false,
+      "publication_policy": {
+        "status": "approved",
+        "scope": "metadata_only",
+        "noncommercial_only": true,
+        "terms_url": "https://www.hospitalitynet.org/rss",
+        "additional_terms": [
+          "https://www.hospitalitynet.org/terms-conditions"
+        ],
+        "basis": "Official designated RSS guide expressly describes integration on external websites. Local review permits selective six-field feed metadata indexing only, interpreted as permission for this designated RSS interface. General Terms sections 5.2 and 6.2 still prohibit unauthorized automation and reproduction/bulk reuse; the guide does not explicitly discuss its priority over those clauses. No separate written licence or blanket website/body reuse approval has been obtained.",
+        "checked_at": "2026-11-03",
+        "body_reuse": "not_authorized",
+        "database_scope": "Selective returned-feed headline/link index only; no article/archive crawling",
+        "approval_authority": "repository_scope_review_not_publisher_certificate",
+        "publisher_written_permission_obtained": false,
+        "rights_review": {
+          "result": "limited_designated_feed_interpretation",
+          "guide_url": "https://www.hospitalitynet.org/rss",
+          "general_terms_url": "https://www.hospitalitynet.org/terms-conditions",
+          "general_terms_sections": [
+            "5.2",
+            "6.2"
+          ],
+          "remaining_uncertainty": "No explicit RSS carve-out/precedence clause or publisher written confirmation. Limited interface guidance only; no broad content licence.",
+          "checked_on": "2026-11-03"
+        }
+      },
+      "first_published_by_engine_at": "2026-11-19T22:45:12+09:00",
+      "editorial": {
+        "version": "0.3-editorial-1",
+        "tier": "reference",
+        "rank": 2,
+        "label": "산업 참고 자료",
+        "korea_connection": "not_established",
+        "evidence": [],
+        "reason": "한국 관광시장 직접 연계 또는 세계 산업 전체의 주요 변화가 충분히 입증되지 않은 산업 참고 자료입니다. 국내·해외 자료 모두 포함할 수 있습니다."
+      }
+    },
+    {
+      "id": "ea0f48f516179c2c83",
+      "published_at": "2026-11-19T22:00:00+09:00",
+      "date": "2026.11.19",
+      "category": "항공·숙박",
+      "source": "Hospitality Net",
+      "source_id": "hospitalitynet",
+      "title": "Hotel Revenue Management Has Changed. Has Your RMS?",
+      "desc": "원문 링크에서 보도자료 또는 기사 내용을 확인하세요. (본문 자동 분석 전)",
+      "insight": "원문을 확인한 후 산업적 시사점을 판단해 주세요.",
+      "summary_type": "metadata_only",
+      "url": "https://www.hospitalitynet.org/opinion/4135569/hotel-revenue-management-has-changed-has-your-rms",
+      "relevance": 8,
+      "relevance_label": "Direct",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "항공·숙박",
+        "score": 8,
+        "rules": [
+          "english_industry_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "hotel",
+              "revenue"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "related_sources": [
+        "Hospitality Net"
+      ],
+      "first_discovered_at": "2026-11-19T22:45:12+09:00",
+      "publication_date_basis": "feed_publication_date",
+      "date_precision": "timestamp",
+      "record_type": "news",
+      "korea_priority": false,
+      "is_backfill": false,
+      "publication_policy": {
+        "status": "approved",
+        "scope": "metadata_only",
+        "noncommercial_only": true,
+        "terms_url": "https://www.hospitalitynet.org/rss",
+        "additional_terms": [
+          "https://www.hospitalitynet.org/terms-conditions"
+        ],
+        "basis": "Official designated RSS guide expressly describes integration on external websites. Local review permits selective six-field feed metadata indexing only, interpreted as permission for this designated RSS interface. General Terms sections 5.2 and 6.2 still prohibit unauthorized automation and reproduction/bulk reuse; the guide does not explicitly discuss its priority over those clauses. No separate written licence or blanket website/body reuse approval has been obtained.",
+        "checked_at": "2026-11-03",
+        "body_reuse": "not_authorized",
+        "database_scope": "Selective returned-feed headline/link index only; no article/archive crawling",
+        "approval_authority": "repository_scope_review_not_publisher_certificate",
+        "publisher_written_permission_obtained": false,
+        "rights_review": {
+          "result": "limited_designated_feed_interpretation",
+          "guide_url": "https://www.hospitalitynet.org/rss",
+          "general_terms_url": "https://www.hospitalitynet.org/terms-conditions",
+          "general_terms_sections": [
+            "5.2",
+            "6.2"
+          ],
+          "remaining_uncertainty": "No explicit RSS carve-out/precedence clause or publisher written confirmation. Limited interface guidance only; no broad content licence.",
+          "checked_on": "2026-11-03"
+        }
+      },
+      "first_published_by_engine_at": "2026-11-19T22:45:12+09:00",
+      "editorial": {
+        "version": "0.3-editorial-1",
+        "tier": "reference",
+        "rank": 2,
+        "label": "산업 참고 자료",
+        "korea_connection": "not_established",
+        "evidence": [],
+        "reason": "한국 관광시장 직접 연계 또는 세계 산업 전체의 주요 변화가 충분히 입증되지 않은 산업 참고 자료입니다. 국내·해외 자료 모두 포함할 수 있습니다."
+      }
+    },
+    {
+      "id": "cb646aefbe6a75a069",
+      "published_at": "2026-11-19T21:19:57+09:00",
+      "date": "2026.11.19",
+      "category": "항공·숙박",
+      "source": "Hospitality Net",
+      "source_id": "hospitalitynet",
+      "title": "Choice Hotels International Launches Access by Choice Privileges®, Allowing Members to Earn and Redeem Points on Concerts, Sports, and Live Events",
+      "desc": "원문 링크에서 보도자료 또는 기사 내용을 확인하세요. (본문 자동 분석 전)",
+      "insight": "원문을 확인한 후 산업적 시사점을 판단해 주세요.",
+      "summary_type": "metadata_only",
+      "url": "https://www.hospitalitynet.org/news/4135577/choice-hotels-international-launches-access-by-choice-privileges-allowing-members-to-earn-and-redeem-points-on-concerts-sports-and-live-events",
+      "relevance": 8,
+      "relevance_label": "Direct",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "항공·숙박",
+        "score": 8,
+        "rules": [
+          "english_industry_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "hotels",
+              "launch"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "related_sources": [
+        "Hospitality Net"
+      ],
+      "first_discovered_at": "2026-11-19T22:45:12+09:00",
+      "publication_date_basis": "feed_publication_date",
+      "date_precision": "timestamp",
+      "record_type": "news",
+      "korea_priority": false,
+      "is_backfill": false,
+      "publication_policy": {
+        "status": "approved",
+        "scope": "metadata_only",
+        "noncommercial_only": true,
+        "terms_url": "https://www.hospitalitynet.org/rss",
+        "additional_terms": [
+          "https://www.hospitalitynet.org/terms-conditions"
+        ],
+        "basis": "Official designated RSS guide expressly describes integration on external websites. Local review permits selective six-field feed metadata indexing only, interpreted as permission for this designated RSS interface. General Terms sections 5.2 and 6.2 still prohibit unauthorized automation and reproduction/bulk reuse; the guide does not explicitly discuss its priority over those clauses. No separate written licence or blanket website/body reuse approval has been obtained.",
+        "checked_at": "2026-11-03",
+        "body_reuse": "not_authorized",
+        "database_scope": "Selective returned-feed headline/link index only; no article/archive crawling",
+        "approval_authority": "repository_scope_review_not_publisher_certificate",
+        "publisher_written_permission_obtained": false,
+        "rights_review": {
+          "result": "limited_designated_feed_interpretation",
+          "guide_url": "https://www.hospitalitynet.org/rss",
+          "general_terms_url": "https://www.hospitalitynet.org/terms-conditions",
+          "general_terms_sections": [
+            "5.2",
+            "6.2"
+          ],
+          "remaining_uncertainty": "No explicit RSS carve-out/precedence clause or publisher written confirmation. Limited interface guidance only; no broad content licence.",
+          "checked_on": "2026-11-03"
+        }
+      },
+      "first_published_by_engine_at": "2026-11-19T22:45:12+09:00",
+      "editorial": {
+        "version": "0.3-editorial-1",
+        "tier": "reference",
+        "rank": 2,
+        "label": "산업 참고 자료",
+        "korea_connection": "not_established",
+        "evidence": [],
+        "reason": "한국 관광시장 직접 연계 또는 세계 산업 전체의 주요 변화가 충분히 입증되지 않은 산업 참고 자료입니다. 국내·해외 자료 모두 포함할 수 있습니다."
+      }
+    },
+    {
+      "id": "7fdf6c3e9ba7cb4f18",
+      "published_at": "2026-11-19T20:22:54+09:00",
+      "date": "2026.11.19",
+      "category": "항공·숙박",
+      "source": "Hospitality Net",
+      "source_id": "hospitalitynet",
+      "title": "Newmark Investor Solutions Launches Hotel Asset Management Business Led by Industry Veterans Dan Falvey and Steve Kakaty",
+      "desc": "원문 링크에서 보도자료 또는 기사 내용을 확인하세요. (본문 자동 분석 전)",
+      "insight": "원문을 확인한 후 산업적 시사점을 판단해 주세요.",
+      "summary_type": "metadata_only",
+      "url": "https://www.hospitalitynet.org/news/4135575/newmark-investor-solutions-launches-hotel-asset-management-business-led-by-industry-veterans-dan-falvey-and-steve-kakaty",
+      "relevance": 8,
+      "relevance_label": "Direct",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "항공·숙박",
+        "score": 8,
+        "rules": [
+          "english_industry_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "hotel",
+              "launch"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "related_sources": [
+        "Hospitality Net"
+      ],
+      "first_discovered_at": "2026-11-19T22:45:12+09:00",
+      "publication_date_basis": "feed_publication_date",
+      "date_precision": "timestamp",
+      "record_type": "news",
+      "korea_priority": false,
+      "is_backfill": false,
+      "publication_policy": {
+        "status": "approved",
+        "scope": "metadata_only",
+        "noncommercial_only": true,
+        "terms_url": "https://www.hospitalitynet.org/rss",
+        "additional_terms": [
+          "https://www.hospitalitynet.org/terms-conditions"
+        ],
+        "basis": "Official designated RSS guide expressly describes integration on external websites. Local review permits selective six-field feed metadata indexing only, interpreted as permission for this designated RSS interface. General Terms sections 5.2 and 6.2 still prohibit unauthorized automation and reproduction/bulk reuse; the guide does not explicitly discuss its priority over those clauses. No separate written licence or blanket website/body reuse approval has been obtained.",
+        "checked_at": "2026-11-03",
+        "body_reuse": "not_authorized",
+        "database_scope": "Selective returned-feed headline/link index only; no article/archive crawling",
+        "approval_authority": "repository_scope_review_not_publisher_certificate",
+        "publisher_written_permission_obtained": false,
+        "rights_review": {
+          "result": "limited_designated_feed_interpretation",
+          "guide_url": "https://www.hospitalitynet.org/rss",
+          "general_terms_url": "https://www.hospitalitynet.org/terms-conditions",
+          "general_terms_sections": [
+            "5.2",
+            "6.2"
+          ],
+          "remaining_uncertainty": "No explicit RSS carve-out/precedence clause or publisher written confirmation. Limited interface guidance only; no broad content licence.",
+          "checked_on": "2026-11-03"
+        }
+      },
+      "first_published_by_engine_at": "2026-11-19T22:45:12+09:00",
+      "editorial": {
+        "version": "0.3-editorial-1",
+        "tier": "reference",
+        "rank": 2,
+        "label": "산업 참고 자료",
+        "korea_connection": "not_established",
+        "evidence": [],
+        "reason": "한국 관광시장 직접 연계 또는 세계 산업 전체의 주요 변화가 충분히 입증되지 않은 산업 참고 자료입니다. 국내·해외 자료 모두 포함할 수 있습니다."
+      }
+    },
     {
       "id": "21d017fbea71ff85c6",
       "published_at": "2026-11-19T20:10:57+09:00",
