@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-11-20T00:24:33+09:00",
+  "generated_at": "2026-11-20T02:31:41+09:00",
   "mode": "live_rss",
   "decisions": [
+    {
+      "article_id": "aee9f351cc6e2f27cc",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-20T00:37:00+09:00"
+    },
     {
       "article_id": "612f6122e64485e165",
       "decision": "editorial_ineligible",
