@@ -16,7 +16,11 @@ class DataError(ValueError):
 
 def read(path):
     try:
-        return json.loads(Path(path).read_text(encoding='utf-8'))
+        doc=json.loads(Path(path).read_text(encoding='utf-8'))
+        if Path(path).name=='discovery.json':
+            from ..discovery_storage import decode
+            return decode(doc)
+        return doc
     except (OSError, ValueError) as exc:
         raise DataError('invalid_or_missing_json:' + Path(path).name) from None
 
