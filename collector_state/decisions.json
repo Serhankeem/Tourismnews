@@ -1,8 +1,26 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-19T16:45:49+09:00",
+  "checked_at": "2026-11-19T17:10:28+09:00",
   "scope": "successful_sources_this_run",
   "items": [
+    {
+      "id": "c6f8eb5ef7896c075b",
+      "title": "문체부, 현장 목소리 담아 인디음악인 첫 무대인 라이브클럽 제도 개선 추진",
+      "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22862",
+      "source_id": "mcst_press",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
     {
       "id": "4975b43818beb16f62",
       "title": "주태국한국문화원, 개원 13년 만에 국유청사 마련해 새 출발",
@@ -151,24 +169,6 @@
       "id": "93c84fb9b6ad0c5500",
       "title": "사상 첫 ‘방한 관광 2천만 명 시대’ 개막… ‘대체불가 관광대국 대한민국’ 향해 민·관·정 뜻 모아",
       "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22853",
-      "source_id": "mcst_press",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "105290c8920ed3da8f",
-      "title": "이천선수촌에서 장애인체육의 미래 키운다",
-      "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22852",
       "source_id": "mcst_press",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -1268,6 +1268,372 @@
         "signals": [],
         "impact_targets": [],
         "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "c074e7af225e6318d9",
+      "title": "버려지는 물건에 새 생명을! 색다른 실내 나들이 공간 '서울새활용플라자'",
+      "url": "https://mediahub.seoul.go.kr/archives/2020099",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "c206db8014a274ee37",
+      "title": "얼마 안 남은 가을날, 서울 단풍 명소 '남산하늘숲길'에서 피날레!",
+      "url": "https://mediahub.seoul.go.kr/archives/2020052",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "548fcc1862089267d7",
+      "title": "페트병이 현금으로? 마포주민편익시설 'AI 투명페트병 회수기' 써보니",
+      "url": "https://mediahub.seoul.go.kr/archives/2020051",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "fc98b03b3d1a58a5bb",
+      "title": "밖은 춥다고? 여긴 꽃이 활짝! 서울식물원 겨울 전시",
+      "url": "https://mediahub.seoul.go.kr/archives/2020083",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "cross_sentence_unproven"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "e7355976ce93d76828",
+      "title": "북한산까지 한눈에! 실패 없는 불광천 물멍 명소 '서울물빛나루' 2곳",
+      "url": "https://mediahub.seoul.go.kr/archives/2020062",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "cb4e497f8d2a921c2d",
+      "title": "물 줘도 시들시들? '반려식물병원' 가보세요…무료 진료",
+      "url": "https://mediahub.seoul.go.kr/archives/2020030",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "b1cb636c34e1adada1",
+      "title": "매헌시민의숲 옆에 이런 곳이? 가을빛 물든 '서초문화예술공원'",
+      "url": "https://mediahub.seoul.go.kr/archives/2019985",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "c0f3170c79bd9b5c2c",
+      "title": "가을 풍경 맛집 '남산 한국숲정원', 알고 걸으면 10배 더 예쁨!",
+      "url": "https://mediahub.seoul.go.kr/archives/2019984",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "cross_sentence_unproven"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "a42ef1aafd65d3e78c",
+      "title": "정조가 걷던 길 위에 가을이 내려앉았다…'시흥행궁길'에서 '호압사'까지",
+      "url": "https://mediahub.seoul.go.kr/archives/2019970",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "c9ef432522f8a73dad",
+      "title": "12월부터 한강버스 시간표 조정, 이용 편의 높인다! 시설 보강까지",
+      "url": "https://mediahub.seoul.go.kr/archives/2019976",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "1cfe30ff8c5bb741f7",
+      "title": "삼청동부터 효자로까지, 단풍이 깊어가는 '경복궁 돌담길'",
+      "url": "https://mediahub.seoul.go.kr/archives/2019918",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "30a4a4211a925ceb9b",
+      "title": "멀리 갈 필요 없네… 서울 단풍길 110선에서 가을 만끽",
+      "url": "https://mediahub.seoul.go.kr/archives/2019923",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "55ddc1c23f0467a135",
+      "title": "아직 늦지 않았어! '노들 글로벌 예술섬'에서 가을 감성에 풍덩~",
+      "url": "https://mediahub.seoul.go.kr/archives/2019844",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "d84858d054fd299584",
+      "title": "가을 나들이 장소, 여기 저장! 단풍·운동·캠핑 모두 즐기는 한강공원, 어디?",
+      "url": "https://mediahub.seoul.go.kr/archives/2019839",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "cd392f4366e15adcec",
+      "title": "이렇게까지 예쁠 일? 하루 피로 싹 풀리는 한강 노을 명소 추천!",
+      "url": "https://mediahub.seoul.go.kr/archives/2019802",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "ac54d16a610876d2bb",
+      "title": "강아지도 신나는 가을 정원으로 초대합니다! '매헌시민의숲' 정원 축제",
+      "url": "https://mediahub.seoul.go.kr/archives/2019713",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "cross_sentence_unproven"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "8bae74ec59428af51a",
+      "title": "단풍 들면 더 예뻐질 이곳! 낙타의 등을 닮은 '낙산공원' 산책",
+      "url": "https://mediahub.seoul.go.kr/archives/2019768",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "b1dc0f5f618a11e68a",
+      "title": "올가을 조용히 걷고 싶다면…대청역 5분, 나만 알고 싶은 메타세쿼이아길",
+      "url": "https://mediahub.seoul.go.kr/archives/2019663",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "b6e2d83978af971ac0",
+      "title": "58년 만에 시민 품으로 돌아온 백악산…새롭게 열린 탐방로 걸어보니",
+      "url": "https://mediahub.seoul.go.kr/archives/2019765",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "091aeabcc35820f250",
+      "title": "백악산 남서자락 탐방로 전면 개방! 새롭게 열린 1.32km 추천 코스",
+      "url": "https://mediahub.seoul.go.kr/archives/2019763",
+      "source_id": "seoul_environment",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
       },
       "decision": "exclude"
     },
@@ -3949,6 +4315,35 @@
       "decision": "exclude"
     },
     {
+      "id": "b1b791a9d6e9653421",
+      "title": "Tourist tax is coming. Where’s the plan?",
+      "url": "https://www.hospitalitynet.org/opinion/4135404/tourist-tax-is-coming-wheres-the-plan",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "관광정책",
+        "score": 8,
+        "rules": [
+          "english_industry_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "tourist tax",
+              "tourist tax"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "decision": "publish"
+    },
+    {
       "id": "667e926b2490bf32cb",
       "title": "Vibe Check-In and the Psychology of Choosing Feelings Over Destination",
       "url": "https://www.hospitalitynet.org/news/4135557/vibe-check-in-and-the-psychology-of-choosing-feelings-over-destination",
@@ -4298,24 +4693,6 @@
       "id": "32de804e0be500d0fc",
       "title": "Revenue Manager 2030: Superhero or Extinct?",
       "url": "https://www.hospitalitynet.org/opinion/4135537/revenue-manager-2030-superhero-or-extinct",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "d2949c4ca95b311582",
-      "title": "Four.",
-      "url": "https://www.hospitalitynet.org/opinion/4135536/four",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",

@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-19T16:45:49+09:00",
-  "last_successful_fetch": "2026-11-19T16:45:49+09:00",
-  "count": 131,
+  "generated_at": "2026-11-19T17:10:28+09:00",
+  "last_successful_fetch": "2026-11-19T17:10:28+09:00",
+  "count": 132,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,14 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Tourist tax is coming. Where’s the plan?",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-19T17:00:00+09:00",
+      "url": "https://www.hospitalitynet.org/opinion/4135404/tourist-tax-is-coming-wheres-the-plan",
+      "category": "관광정책",
+      "keywords": []
+    },
     {
       "title": "Travel Media Group Continues to Expand its Respond & Resolve™ Guest Review Response Solution in the Luxury Hotel Segment",
       "source": "Hospitality Net",
