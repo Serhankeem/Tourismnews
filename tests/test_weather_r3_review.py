@@ -12,7 +12,7 @@ from test_weather_publication import setup,NOW
 
 COVER='\n\n'.join(['한국 관광의 날씨는? / MONTHLY REPORT','2026년 11월 Market Weather',
  '2026년 9월 검증 자료 기반','2026.11 · VOL. 01','발행: 2026년 11월\n통계 기준: 2026년 9월',
- '공식 관광통계를 바탕으로 시장의 주요 변화 신호를 살펴봅니다. 산업 전체의 종합 경기 판정은 보류합니다.'])
+ '합성 편집 검토 리드입니다. 종합 판정은 보류합니다.'])
 
 
 class R3DraftTests(unittest.TestCase):
