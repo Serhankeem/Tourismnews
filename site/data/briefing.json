@@ -1,10 +1,10 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-20T15:48:04+09:00",
+  "generated_at": "2026-11-20T16:52:16+09:00",
   "briefing_date": "2026-11-20",
-  "last_successful_fetch": "2026-11-20T15:48:04+09:00",
+  "last_successful_fetch": "2026-11-20T16:52:16+09:00",
   "status": "candidates_ready",
-  "recent_news_count": 15,
+  "recent_news_count": 14,
   "selected_count": 2,
   "collection": {
     "status": "partial",
