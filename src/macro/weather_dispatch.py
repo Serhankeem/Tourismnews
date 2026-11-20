@@ -12,14 +12,44 @@ import os
 from pathlib import Path
 import re
 import zlib
+import urllib.error
+import urllib.request
 
 from . import weather_publication as gate, weather_release as release, weather_shadow as shadow
-from .tourgo_delivery import GitHub
+from .tourgo_delivery import GitHub as BaseGitHub
 
 REPOSITORY='Serhankeem/tourismnews'
 NAMES={'bundle_manifest':'manifest.json','diagnostic':'diagnostic-private.json',
        'config':'inputs/config.json','archive':'inputs/archive.json','policy':'inputs/policy.json'}
 LIMIT=2*1024*1024
+
+
+class GitHub(BaseGitHub):
+    """Monthly-only read client; never prints HTTP bodies, URLs or credentials."""
+    def __init__(self,token):
+        gate.require(isinstance(token,str) and bool(token) and not any(c.isspace() for c in token),'monthly_token_missing')
+        super().__init__(token)
+
+    def get(self,path):
+        run_path=re.fullmatch('repos/'+REPOSITORY+r'/actions/runs/[1-9][0-9]*',path) is not None
+        role_path=re.fullmatch('repos/'+REPOSITORY+r'/collaborators/[A-Za-z0-9][A-Za-z0-9-]{0,38}/permission',path) is not None
+        gate.require(run_path or role_path,'monthly_api_path_invalid')
+        prefix='monthly_run_api_' if run_path else 'monthly_role_api_'
+        request=urllib.request.Request('https://api.github.com/'+path,headers={
+            'Authorization':'Bearer '+self.token,'Accept':'application/vnd.github+json',
+            'X-GitHub-Api-Version':'2022-11-28','User-Agent':'currentourism-monthly-read-check'})
+        try:
+            with self.open(request,timeout=30) as response:raw=response.read(LIMIT+1)
+        except urllib.error.HTTPError as exc:
+            code=prefix+{401:'unauthenticated',403:'forbidden',404:'not_found',429:'rate_limited'}.get(exc.code,'unavailable')
+            if exc.code==403 and exc.headers and exc.headers.get('X-RateLimit-Remaining')=='0':code=prefix+'rate_limited'
+            raise gate.GateError(code) from None
+        except Exception:raise gate.GateError(prefix+'unavailable') from None
+        gate.require(len(raw)<=LIMIT,prefix+'invalid_response')
+        try:doc=gate.decode(raw)
+        except Exception:raise gate.GateError(prefix+'invalid_response') from None
+        gate.require(isinstance(doc,dict),prefix+'invalid_response')
+        return doc
 
 
 def encoded(doc):return (json.dumps(doc,ensure_ascii=False,separators=(',',':'))+'\n').encode()
@@ -50,7 +80,9 @@ def candidate(raw,manuscript_hash,candidate_hash):
 
 def validate(doc,ctx,snapshot,code,at,approved_at):
     config=gate.engine.read(Path(code)/'macro_sources.json');policy=gate.engine.read(Path(code)/'operating_policy.json')
-    return gate.validate_inputs(ctx,snapshot,doc['period'],approved_at,at,config,policy)
+    try:return gate.validate_inputs(ctx,snapshot,doc['period'],approved_at,at,config,policy)
+    except gate.GateError:raise
+    except Exception:raise gate.GateError('monthly_statistics_contract_invalid') from None
 
 
 def authorize(api,env,manuscript_hash,candidate_hash,code_sha,at):
@@ -86,7 +118,9 @@ class Request:
     def __init__(self,raw,manuscript_hash,candidate_hash,api,env,code,code_sha,at):
         self.approved_at=authorize(api,env,manuscript_hash,candidate_hash,code_sha,at)
         self.raw=bytes(raw);self.manuscript_hash=manuscript_hash;self.candidate_hash=candidate_hash
-        doc,ctx,snapshot=candidate(self.raw,manuscript_hash,candidate_hash)
+        try:doc,ctx,snapshot=candidate(self.raw,manuscript_hash,candidate_hash)
+        except gate.GateError:raise
+        except Exception:raise gate.GateError('monthly_candidate_contract_invalid') from None
         self.authority=None  # Existing runner distinguishes private legacy authority.
         self.release_key='market-weather-'+doc['period']+':1'
         release.signing_key()  # Fail before any public projection if not configured.
@@ -120,9 +154,14 @@ class Request:
 
 def from_environment(code,code_sha,manuscript_hash,candidate_hash,at):
     env=os.environ
+    # Only transport whitespace is removed; decoded candidate bytes must still
+    # match the approved hash. Clipboard line endings do not change that binding.
+    value=env.get('MARKET_WEATHER_CANDIDATE_B64','')
+    gate.require(bool(value),'candidate_secret_missing_or_oversized')
+    try:compressed=base64.b64decode(re.sub(r'[ \t\r\n]','',value),validate=True)
+    except Exception:raise gate.GateError('monthly_candidate_base64_invalid') from None
+    gate.require(0<len(compressed)<=48*1024,'candidate_secret_missing_or_oversized')
     try:
-        compressed=base64.b64decode(env.get('MARKET_WEATHER_CANDIDATE_B64',''),validate=True)
-        gate.require(0<len(compressed)<=48*1024,'candidate_secret_missing_or_oversized')
         decoder=zlib.decompressobj();raw=decoder.decompress(compressed,LIMIT+1)
         gate.require(len(raw)<=LIMIT and decoder.eof and not decoder.unused_data,'candidate_size_or_encoding_invalid')
     except gate.GateError:raise

@@ -29,12 +29,31 @@ permissions:
   contents: read
 jobs:
   test:
+    permissions:
+      contents: read
+      actions: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify default token API contracts (PR only, never authorize publication)
+        if: github.event_name == 'pull_request'
+        env:
+          MONTHLY_READ_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PYCODE'
+          import os
+          from src.macro.weather_dispatch import GitHub, REPOSITORY
+          from src.macro.weather_publication import require
+          api = GitHub(os.environ['MONTHLY_READ_TOKEN'])
+          run = api.get('repos/'+REPOSITORY+'/actions/runs/44681861640')
+          require(run['repository']['full_name']==REPOSITORY,'github_dispatch_binding_invalid')
+          role = api.get('repos/'+REPOSITORY+'/collaborators/Serhankeem/permission')
+          require(role.get('permission') in ('admin','write','maintain') and role.get('user',{}).get('id')==run['actor']['id'],'github_publish_permission_required')
+          print('monthly_default_token_run_and_role_contract_ok; no approval or publication requested')
+          PYCODE
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
   collect-and-publish:
