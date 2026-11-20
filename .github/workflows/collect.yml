@@ -52,10 +52,47 @@ jobs:
           print('monthly_default_token_read_contract_ok; no approval or publication requested')
           request = urllib.request.Request('https://api.github.com/repos/Serhankeem/tourismnews/collaborators/Serhankeem/permission', headers={'Authorization': 'Bearer '+os.environ['MONTHLY_READ_TOKEN'], 'X-GitHub-Api-Version': '2022-11-28', 'Accept': 'application/vnd.github+json'})
           try:
-              with api.open(request, timeout=30) as response: status = response.status
+              with api.open(request, timeout=30) as response: status = response.status; role_body = response.read(32768)
           except urllib.error.HTTPError as exc: status = exc.code
           except Exception: status = None
           print('monthly_legacy_role_read_http_'+str(status) if status in (200,401,403,404,429) else 'monthly_legacy_role_read_unavailable')
+          if status == 200:
+              import json
+              role = json.loads(role_body)
+              print('monthly_legacy_role_contract_ok' if role.get('permission') in ('admin','write','maintain') and role.get('user',{}).get('id') == run['actor']['id'] else 'monthly_legacy_role_contract_invalid')
+          PYCODE
+      - name: Incident 44681861640 private input preflight (read only)
+        if: github.event_name == 'pull_request' && github.event.pull_request.number == 64 && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          MARKET_WEATHER_CANDIDATE_B64: ${{ secrets.MARKET_WEATHER_CANDIDATE_B64 }}
+          MARKET_WEATHER_SIGNING_KEY: ${{ secrets.MARKET_WEATHER_SIGNING_KEY }}
+        run: |
+          python - <<'PYCODE'
+          import os, re, base64, zlib, datetime
+          from src.macro.weather_dispatch import candidate, validate
+          from src.macro.weather_publication import engine
+          from src.macro.weather_release import signing_key
+          from src.pipeline.diagnostics import error_code
+          value = os.environ.get('MARKET_WEATHER_CANDIDATE_B64','')
+          try:
+              base64.b64decode(value, validate=True)
+              print('monthly_legacy_candidate_transport_ok')
+          except Exception:
+              print('monthly_legacy_candidate_transport_invalid')
+          print('monthly_legacy_signing_key_format_ok' if re.fullmatch('[a-f0-9]{64}',os.environ.get('MARKET_WEATHER_SIGNING_KEY','')) else 'monthly_legacy_signing_key_format_invalid')
+          try:
+              compressed = base64.b64decode(re.sub(r'[ \t\r\n]','',value), validate=True)
+              decoder = zlib.decompressobj()
+              raw = decoder.decompress(compressed,2*1024*1024+1)
+              assert len(raw)<=2*1024*1024 and decoder.eof and not decoder.unused_data
+              doc, ctx, snapshot = candidate(raw,'18d43e3750c5669a57dc0d75aab252e2f6047b700b20ced9e479fe5944fc28e6','202302dd5302628a3e722b50d5b1fc9080516c78a0b9afb03b5bb372c8fcd590')
+              signing_key()
+              now = datetime.datetime.now(datetime.timezone.utc)
+              validate(doc,ctx,snapshot,engine.ROOT,now,now)
+              print('monthly_private_input_preflight_ok; no approval or projection requested')
+          except Exception as exc:
+              print(error_code(exc))
+              raise SystemExit(1) from None
           PYCODE
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
