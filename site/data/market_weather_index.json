@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "kind": "approved_market_weather_index",
+  "latest": "market-weather-2026-09:1",
+  "entries": [
+    {
+      "key": "market-weather-2026-09:1",
+      "content_id": "market-weather-2026-09",
+      "revision": 1,
+      "editorial_revision": "r3",
+      "reference_period": "2026-09",
+      "title": "2026년 11월 관광시장 진단",
+      "issued_at": "2026-11-20T07:30:38+00:00",
+      "not_after": "9999-12-31T23:59:59+00:00",
+      "content_sha256": "f0ab5238755ecba0d22144fabbf5c3de6cabd1884bcdd1ac5e64af9aa9d846c0"
+    }
+  ],
+  "seal": "855dad0477c74fcd05c0f0ce7d370ff24ecc1a9342b3e9ee7426b882a9de7a52"
+}

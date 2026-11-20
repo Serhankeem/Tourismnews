@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "kind": "approved_market_weather_archive",
+  "contents": {
+    "market-weather-2026-09:1": {
+      "schema_version": 2,
+      "content_id": "market-weather-2026-09",
+      "revision": 1,
+      "editorial_revision": "r3",
+      "reference_period": "2026-09",
+      "issued_at": "2026-11-20T07:30:38+00:00",
+      "data_cutoff": "2026-11-17T01:50:04.081469+00:00",
+      "analysis_mode": "retrospective_current_vintage",
+      "title": "2026년 11월 관광시장 진단",
+      "summary": "한국 관광의 날씨는? / MONTHLY REPORT\n\n2026년 11월 Market Weather\n\n2026년 9월 검증 자료 기반\n\n2026.11 · VOL. 01\n\n발행호: 2026년 11월\n통계 기준: 2026년 9월\n\n공식 관광통계를 바탕으로 시장의 주요 변화 신호를 살펴봅니다. 산업 전체의 종합 경기 판정은 보류합니다.\n\n2026년 9월 방한 외래관광객과 일반여행수입은 모두 지난해 같은 달보다 증가했다. 반면 직전 달인 8월과 비교하면 두 지표 모두 감소한 것으로 나타났다.\n\n이는 전년 동월과 전월을 비교했을 때 서로 다른 방향의 변화가 관측됐다는 의미다. 다만 관광 수요에는 계절적 요인이 작용할 수 있어, 비계절조정 전월비 감소만으로 시장이 위축됐다고 판단하기는 어렵다.",
+      "overall_state": "withheld",
+      "metrics": {
+        "kto_inbound": {
+          "value": 2062042,
+          "unit": "명",
+          "comparisons": {
+            "mom": {
+              "period": "2026-08",
+              "pct": "-8.161563",
+              "direction": "decrease"
+            },
+            "yoy": {
+              "period": "2025-09",
+              "pct": "21.096210",
+              "direction": "increase"
+            }
+          }
+        },
+        "kto_tourism_receipts": {
+          "value": 2460800000,
+          "unit": "US$",
+          "comparisons": {
+            "mom": {
+              "period": "2026-08",
+              "pct": "-1.069390",
+              "direction": "decrease"
+            },
+            "yoy": {
+              "period": "2025-09",
+              "pct": "16.432458",
+              "direction": "increase"
+            }
+          }
+        }
+      },
+      "evidence": [
+        {
+          "indicator": "kto_inbound",
+          "text": "한국관광공사 통계에 따르면 2026년 9월 방한 외래관광객은 **206만 2,042명**으로 집계됐다.\n\n2025년 9월의 170만 2,813명보다 21.10% 증가한 수치다. 다만 2026년 8월의 224만 5,293명과 비교하면 8.16% 감소했다.\n\n이는 방한 입국 통계의 변화이며, 관광 목적 방문자만의 변화로 해석해서는 안 된다.",
+          "source_ids": [
+            "source_1"
+          ],
+          "comparison_periods": [
+            "2025-09",
+            "2026-08"
+          ]
+        },
+        {
+          "indicator": "kto_tourism_receipts",
+          "text": "한국문화관광연구원 관광지식정보시스템의 자료에 따르면 2026년 9월 일반여행수입은 **24억 6,080만 달러**로 나타났다.\n\n2025년 9월의 21억 1,350만 달러보다 16.43% 증가했으며, 2026년 8월의 24억 8,740만 달러와 비교하면 1.07% 감소했다.\n\n일반여행수입은 국제수지 기준의 명목 달러 통계다. 국내 관광소비 전체를 나타내지 않으며, 방한객 통계와 모집단이 일치하지 않으므로 두 수치를 단순히 나누어 관광객 1인당 소비액으로 해석할 수 없다.",
+          "source_ids": [
+            "source_2"
+          ],
+          "comparison_periods": [
+            "2025-09",
+            "2026-08"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "source_1",
+          "publisher": "한국관광공사",
+          "url": "https://datalab.visitkorea.or.kr/site/portal/ex/bbs/View.do?cbIdx=1603&cbIdx2=1127&bcIdx=311425&pageIndex=1&tgtTypeCd=CATE_CONT&searchKey=&searchKey1=&searchKey2=spt01&searchKey3=&tabFlag=N&subFlag=N&cateCont=spt01",
+          "original_publication_at": null,
+          "finality": "not_stated"
+        },
+        {
+          "id": "source_2",
+          "publisher": "한국문화관광연구원 관광지식정보시스템(TOURGO)",
+          "url": "https://know.tour.go.kr/stat/koreaTourIncomeDis19Re.do",
+          "original_publication_at": null,
+          "finality": "not_stated"
+        }
+      ],
+      "limitations": {
+        "industry_activity_missing": "9월에는 방한 입국 규모와 일반여행수입이 모두 전년 동월 대비 증가했다는 공통된 흐름이 확인된다.\n\n그러나 두 지표만으로 이러한 변화의 원인이나 관광산업 전반의 경기 상태를 판단할 수는 없다. 숙박·여가 등 산업 활동 핵심 지표가 아직 포함되지 않았기 때문이다.\n\n따라서 이번 분석은 **방한 수요와 일반여행수입의 부분적인 흐름을 보여주는 모니터**이며, 관광시장 전체에 대한 종합 판정은 보류한다.",
+        "nominal_bop_definition": "일반여행수입은 국제수지 기준의 명목 달러 통계다. 국내 관광소비 전체를 나타내지 않으며, 방한객 통계와 모집단이 일치하지 않으므로 두 수치를 단순히 나누어 관광객 1인당 소비액으로 해석할 수 없다.",
+        "nonseasonal_mom": "이는 전년 동월과 전월을 비교했을 때 서로 다른 방향의 변화가 관측됐다는 의미다. 다만 관광 수요에는 계절적 요인이 작용할 수 있어, 비계절조정 전월비 감소만으로 시장이 위축됐다고 판단하기는 어렵다.",
+        "vintage_and_lag": "- 방한 외래관광객: [한국관광공사 한국관광통계](https://datalab.visitkorea.or.kr/site/portal/ex/bbs/View.do?cbIdx=1603&cbIdx2=1127&bcIdx=311425&pageIndex=1&tgtTypeCd=CATE_CONT&searchKey=&searchKey1=&searchKey2=spt01&searchKey3=&tabFlag=N&subFlag=N&cateCont=spt01)\n- 일반여행수입: [한국문화관광연구원 관광지식정보시스템](https://know.tour.go.kr/stat/koreaTourIncomeDis19Re.do)\n- 자료 마감: 2026년 11월 17일 오전 10시 50분(KST)\n- 분석 기준: 현재 확보된 수정 가능 통계를 이용한 회고 분석(retrospective_current_vintage)\n\n전월비는 계절조정하지 않은 원계열 비교이며, 전년 동월비에도 기저효과가 영향을 미칠 수 있다. 두 통계의 잠정·확정 여부와 일부 원공표 시점은 확인되지 않았다. 향후 원자료가 정정되면 수치와 비교율이 달라질 수 있다.\n\n*본 콘텐츠는 여행기류의 자체 분석 초안이며, 공식 기관의 관광경기 종합지수가 아닙니다.*",
+        "base_effect_and_revisions": "전월비는 계절조정하지 않은 원계열 비교이며, 전년 동월비에도 기저효과가 영향을 미칠 수 있다. 두 통계의 잠정·확정 여부와 일부 원공표 시점은 확인되지 않았다. 향후 원자료가 정정되면 수치와 비교율이 달라질 수 있다."
+      },
+      "article": {
+        "subtitle": "방한객 206만 명·일반여행수입 24.6억 달러, 전년 동월 대비 동반 증가",
+        "sections": [
+          {
+            "heading": "두 지표 모두 전년보다 늘었지만, 전월보다는 감소",
+            "markdown": "한국 관광의 날씨는? / MONTHLY REPORT\n\n2026년 11월 Market Weather\n\n2026년 9월 검증 자료 기반\n\n2026.11 · VOL. 01\n\n발행호: 2026년 11월\n통계 기준: 2026년 9월\n\n공식 관광통계를 바탕으로 시장의 주요 변화 신호를 살펴봅니다. 산업 전체의 종합 경기 판정은 보류합니다.\n\n2026년 9월 방한 외래관광객과 일반여행수입은 모두 지난해 같은 달보다 증가했다. 반면 직전 달인 8월과 비교하면 두 지표 모두 감소한 것으로 나타났다.\n\n이는 전년 동월과 전월을 비교했을 때 서로 다른 방향의 변화가 관측됐다는 의미다. 다만 관광 수요에는 계절적 요인이 작용할 수 있어, 비계절조정 전월비 감소만으로 시장이 위축됐다고 판단하기는 어렵다."
+          },
+          {
+            "heading": "01. 방한 외래관광객, 전년 동월 대비 21.10% 증가",
+            "markdown": "한국관광공사 통계에 따르면 2026년 9월 방한 외래관광객은 **206만 2,042명**으로 집계됐다.\n\n2025년 9월의 170만 2,813명보다 21.10% 증가한 수치다. 다만 2026년 8월의 224만 5,293명과 비교하면 8.16% 감소했다.\n\n이는 방한 입국 통계의 변화이며, 관광 목적 방문자만의 변화로 해석해서는 안 된다."
+          },
+          {
+            "heading": "02. 일반여행수입, 전년 동월 대비 16.43% 증가",
+            "markdown": "한국문화관광연구원 관광지식정보시스템의 자료에 따르면 2026년 9월 일반여행수입은 **24억 6,080만 달러**로 나타났다.\n\n2025년 9월의 21억 1,350만 달러보다 16.43% 증가했으며, 2026년 8월의 24억 8,740만 달러와 비교하면 1.07% 감소했다.\n\n일반여행수입은 국제수지 기준의 명목 달러 통계다. 국내 관광소비 전체를 나타내지 않으며, 방한객 통계와 모집단이 일치하지 않으므로 두 수치를 단순히 나누어 관광객 1인당 소비액으로 해석할 수 없다."
+          },
+          {
+            "heading": "이번 달의 관측과 해석 범위",
+            "markdown": "9월에는 방한 입국 규모와 일반여행수입이 모두 전년 동월 대비 증가했다는 공통된 흐름이 확인된다.\n\n그러나 두 지표만으로 이러한 변화의 원인이나 관광산업 전반의 경기 상태를 판단할 수는 없다. 숙박·여가 등 산업 활동 핵심 지표가 아직 포함되지 않았기 때문이다.\n\n따라서 이번 분석은 **방한 수요와 일반여행수입의 부분적인 흐름을 보여주는 모니터**이며, 관광시장 전체에 대한 종합 판정은 보류한다."
+          },
+          {
+            "heading": "자료 출처 및 분석 시 유의사항",
+            "markdown": "- 방한 외래관광객: [한국관광공사 한국관광통계](https://datalab.visitkorea.or.kr/site/portal/ex/bbs/View.do?cbIdx=1603&cbIdx2=1127&bcIdx=311425&pageIndex=1&tgtTypeCd=CATE_CONT&searchKey=&searchKey1=&searchKey2=spt01&searchKey3=&tabFlag=N&subFlag=N&cateCont=spt01)\n- 일반여행수입: [한국문화관광연구원 관광지식정보시스템](https://know.tour.go.kr/stat/koreaTourIncomeDis19Re.do)\n- 자료 마감: 2026년 11월 17일 오전 10시 50분(KST)\n- 분석 기준: 현재 확보된 수정 가능 통계를 이용한 회고 분석(retrospective_current_vintage)\n\n전월비는 계절조정하지 않은 원계열 비교이며, 전년 동월비에도 기저효과가 영향을 미칠 수 있다. 두 통계의 잠정·확정 여부와 일부 원공표 시점은 확인되지 않았다. 향후 원자료가 정정되면 수치와 비교율이 달라질 수 있다.\n\n*본 콘텐츠는 여행기류의 자체 분석 초안이며, 공식 기관의 관광경기 종합지수가 아닙니다.*"
+          }
+        ]
+      },
+      "methodology_version": "weather-diagnostic-v0.1.1",
+      "correction": null
+    }
+  }
+}

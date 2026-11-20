@@ -14,6 +14,8 @@
     "site/data/reports.json": "bb9df3cea660aa0df152c246b8e3f80f332b1770fd68a958cad21f6c16d0afd1",
     "site/data/reports_health.json": "7928ee22e6e3d60c7085419c0435efa48ade833199e15cc58413b190c15cbca3",
     "site/data/research.json": "5e90e95029028f6b618275278d538cddf4bcba61eb9d9100b619f8a6c3185da0",
+    "site/data/market_weather_index.json": "eb1e9405b84a1fe9599efc4a458528612ee29da608416b3691c440b579edb76f",
+    "site/data/market_weather_archive.json": "ec69df6e8fb06eb483954142e010a7fe81aa42afed78d4b427d6ba67289a4eaa",
     "collector_state/archive.json": "4c021c65db59f5e17fdc50026b97a91e24aaa7fc031742fde17e23d28dda6c3a",
     "collector_state/briefing_latest_selection.json": "3216c9f9a3da73536a079058fbbbc9a2afa61805a1e0aebbc55b8d40e25d03d7",
     "collector_state/briefing_selection.json": "9be1a70e0a3d64844e4eac5e91de0766c274a4a4b8b845dafd467407e1d34e33",
