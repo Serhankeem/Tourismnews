@@ -5,6 +5,12 @@ on:
       engine:
         type: string
         required: true
+      monthly_manuscript_sha256:
+        type: string
+        default: ''
+      monthly_candidate_sha256:
+        type: string
+        default: ''
       force:
         type: boolean
         default: false
@@ -33,6 +39,7 @@ jobs:
       name: ${{ (inputs.tourgo_release || inputs.tourgo_update) && 'tourgo-production' || 'github-pages' }}
     permissions:
       contents: write
+      actions: read
       pages: write
       id-token: write
     steps:
@@ -75,10 +82,17 @@ jobs:
           REQUESTED_ENGINE: ${{ inputs.engine }}
           FORCE_RECHECK: ${{ inputs.force }}
           BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          MARKET_WEATHER_SIGNING_KEY: ${{ secrets.MARKET_WEATHER_SIGNING_KEY }}
+          MARKET_WEATHER_CANDIDATE_B64: ${{ inputs.monthly_manuscript_sha256 != '' && secrets.MARKET_WEATHER_CANDIDATE_B64 || '' }}
+          MONTHLY_MANUSCRIPT_SHA256: ${{ inputs.monthly_manuscript_sha256 }}
+          MONTHLY_CANDIDATE_SHA256: ${{ inputs.monthly_candidate_sha256 }}
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
           KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
         run: |
           args=()
+          if [ -n "$MONTHLY_MANUSCRIPT_SHA256$MONTHLY_CANDIDATE_SHA256" ]; then
+            args+=(--monthly-manuscript-sha256 "$MONTHLY_MANUSCRIPT_SHA256" --monthly-candidate-sha256 "$MONTHLY_CANDIDATE_SHA256")
+          fi
           if [ "$TOURGO_RELEASE" = 'true' ] && [ "$TOURGO_UPDATE" = 'true' ]; then exit 1; fi
           if [ "$FORCE_RECHECK" = 'true' ]; then args+=(--force); fi
           if [ "$TOURGO_RELEASE" = 'true' ]; then
@@ -90,6 +104,7 @@ jobs:
         if: steps.pipeline.outputs.ready == 'true'
         env:
           PIPELINE_GITHUB_TOKEN: ${{ github.token }}
+          MARKET_WEATHER_SIGNING_KEY: ${{ secrets.MARKET_WEATHER_SIGNING_KEY }}
         run: python -m src.pipeline.runner guard --work "$RUNNER_TEMP/tourism-pipeline"
       - uses: actions/configure-pages@v5
         if: steps.pipeline.outputs.ready == 'true'
@@ -101,6 +116,7 @@ jobs:
         if: steps.pipeline.outputs.ready == 'true'
         env:
           PIPELINE_GITHUB_TOKEN: ${{ github.token }}
+          MARKET_WEATHER_SIGNING_KEY: ${{ secrets.MARKET_WEATHER_SIGNING_KEY }}
         run: python -m src.pipeline.runner guard --work "$RUNNER_TEMP/tourism-pipeline"
       - uses: actions/deploy-pages@v4
         id: deploy

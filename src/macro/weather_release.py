@@ -1,6 +1,9 @@
 """Transactional monthly staging and revalidation. No approval issuer/network API."""
 import datetime as dt
 import json
+import hashlib
+import hmac
+import re
 import os
 from pathlib import Path
 from . import weather_publication as gate,weather_diagnostic as engine
@@ -35,7 +38,7 @@ def catalog(root,before=None):
     if not any(present):return None
     need(all(not (root/name).is_symlink() for name in PUBLIC_FILES),'monthly_symlink_forbidden')
     index,archive=[engine.read(root/name) for name in PUBLIC_FILES]
-    need(set(index)=={'schema_version','kind','latest','entries'} and index['schema_version']==1 and index['kind']=='approved_market_weather_index','monthly_index_shape_invalid')
+    need(set(index) in ({'schema_version','kind','latest','entries'},{'schema_version','kind','latest','entries','seal'}) and index['schema_version']==1 and index['kind']=='approved_market_weather_index','monthly_index_shape_invalid')
     need(set(archive)=={'schema_version','kind','contents'} and archive['schema_version']==1 and archive['kind']=='approved_market_weather_archive','monthly_archive_shape_invalid')
     need(isinstance(archive['contents'],dict) and bool(archive['contents']) and isinstance(index['entries'],list),'monthly_archive_empty_or_invalid')
     grants={}
@@ -50,6 +53,9 @@ def catalog(root,before=None):
         grants[k]={'content':payload,'not_after':entry['not_after']}
     need(set(grants)==set(archive['contents']),'monthly_catalog_archive_mismatch')
     expected_index,expected_archive=documents(grants)
+    if 'seal' in index:
+        need(isinstance(index['seal'],str) and re.fullmatch('[a-f0-9]{64}',index['seal']),'monthly_seal_invalid')
+        expected_index['seal']=index['seal']
     need(index==expected_index and archive==expected_archive,'monthly_catalog_order_or_latest_invalid')
     if before is not None:
         old=catalog(before)
@@ -58,6 +64,33 @@ def catalog(root,before=None):
             for k,payload in old[1]['contents'].items():need(payload==archive['contents'][k],'monthly_published_edition_changed')
             for e in old[0]['entries']:need(e in index['entries'],'monthly_approved_entry_changed')
     return index,archive
+
+
+def signing_key():
+    raw=os.environ.get('MARKET_WEATHER_SIGNING_KEY','')
+    need(re.fullmatch('[a-f0-9]{64}',raw) is not None,'monthly_signing_key_required')
+    return bytes.fromhex(raw)
+
+
+def seal(documents):
+    index,archive=documents
+    unsigned={k:v for k,v in index.items() if k!='seal'}
+    message=('market-weather-catalog-v1:'+engine.digest([unsigned,archive])).encode()
+    return hmac.new(signing_key(),message,hashlib.sha256).hexdigest()
+
+
+def verify_seal(stored,code,at):
+    need(hmac.compare_digest(stored[0]['seal'],seal(stored)),'monthly_signature_mismatch')
+    config=engine.read(Path(code)/'macro_sources.json');policy=engine.read(Path(code)/'operating_policy.json')
+    for entry in stored[0]['entries']:
+        payload=stored[1]['contents'][entry['key']]
+        need(engine.stamp(payload['issued_at'])<=at<=engine.stamp(entry['not_after']),'monthly_release_time_invalid')
+        gate.validate_current_rights(config,policy,payload['reference_period'],at)
+        source=next(s for s in config['sources'] if s['id']=='tourgo_tourism_balance')
+        for c in payload['metrics']['kto_tourism_receipts']['comparisons'].values():
+            for action in ('collection','publication'):
+                scope=engine.tourgo.approved_range(source,action)
+                need(scope['period_from']<=c['period']<=scope['period_through'],'statistics_not_currently_eligible')
 
 
 class Authority:
@@ -110,6 +143,9 @@ def environment():
 def verify(root,code,authority=None,at=None):
     stored=catalog(root)
     if stored is None:return None
+    if 'seal' in stored[0]:
+        verify_seal(stored,code,at or dt.datetime.now(dt.timezone.utc))
+        return stored
     authority=authority or environment();need(authority is not None,'monthly_authority_required')
     expected=authority.grants(code,at or dt.datetime.now(dt.timezone.utc))
     subset={}
