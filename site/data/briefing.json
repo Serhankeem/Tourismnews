@@ -1,20 +1,31 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-20T14:28:49+09:00",
+  "generated_at": "2026-11-20T15:33:48+09:00",
   "briefing_date": "2026-11-20",
-  "last_successful_fetch": "2026-11-20T14:28:49+09:00",
+  "last_successful_fetch": "2026-11-20T15:33:48+09:00",
   "status": "candidates_ready",
-  "recent_news_count": 14,
-  "selected_count": 1,
+  "recent_news_count": 15,
+  "selected_count": 2,
   "collection": {
     "status": "partial",
-    "successful_sources": 52,
+    "successful_sources": 49,
     "source_count": 60,
-    "failed_sources": 8
+    "failed_sources": 11
   },
   "mode": "live_rss",
   "title": "관광산업 주요 뉴스 브리핑 후보",
   "items": [
+    {
+      "title": "한국관광공사·문화체육관광부, 관광기업 미주 시장 진출 지원…포커스라이트 참가",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-20T12:34:24+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3164496",
+      "category": "여행산업",
+      "keywords": [
+        "관광공사",
+        "관광기업"
+      ]
+    },
     {
       "title": "올마이투어, 대만 여행사 협력 강화… 방한 수요 선점 추진",
       "source": "퍼블릭뉴스통신(TTL)",

@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-20T14:28:49+09:00",
-  "last_successful_fetch": "2026-11-20T14:28:49+09:00",
-  "count": 145,
+  "generated_at": "2026-11-20T15:33:48+09:00",
+  "last_successful_fetch": "2026-11-20T15:33:48+09:00",
+  "count": 146,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,17 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "한국관광공사·문화체육관광부, 관광기업 미주 시장 진출 지원…포커스라이트 참가",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-20T12:34:24+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3164496",
+      "category": "여행산업",
+      "keywords": [
+        "관광공사",
+        "관광기업"
+      ]
+    },
     {
       "title": "올마이투어, 대만 여행사 협력 강화… 방한 수요 선점 추진",
       "source": "퍼블릭뉴스통신(TTL)",
