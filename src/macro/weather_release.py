@@ -67,7 +67,8 @@ def catalog(root,before=None):
 
 
 def signing_key():
-    raw=os.environ.get('MARKET_WEATHER_SIGNING_KEY','')
+    raw=os.environ.get('MARKET_WEATHER_SIGNING_KEY','').strip(' \t\r\n')
+    need(bool(raw),'monthly_signing_key_missing')
     need(re.fullmatch('[a-f0-9]{64}',raw) is not None,'monthly_signing_key_required')
     return bytes.fromhex(raw)
 

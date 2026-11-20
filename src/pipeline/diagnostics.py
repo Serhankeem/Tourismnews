@@ -16,6 +16,23 @@ CODES={'data_push_failed_no_deployment','git_remote_blob_limit','git_blob_size_l
        'monthly_guard_artifact_symlink','validation_or_execution_failed'}
 CODES|={'discovery_logical_size_limit','discovery_storage_integrity_invalid','discovery_storage_envelope_invalid'}
 
+# Fixed monthly codes only. Never pass through arbitrary exception text.
+CODES|={'monthly_token_missing','monthly_api_path_invalid','monthly_run_api_unauthenticated',
+        'monthly_run_api_forbidden','monthly_run_api_not_found','monthly_run_api_rate_limited',
+        'monthly_run_api_unavailable','monthly_run_api_invalid_response','github_publish_owner_required',
+        'monthly_candidate_base64_invalid','monthly_candidate_contract_invalid','monthly_statistics_contract_invalid',
+        'dispatch_hashes_required','manual_main_dispatch_required','dispatch_run_invalid',
+        'github_dispatch_binding_invalid','github_dispatch_actor_invalid','dispatch_stale_or_future',
+        'candidate_secret_missing_or_oversized','candidate_size_or_encoding_invalid','candidate_hash_mismatch',
+        'candidate_shape_invalid','candidate_revision_invalid','candidate_not_private','candidate_snapshot_file_mismatch',
+        'manuscript_hash_mismatch','monthly_signing_key_missing','monthly_signing_key_required',
+        'snapshot_manifest_mismatch','snapshot_input_mismatch','diagnostic_hash_mismatch','methodology_mismatch',
+        'reference_period_mismatch','cutoff_mismatch','editorial_precedes_analysis','statistics_not_currently_eligible',
+        'tourgo_scope_expansion_forbidden','diagnostic_scope_invalid','unapproved_indicators','statistics_or_vintage_mismatch',
+        'article_current_value_mismatch','article_baseline_mismatch','article_rate_or_direction_mismatch','source_urls_mismatch'}
+
+CODES|={'article_bounds_invalid','article_rate_unavailable','evidence_sections_invalid','manuscript_header_invalid','manuscript_number_invalid','manuscript_period_mismatch','manuscript_sections_invalid','manuscript_subtitle_missing','overall_withheld_note_missing','public_source_bounds_invalid','public_timestamp_format_invalid','review_metadata_invalid','unsupported_manuscript_markup','vintage_note_missing'}
+
 
 def safe_code(value):return value if isinstance(value,str) and value in CODES else 'validation_or_execution_failed'
 
@@ -61,7 +78,7 @@ def action(result,deployment='skipped'):
 def failure(result,exc):
     code=error_code(exc)
     result.update(failure_phase=result.get('phase','authorization'),error_kind=type(exc).__name__ if type(exc).__name__ in
-                  ('StoreError','Conflict','ValidationError','DataError','ValueError','OSError','RuntimeError','TimeoutExpired') else 'ExecutionError',
+                  ('StoreError','Conflict','ValidationError','DataError','ValueError','OSError','RuntimeError','TimeoutExpired','GateError') else 'ExecutionError',
                   error=safe_code(str(exc)),error_code=code,ready=False,previous_public_preserved=True)
     if result.get('phase')=='persist':
         result['storage_status']='unverified' if str(exc)=='git_push_outcome_unverified' else 'failed'

@@ -29,12 +29,34 @@ permissions:
   contents: read
 jobs:
   test:
+    permissions:
+      contents: read
+      actions: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify default token read contract (PR only, never authorize publication)
+        if: github.event_name == 'pull_request'
+        env:
+          MONTHLY_READ_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PYCODE'
+          import os, urllib.request, urllib.error
+          from src.macro.weather_dispatch import GitHub, owner
+          api = GitHub(os.environ['MONTHLY_READ_TOKEN'])
+          run = api.get('repos/Serhankeem/tourismnews/actions/runs/44681861640')
+          owner(run)
+          print('monthly_default_token_read_contract_ok; no approval or publication requested')
+          request = urllib.request.Request('https://api.github.com/repos/Serhankeem/tourismnews/collaborators/Serhankeem/permission', headers={'Authorization': 'Bearer '+os.environ['MONTHLY_READ_TOKEN'], 'X-GitHub-Api-Version': '2022-11-28', 'Accept': 'application/vnd.github+json'})
+          try:
+              with api.open(request, timeout=30) as response: status = response.status
+          except urllib.error.HTTPError as exc: status = exc.code
+          except Exception: status = None
+          print('monthly_legacy_role_read_http_'+str(status) if status in (200,401,403,404,429) else 'monthly_legacy_role_read_unavailable')
+          PYCODE
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
   collect-and-publish:
