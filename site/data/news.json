@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-20T18:30:46+09:00",
-  "last_successful_fetch": "2026-11-20T18:30:46+09:00",
-  "count": 147,
+  "generated_at": "2026-11-20T20:27:23+09:00",
+  "last_successful_fetch": "2026-11-20T20:27:23+09:00",
+  "count": 148,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,16 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Trailborn Hotels & Resorts Expands to Yosemite with Evergreen Lodge and Rush Creek Lodge & Spa, Adds Firefall Ranch to Management Portfolio",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-20T19:23:52+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135606/trailborn-hotels-resorts-expands-to-yosemite-with-evergreen-lodge-and-rush-creek-lodge-spa-adds-firefall-ranch-to-management-portfolio",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels"
+      ]
+    },
     {
       "title": "Mirai launches Booking Center: Bringing the full power of its booking engine to hotel reservations teams",
       "source": "Hospitality Net",
