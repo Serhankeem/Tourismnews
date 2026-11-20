@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-20T22:42:47+09:00",
+  "checked_at": "2026-11-21T00:23:13+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -3931,6 +3931,60 @@
       "decision": "exclude"
     },
     {
+      "id": "6b8a93095da8eb81e7",
+      "title": "Your Sales Team Isn't Ignoring Your Strategy. They're Following Their Payslip.",
+      "url": "https://www.hospitalitynet.org/opinion/4134966/your-sales-team-isnt-ignoring-your-strategy-theyre-following-their-payslip",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "307d7dd65ca8128829",
+      "title": "Why the Hotel Website is More Important than Ever",
+      "url": "https://www.hospitalitynet.org/opinion/4135173/why-the-hotel-website-is-more-important-than-ever",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "fdbe83c7423164a19e",
+      "title": "Recast: Will guests trust AI with their travel plans? | with Aaron Miller",
+      "url": "https://www.hospitalitynet.org/podcast/4135619/recast-will-guests-trust-ai-with-their-travel-plans-with-aaron-miller",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "6c3fe5f8b6e6c9cbe8",
       "title": "One Size Doesn’t Fit All: How to Choose Your Winning Google Campaign",
       "url": "https://www.hospitalitynet.org/opinion/4135618/one-size-doesnt-fit-all-how-to-choose-your-winning-google-campaign",
@@ -4233,71 +4287,6 @@
       "id": "6a5a10859d0354c952",
       "title": "Your PMS has a CRM. So what?",
       "url": "https://www.hospitalitynet.org/explainer/4135586/your-pms-has-a-crm-so-what",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "b1b7427dbfadc3e0e0",
-      "title": "Mirai launches Booking Center: Bringing the full power of its booking engine to hotel reservations teams",
-      "url": "https://www.hospitalitynet.org/news/4135584/mirai-launches-booking-center-bringing-the-full-power-of-its-booking-engine-to-hotel-reservations-teams",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hotel",
-              "launch"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "8f754081cd48a90f76",
-      "title": "The Multi-Generational Magic of Fiji's Jean-Michel Cousteau Resort",
-      "url": "https://www.hospitalitynet.org/opinion/4135497/the-multi-generational-magic-of-fijis-jean-michel-cousteau-resort",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "c00470bd1d10d81543",
-      "title": "From Vibe Check(In) to Designing the Feeling Behind a Hotel Stay",
-      "url": "https://www.hospitalitynet.org/news/4135600/from-vibe-checkin-to-designing-the-feeling-behind-a-hotel-stay",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
