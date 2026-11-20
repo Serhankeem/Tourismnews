@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-20T20:27:23+09:00",
+  "checked_at": "2026-11-20T22:42:47+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -3931,6 +3931,168 @@
       "decision": "exclude"
     },
     {
+      "id": "6c3fe5f8b6e6c9cbe8",
+      "title": "One Size Doesn’t Fit All: How to Choose Your Winning Google Campaign",
+      "url": "https://www.hospitalitynet.org/opinion/4135618/one-size-doesnt-fit-all-how-to-choose-your-winning-google-campaign",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "4bf58ac004779f80da",
+      "title": "“Always on”: What happens when the shift ends but the messages keep coming?",
+      "url": "https://www.hospitalitynet.org/opinion/4135617/always-on-what-happens-when-the-shift-ends-but-the-messages-keep-coming",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "bbba730944eb355bb2",
+      "title": "Canada hotels report 10 consecutive months of RevPAR growth",
+      "url": "https://www.hospitalitynet.org/news/4135616/canada-hotels-report-10-consecutive-months-of-revpar-growth",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "4fc50cb4a57ebccac8",
+      "title": "U.S. hotel results for week ending 14 November",
+      "url": "https://www.hospitalitynet.org/news/4135615/us-hotel-results-for-week-ending-14-november",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "70ad4c737348aee014",
+      "title": "Build the hotel your guests want, not the one your technology allows",
+      "url": "https://www.hospitalitynet.org/opinion/4135614/build-the-hotel-your-guests-want-not-the-one-your-technology-allows",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "499879198fd22db05d",
+      "title": "The Caribbean Hotel & Tourism Association Announces 2026 Chief Award Winners, Celebrating Excellence in Caribbean Hospitality",
+      "url": "https://www.hospitalitynet.org/news/4135613/the-caribbean-hotel-tourism-association-announces-2026-chief-award-winners-celebrating-excellence-in-caribbean-hospitality",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "165aa2db36fb8e296f",
+      "title": "PMS Migration: How To Get Connectivity Right",
+      "url": "https://www.hospitalitynet.org/explainer/4135612/pms-migration-how-to-get-connectivity-right",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "db4a2794d732aca030",
+      "title": "Rhodes Market Pulse 2026 - From Scale to Value Creation",
+      "url": "https://www.hospitalitynet.org/report/4135611/rhodes-market-pulse-2026-from-scale-to-value-creation",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "9ed4fd6068ba9aa605",
+      "title": "Kos Market Pulse 2026",
+      "url": "https://www.hospitalitynet.org/report/4135610/kos-market-pulse-2026",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "aeed4cb98e21f64ac0",
       "title": "Leonardo Hotels – new location in Bremen and a rebranding in Freiburg",
       "url": "https://www.hospitalitynet.org/news/4135609/leonardo-hotels-new-location-in-bremen-and-a-rebranding-in-freiburg",
@@ -4068,9 +4230,9 @@
       "decision": "exclude"
     },
     {
-      "id": "8f754081cd48a90f76",
-      "title": "The Multi-Generational Magic of Fiji's Jean-Michel Cousteau Resort",
-      "url": "https://www.hospitalitynet.org/opinion/4135497/the-multi-generational-magic-of-fijis-jean-michel-cousteau-resort",
+      "id": "6a5a10859d0354c952",
+      "title": "Your PMS has a CRM. So what?",
+      "url": "https://www.hospitalitynet.org/explainer/4135586/your-pms-has-a-crm-so-what",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4115,9 +4277,9 @@
       "decision": "publish"
     },
     {
-      "id": "6a5a10859d0354c952",
-      "title": "Your PMS has a CRM. So what?",
-      "url": "https://www.hospitalitynet.org/explainer/4135586/your-pms-has-a-crm-so-what",
+      "id": "8f754081cd48a90f76",
+      "title": "The Multi-Generational Magic of Fiji's Jean-Michel Cousteau Resort",
+      "url": "https://www.hospitalitynet.org/opinion/4135497/the-multi-generational-magic-of-fijis-jean-michel-cousteau-resort",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4136,194 +4298,6 @@
       "id": "c00470bd1d10d81543",
       "title": "From Vibe Check(In) to Designing the Feeling Behind a Hotel Stay",
       "url": "https://www.hospitalitynet.org/news/4135600/from-vibe-checkin-to-designing-the-feeling-behind-a-hotel-stay",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "888a8883ffa44c1861",
-      "title": "Curating Wonder the San Vicente Way",
-      "url": "https://www.hospitalitynet.org/opinion/4135599/curating-wonder-the-san-vicente-way",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "aee9f351cc6e2f27cc",
-      "title": "What Does a Career in Hospitality Mean to You?, England's Tourist Tax Needs a Spending Plan, 52% of Travelers Plan With AI but 2% Book Through It",
-      "url": "https://www.hospitalitynet.org/editorial/4135598/what-does-a-career-in-hospitality-mean-to-you-englands-tourist-tax-needs-a-spending-plan-52-of-travelers-plan-with-ai-but-2-book-through-it",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hospitality",
-              "tourist tax"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "12f6966b22c366cc2d",
-      "title": "If AI Does the Work, Who Owns the Numbers?",
-      "url": "https://www.hospitalitynet.org/opinion/4135596/if-ai-does-the-work-who-owns-the-numbers",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "8caa46c1800e2fafd5",
-      "title": "Know Your Goal. Then Pick Your Channel.",
-      "url": "https://www.hospitalitynet.org/opinion/4135555/know-your-goal-then-pick-your-channel",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "612f6122e64485e165",
-      "title": "Q3 2026 Hotel Profitability Report: What's Driving the Gains?",
-      "url": "https://www.hospitalitynet.org/report/4135564/q3-2026-hotel-profitability-report-whats-driving-the-gains",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hotel",
-              "profit"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "9f0e92fc93330f8109",
-      "title": "HotelData.com Q3 2026 Profitability Report Shows US Hotels Beat Budget as Profits Rise",
-      "url": "https://www.hospitalitynet.org/news/4135563/hoteldatacom-q3-2026-profitability-report-shows-us-hotels-beat-budget-as-profits-rise",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hotels",
-              "profit"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "4ebe86d874e3287abc",
-      "title": "BirchStreet Launches Smart Inventory to Give Hospitality Operators Real-Time Stock Control",
-      "url": "https://www.hospitalitynet.org/news/4135593/birchstreet-launches-smart-inventory-to-give-hospitality-operators-real-time-stock-control",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hospitality",
-              "launch"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "91b0b9bfd4e00221a8",
-      "title": "AI can quote your hotel’s own website and still give guests the wrong answer",
-      "url": "https://www.hospitalitynet.org/opinion/4135592/ai-can-quote-your-hotels-own-website-and-still-give-guests-the-wrong-answer",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
