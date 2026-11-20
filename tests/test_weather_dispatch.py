@@ -30,12 +30,10 @@ class API:
     def __init__(self,mh,ch):
         self.run=dict(id=123,event='workflow_dispatch',status='in_progress',path='.github/workflows/deploy.yml',
                       head_branch='main',head_sha='a'*40,display_title='Market Weather publish '+mh+' / '+ch,
-                      run_attempt=1,repository={'full_name':d.REPOSITORY,'id':1,'owner':{'login':'Serhankeem','id':2,'type':'User'}},head_repository={'id':1},
-                      actor={'login':'Serhankeem','id':2},triggering_actor={'id':2},created_at=(NOW-dt.timedelta(minutes=5)).isoformat())
+                      run_attempt=1,repository={'full_name':d.REPOSITORY,'id':1},head_repository={'id':1},
+                      actor={'login':'synthetic-owner','id':2},triggering_actor={'id':2},created_at=(NOW-dt.timedelta(minutes=5)).isoformat())
         self.permission={'permission':'admin','user':{'id':2}}
-    def get(self,path):
-        if '/actions/runs/' not in path:raise AssertionError('collaborator permission endpoint must not be used')
-        return copy.deepcopy(self.run)
+    def get(self,path):return copy.deepcopy(self.run if '/actions/runs/' in path else self.permission)
 
 
 ENV=dict(GITHUB_ACTIONS='true',GITHUB_EVENT_NAME='workflow_dispatch',GITHUB_REF='refs/heads/main',
@@ -66,9 +64,9 @@ class DispatchTests(unittest.TestCase):
                 projection.assert_not_called()
         self.assertFalse(any((self.stage/n).exists() for n in r.PUBLIC_FILES))
     def test_actual_permission_and_identity_required(self):
-        for identity in [{'login':'Serhankeem','id':3,'type':'User'},{'login':'other','id':2,'type':'User'},{'login':'Serhankeem','id':2,'type':'Organization'}]:
-            self.api.run['repository']['owner']=identity
-            with self.assertRaisesRegex(g.GateError,'github_publish_owner_required'):self.request()
+        for permission in [{'permission':'read','user':{'id':2}},{'permission':'admin','user':{'id':3}}]:
+            self.api.permission=permission
+            with self.assertRaisesRegex(g.GateError,'github_publish_permission_required'):self.request()
     def test_api_unavailable_is_not_approval(self):
         with patch.object(self.api,'get',side_effect=ValueError('synthetic unavailable')),self.assertRaises(ValueError):self.request()
     def test_input_hash_and_manuscript_mutation_are_blocked(self):
