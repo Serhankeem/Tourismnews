@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:16:21+09:00",
+  "generated_at": "2026-11-21T08:14:05+09:00",
   "mode": "live_rss",
   "decisions": [
     {
@@ -8,7 +8,7 @@
       "tier": "korea_direct",
       "category": "여행산업",
       "new_category": true,
-      "age_hours": 17.7,
+      "age_hours": 19.66,
       "published_at": "2026-11-20T12:34:24+09:00",
       "basis": [
         "authorized_newsroom",
@@ -23,7 +23,7 @@
       "tier": "korea_direct",
       "category": "인바운드",
       "new_category": true,
-      "age_hours": 21.08,
+      "age_hours": 23.04,
       "published_at": "2026-11-20T09:11:30+09:00",
       "basis": [
         "authorized_newsroom",
