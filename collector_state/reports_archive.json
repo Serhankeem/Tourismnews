@@ -1,7 +1,7 @@
 {
   "version": "0.5",
-  "updated_at": "2026-11-16T08:05:27+09:00",
-  "count": 138,
+  "updated_at": "2026-11-23T08:13:15+09:00",
+  "count": 147,
   "reports": [
     {
       "id": "2960d69f93fb9a93cf3fa27e",
@@ -24,12 +24,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-autumn-winter-2026-2027/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "5c7160158550e72862b286ee465a542b59f469f0619349e5d1e8e0c93f4e2881",
+        "sha256": "f19e2fc430cbffb384d974bd849f80bc44a9dfbaf3c3425b9353be81fd1b1bcf",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-11-16T08:05:27+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -42,7 +42,11 @@
         "noncommercial_only": true,
         "body_pdf_images": "not_authorized",
         "basis": "Official publicly offered research publication catalog with ordinary archive pagination, linked report headings and first-publication metadata. Bibliographic references only; no report text/PDF/images/figures or catalog descriptions reused. Public catalog/robots and privacy/copyright notice reviewed; no automated bibliographic-access prohibition found. This is a limited metadata indexing assessment, not a content redistribution licence."
-      }
+      },
+      "aliases": [
+        "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-autumn-winter-2026-2027/"
+      ],
+      "versions": []
     },
     {
       "id": "ffb54a6ff3ef94875034be24",
@@ -65,12 +69,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-trends-prospects-q3-2026/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "beb0ace0a9a9a978229598684c55783688a4e411e69780e224c9b78503feb267",
+        "sha256": "aaaeea975f48d10a4d72cccbe4246531c5c0340b52b9bd9dba0b208bfd6c5161",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-11-09T07:50:14+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -242,12 +246,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/long-haul-travel-barometer-3-2026/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "f2189cb4f2801cb5001afec9e9395ac80ac65f5f050e812da841feeea518a0bc",
+        "sha256": "b7613684cdd6f5cfd72dfe7cb0d81a59383a7e27433e99150584ccfeb0671bb7",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -330,12 +334,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/proof-not-promises-updated-guide-helps-tourism-and-events-industry-navigate-new-eu-greenwashing-rules/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "d16d7b0d74c7ec1a92d864785fbc38e539b044370c72d5a87b8c3e5708088217",
+        "sha256": "c11abd51b2e6c80c403d35fc42d5c1268578b0503242bbe7dceca617a0c35b39",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-11-09T07:50:14+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -1392,12 +1396,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-trends-prospects-q2-2026/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "da80ed42a9b78bdd98640ad963f3df389607f89cf7630224774d270a92df1314",
+        "sha256": "54ea08499dacaaa1ec74138cfde96d1fcdb32ba71f4a3790c389b0978b965448",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -1481,12 +1485,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/snapshot-resident-satisfaction-with-tourism/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "b7bf4f2b1f7dbeed0c37b3d95036378ddcb3f875c9602fef4d5ded8732b377cc",
+        "sha256": "c5c8539bf02d29ed38e8b9bb94ee27a7bd3991658216ddbaa6b0edc7a9ac012b",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -1570,12 +1574,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-summer-autumn-2026/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "f747ee41804236ae262abcab6d2d4dc1d62a0eafc97530d1588144c5c7ffb233",
+        "sha256": "49368ae65d169daa1611326e6be142b19935366c00cae82ea383a8c1422c146e",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -1772,12 +1776,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/long-haul-travel-barometer-2-2026/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "1cedf96dabaa5676b5cd0133a9a51c0c92efb406531381965924e96f4eb6c871",
+        "sha256": "3a7d6551e172bcbcc09e51c0cdcb2227e3c68a7d3bdbcff224119df7964ef6d6",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -2082,12 +2086,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/proof-not-promises-a-practical-guide-to-the-eu-empowering-consumers-directive-for-destinations/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "10810d7ffd1ef2407be7eedbb308a8c2e5ec9342d44f480d599a71fd4ef411e6",
+        "sha256": "af3ed72cc409ad8657c4f4bef75b9a14574fd49b042b30a38aefe4e764ff62eb",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -2232,12 +2236,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-trends-prospects-q1-2026/",
         "catalog_url": "https://etc-corporate.org/publications/",
-        "sha256": "d61cd2c14605735af213272360e2ed1d3f1ada791deb8f7df1e9c5ce29fdf312",
+        "sha256": "53202107821271a9270fd0b371c069dbcea783b35a1b3d2b0645372e13591c81",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -2411,12 +2415,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-spring-summer-2026/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "a5b3fb2c7bda8ef22e769eded82377130fc5666891911e2f4beaca791c5aa7c2",
+        "sha256": "045ccc4345bdbc8eaa022c0717c3a602518e89f098572a8d0ded23e4e7161abe",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -2497,12 +2501,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/understanding-european-conscious-traveller-segments/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "950a635f4707943b421150c6a4af68015f3c7864c91438f16f50ea208c124810",
+        "sha256": "e7933c2fd60a56221b677e3861146055f63390914d265cf871972c6d30bcd433",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -2776,12 +2780,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/assessment-of-responsible-travel-behaviours-of-long-haul-travellers-to-europe/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "8f455ab722be62daf21937bb0d4b03a09ac3ca09a33878bb510a1a4342b4e4d6",
+        "sha256": "97f3853900c493fe641d7ffbe3ecd8fea79ef303d8321bb649ff93fc7f2c100b",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -2952,12 +2956,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-2025-trends-prospects-q4-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "569f4a179e6947e0c3ceb2563d303cb5af5f4cfd5a816eb7c36892e18aa7e363",
+        "sha256": "275cc69f7b0ef5aaab57361defea1f42c83e5624c578178d8bf3c4331d6c5f7f",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3042,12 +3046,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/long-haul-travel-barometer-1-2026/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "80bdc4dee0de0e346c0ac691431771743a90cd44eb069935f3c5805562607f69",
+        "sha256": "c45df4e9d4b8aa239f55616e91ef42429754121a761cb59caf74ac10eedb600d",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3373,6 +3377,379 @@
       "versions": []
     },
     {
+      "id": "6dc5cc48cb672fadbde26bee",
+      "source_id": "kcti",
+      "provider_id": "e7a13293d5db446e9a6d331e103ae2e7",
+      "publisher": "한국문화관광연구원",
+      "title": "K-뷰티 관광 현황 및 정책 추진 방안",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e7a13293d5db446e9a6d331e103ae2e7",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e7a13293d5db446e9a6d331e103ae2e7",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "75b51ee09eabf53e70ee3f4fc8090003d1345d376da5e4c33b4b4c0382a9ef90",
+        "kogl_type": 4,
+        "authors": "이원희,김진영"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "9beb2e177f4e42e5f3f43ec0",
+      "source_id": "kcti",
+      "provider_id": "63e66313987042018a5231036ec8313f",
+      "publisher": "한국문화관광연구원",
+      "title": "항공 접근성 변화가 지역 인바운드 관광수요에 미치는 영향",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=63e66313987042018a5231036ec8313f",
+      "report_type": "정책연구",
+      "category": "항공·교통산업",
+      "keywords": [
+        "항공",
+        "인바운드",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=63e66313987042018a5231036ec8313f",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "8bf96a6ba3de5f840cb2a25e3a723c846d233007a2deb0fcbb564c6bf2aa7673",
+        "kogl_type": 4,
+        "authors": "류광훈,김형종,이성빈"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "75a262a3dcfbabfd8545e567",
+      "source_id": "kcti",
+      "provider_id": "b40d46926dc7434988114ee5544e9bcd",
+      "publisher": "한국문화관광연구원",
+      "title": "지역관광산업 활성화를 위한 관광기념품 육성 방안",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b40d46926dc7434988114ee5544e9bcd",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "관광산업",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b40d46926dc7434988114ee5544e9bcd",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "a26fe10d91ee3061555e52533d09f1dac8b6dfc8b1ebfb5992500ff46dd1316c",
+        "kogl_type": 4,
+        "authors": "김윤영,서예빈,윤설민"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "7d24a2c67de516fb111190eb",
+      "source_id": "kcti",
+      "provider_id": "4b6cc1a62bc84c0cb231c597bfd11bf3",
+      "publisher": "한국문화관광연구원",
+      "title": "지역 간 연계 협력 관광사업 실태와 활성화 방안",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4b6cc1a62bc84c0cb231c597bfd11bf3",
+      "report_type": "정책연구",
+      "category": "관광시장 전망·트렌드",
+      "keywords": [
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4b6cc1a62bc84c0cb231c597bfd11bf3",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "0deb219dc5ce8213254a26565886c17d96da3e212a809f4ca19223780efee516",
+        "kogl_type": 4,
+        "authors": "김영준,김성윤"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "44391d2845adf55487c65ded",
+      "source_id": "kcti",
+      "provider_id": "4c86eab28212424ba612088cdbea75e2",
+      "publisher": "한국문화관광연구원",
+      "title": "신관광산업의 동향과 정책 대응 방안",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4c86eab28212424ba612088cdbea75e2",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광산업",
+        "동향",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4c86eab28212424ba612088cdbea75e2",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "3991216dc56f75db5548ec1ede3510b4142cbd32de184b943f06742568db2711",
+        "kogl_type": 4,
+        "authors": "전효재,송수엽"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "f9a0ecbe853ba5461b772fd4",
+      "source_id": "kcti",
+      "provider_id": "6342fd5092f849abb065b3658d71ba6f",
+      "publisher": "한국문화관광연구원",
+      "title": "방한 중국관광시장 분석 및 정책방향",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6342fd5092f849abb065b3658d71ba6f",
+      "report_type": "정책연구",
+      "category": "국제관광·인바운드",
+      "keywords": [
+        "방한",
+        "정책",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6342fd5092f849abb065b3658d71ba6f",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "a1907c98ea7fe5c83bc4bb5924148f27a68d5854cdf617f828a2a7db36091b18",
+        "kogl_type": 4,
+        "authors": "최경은,김형종"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "9139635c47315eb393b46fde",
+      "source_id": "kcti",
+      "provider_id": "f1900c930311481583f6a939d0d7402a",
+      "publisher": "한국문화관광연구원",
+      "title": "방한 외래관광객 유입의 지역 경제 효과 분석",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=f1900c930311481583f6a939d0d7402a",
+      "report_type": "정책연구",
+      "category": "국제관광·인바운드",
+      "keywords": [
+        "방한",
+        "경제효과",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=f1900c930311481583f6a939d0d7402a",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "da9dd9500c77cbb70072102a2cbc0c996aea6a742b3fc0b4df6741880c8d00bd",
+        "kogl_type": 4,
+        "authors": "강지수,김동현,조장희"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "317497189209ce39ac53b44e",
+      "source_id": "kcti",
+      "provider_id": "d3bbab6a9d4649dbad5beac4e8656c1d",
+      "publisher": "한국문화관광연구원",
+      "title": "관광단지 민간투자 활성화를 위한 정책방안",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=d3bbab6a9d4649dbad5beac4e8656c1d",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=d3bbab6a9d4649dbad5beac4e8656c1d",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "d32a85ec83a52f97a0f757958ef856bcc11f706116b54ac02c80c18dc90b2f77",
+        "kogl_type": 4,
+        "authors": "진보라,박주영,박상곤"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
+      "id": "4f4e15238b1e88cda1a53cfa",
+      "source_id": "kcti",
+      "provider_id": "b69de0133c3d4776805f366c67edf3f3",
+      "publisher": "한국문화관광연구원",
+      "title": "5극3특 국가균형성장전략과 초광역권 관광정책방향",
+      "published_at": "2026",
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b69de0133c3d4776805f366c67edf3f3",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광"
+      ],
+      "access_type": "무료 공개",
+      "region": "국내",
+      "date_kind": "publication_year",
+      "date_precision": "year",
+      "metadata_evidence": {
+        "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b69de0133c3d4776805f366c67edf3f3",
+        "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
+        "sha256": "4f920ee19099bd836956bef83d40bf9510d9c21be45cd8260917d7f91b321fb9",
+        "kogl_type": 4,
+        "authors": "윤주,강현수"
+      },
+      "first_discovered_at": "2026-11-23T08:13:15+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
+      "discovery_method": "automatic",
+      "access_method": "official_catalog_post_then_landing_get",
+      "verification_status": "verified",
+      "publication_status": "published",
+      "publication_policy": {
+        "status": "approved",
+        "scope": "bibliographic_metadata_only",
+        "terms_url": "https://www.kcti.re.kr/web/intropage/intropageShow.do?page_id=4c5529fca34a42939ffef7c67de46a40",
+        "checked_on": "2026-10-29",
+        "noncommercial_only": true,
+        "body_pdf_images": "not_authorized",
+        "basis": "Official public tourism research catalog; require a per-record KOGL marker, attribution and noncommercial unchanged-title scope. No PDF/content copy. Use official publication year as year precision; never replace it with the separate 작성일."
+      }
+    },
+    {
       "id": "5c765b3fb3fd9e6a575ba5f4",
       "source_id": "phocuswright",
       "provider_id": "/Travel-Research/Research-Updates/2025/Phocuswright-Research-Roundup-2H25",
@@ -3611,7 +3988,7 @@
         "authors": "김명현,한익현"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3651,12 +4028,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-2025-trends-prospects-q3-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "68e147a05c5a41315dfdc8a8c355e2db6e700fbd1a282b174436ac6855af5894",
+        "sha256": "82f0da5fc0d0ed3bf9a64232b8bb18f749692e3a350104e6ae70ae0b07ed1427",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3741,12 +4118,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-autumn-25-winter-2026/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "c4aff2c3b6936c8f225ba9580a8e76b69f1a848716168f6651685165f4cd4560",
+        "sha256": "d42a4bc0ef04e3dd5a1f8c1ff4897b49c056a477391565968d3257f6b0f5e9cc",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3790,7 +4167,7 @@
         "authors": "김명현,강동운,손정웅,김소연"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3830,12 +4207,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/long-haul-travel-barometer-3-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "2b08b67dd141e09cf26ba9404e3b4d50b3f50ae0e97feb6034256b7cf7623ccd",
+        "sha256": "011d50874725e8bcd8a11c3c8dc65a64f2c84b65f6c5983aaaf1a6c286e72444",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3874,12 +4251,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/futureproofing-european-tourism-through-scenario-planning-and-strategic-foresight/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "035ac5074140615b620a70e6820fc3fab6ec98f34aeea6f2abb0b98226380958",
+        "sha256": "5d5e9b8006719fd0e40da101e3a99db58a78ec2e89907b8c57b36481e31e7ad2",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3919,12 +4296,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/artificial-intelligence-ai-in-tourism-assessing-and-supporting-ntos-research-marketing-operations/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=2",
-        "sha256": "fe1618d1b815f6d531df28f9b3e240ae7f17d72e23f7d0bef5637fb2f73308eb",
+        "sha256": "c8c65f60d5ebbaa45d26a6dac1c6a4a55b8875068482fa07d9facd9cfadffb71",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -3982,12 +4359,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-summer-autumn-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "e599b700256c943dc34212f77086cc38381901f62fb89f4e820f6028b8cdb42b",
+        "sha256": "16f0a66ae85013c453eac42b51d01ebd9d2e0b7bddceafe4b87a89a6933efbbb",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4027,12 +4404,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-2025-trends-prospects-q2-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "fcb2854b638ea292d8d85e51585ff744ad4ddde59d35d5de8b1ae8b1424c6d76",
+        "sha256": "3dd1f1c6310b94741d1ebe3745331e51823cbda23ce9ae4dfbfd2133c69b7003",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4072,12 +4449,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/long-haul-travel-barometer-2-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "5a551e2e4fdb5571b48d664c8fc93bcee2dcb8c80e6bb123129cf5109b5e5d58",
+        "sha256": "8a778b82714f1463cae8bc0aab13defe08d1b92eb9c983168ae22e34383db341",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4114,12 +4491,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "3bdc73c2699516992b17640f79128e42dc145e9ae38aac1e335ff6cc8fcea157",
+        "sha256": "c5133760620eb8d9b769a9a8e5c7e2068c86dce5836345ab12b82ea1110d194f",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4159,12 +4536,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-2025-trends-prospects-q1-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "e453299f3410a93dc9a20d29bb4f9b44ebad43120103ad0483e28e6275b65b80",
+        "sha256": "e81227007dd97192061dc91421267f1b53f3ada87e2324ad5e97711987ea263e",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4204,12 +4581,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/monitoring-sentiment-for-intra-european-travel-spring-summer-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "9552ecad6deba5c8286a263b200d931bcd962c5f3c24ebe0de8948c177d06f25",
+        "sha256": "e7cbcee341a5c4cfd86f0280377956ad6de2e4ed1fba93141f737479af72d105",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4249,12 +4626,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/european-tourism-2024-trends-prospects-q4-2024/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "b00be672e1016903f0d4c4b3b1a99fee10f5599752d2fa4b0447047983574442",
+        "sha256": "db7adedd4b726b4983ac9e9b2a7ca17f3a7030fd25753e2d6b19063876b88956",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4294,12 +4671,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/long-haul-travel-barometer-1-2025/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "c808a4d1bc9363f1f28b4b976d6c4efb9ab4a5e0b46b8d78233043dd61979d69",
+        "sha256": "ca7d5781329d81ccca0ad4f946e3c4cab336682ae3237f1151a0b4f61d043e3a",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4338,12 +4715,12 @@
       "metadata_evidence": {
         "url": "https://etc-corporate.org/reports/roadmap-for-national-tourism-organisations-towards-climate-action-in-destinations/",
         "catalog_url": "https://etc-corporate.org/publications/?wpv_view_count=277&wpv_paged=3",
-        "sha256": "4937897cf57b2860f852f294f88e80da6034f976196b145676bae718da4a9ec1",
+        "sha256": "52a926d15d128fe253be1e5384dbb986c3e9fff319b6eecfbc0290ce103d43de",
         "kogl_type": null,
         "authors": ""
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -4382,12 +4759,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=03fdec5804b945d7aab5e9694cc1c2a2",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "533a84f3414a2f2af65d428a9c50bcd3b7f536b87fab5d8b6e7b661359e51f59",
+        "sha256": "d5a6bad13cf6a0b3fc33134ba2df1b3fd2a27b5bedd274b406ab5dcb2449a2c2",
         "kogl_type": 4,
         "authors": "강지수,김형종,류광훈"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4427,12 +4804,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=cd700bedb4e344f0bad1e3e3b06e929b",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "5d55fe5c1116781981944611f922553136b2d8197acb7c10fbdaa43ec47411f3",
+        "sha256": "5555384e3a2810db4bc8104f267fc3f1c43b20397774b249af6a9697e0b456f4",
         "kogl_type": 4,
         "authors": "오훈성"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4471,12 +4848,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=1b76f17ef0784ce8bb8297ab3d4501a8",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "1cc6e17a05c75ff5823704887af26590c5e1a5d812a70d6210f22bec9a3135d2",
+        "sha256": "17056baa37a028e53e2cb245474bf226273494983f845b9364b0c22d8c1e5a6c",
         "kogl_type": 4,
         "authors": "전효재,송수엽,이영주"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4516,12 +4893,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b350f1ce9c594ce488126f0e93a9e4b7",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "42eb440a3375c9675e6720eb288eaa8d31d3bc275f37d429c33a44051dd8bfa6",
+        "sha256": "ff5535e8fe06ce99b3e10f0a11d868eecaafa6aa4eea1d0c602239cd711bf71e",
         "kogl_type": 4,
         "authors": "강지수"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4561,12 +4938,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=80c9f9c5ec9a45a6a9f77702aa269126",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "1f88cd6cb03bd29c658984c12a112b3158cd22a505ba63d387b72b06940c6c44",
+        "sha256": "ffceaa999120c5d85700877b5170efc3a2780bf3cd2018eb07dfc1149409c389",
         "kogl_type": 4,
         "authors": "김현주,조아라,장윤정"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4605,12 +4982,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e55e0627bb2e4d94af3e1e766fbd1131",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "d43e30f6fbe4050b741bdbae4b00e65f7656b981b5d3016d648ac36607c75f50",
+        "sha256": "b62ad42abb84c8bc0ff0e311962f1b2b380a21f4b358acc9e672ada6b5ecc98a",
         "kogl_type": 4,
         "authors": "김윤영,유지윤,한희정,김하니,양은정"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4651,12 +5028,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=9883a206aa4a4f65a6d275477a7acbd1",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "83ab31a5fbd7a63b1a7af08a2adce1de4374aca54ac156d8c1c8202440ca8b88",
+        "sha256": "f5e3ca13d96f1e09055b5d4b0eba4c87c3df1cecee3831b0359688b7aeb7b8a3",
         "kogl_type": 4,
         "authors": "안희자,이성빈"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4697,12 +5074,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=28339ad0728b4954b3e94625767c6073",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "8cb494f2ff0626287084c240848154d07b972f18c0a5d6c12f8679fbc8006755",
+        "sha256": "2010a31d4bc5c470d1cfe9fb198b1eb89b32fb22904d45afed18f310d30b0962",
         "kogl_type": 4,
         "authors": "류광훈,김형종"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4742,12 +5119,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=867adbbded5a46cfbde081a0175eca0c",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "63a645618170d7186cd2928a5b6c1a8cbb9a6947230021603831479115db5d50",
+        "sha256": "e24911119ca3a4c0c015d51820e7b68de94bf6f80fbd026e78dd60c74183ec57",
         "kogl_type": 4,
         "authors": "정광민,서예빈,변재문,이순학"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4786,12 +5163,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=fb24f6e743564a79b3fa8737458f7756",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "82c40f677269df013c757b6c363e9c89bc68e58b82bf2c4771970651040d681b",
+        "sha256": "a21d06193ec9e19380354be4c1357cdeddec42b40bc925a14cb5c2a792d0a46c",
         "kogl_type": 4,
         "authors": "강지수,류광훈,마은성"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4831,12 +5208,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=00cb48afd8cc4288822f76ce618fc96f",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "583c4e43fc392d88d0d5c60d1b8af68594174a7f6aa5b3f7689499f69d4a42d6",
+        "sha256": "78d1fbc9519100c116cadee9c6c5166c50a05e8c6953de6439956573ede5a4d8",
         "kogl_type": 4,
         "authors": "윤주,손신욱"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4876,12 +5253,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e7989626006b4c199eea94e3572ce49c",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "58eb291441c9bc6accf52a425663d144dc934d3bf774b5b85087dd50e2569d10",
+        "sha256": "206ed804f44a7f8624954a09492e903c5841a9b51e1a73546b71fdcf498d1114",
         "kogl_type": 4,
         "authors": "최경은,김형종"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4920,12 +5297,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=bc62f26dbd8a4474ae9630e263830329",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "c5485427f6d503c8fd9edd27473120be1c0f26a5f81ead74159e05e6ad04abfc",
+        "sha256": "b0841acbc2ec79d6d1da00782b1e9225ea57867cafc7fc5c4f2e077c51553cf8",
         "kogl_type": 4,
         "authors": "박상곤"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -4964,12 +5341,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=0d5947005c484bac8d9b8954e9af9cb4",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "bafd2f6255730535d288da77fbb65ed40e888dccc56e001b5e76f80a687382c9",
+        "sha256": "9f8f7f0f11d1778b98077670de8c636a3e7745f5f025e4a1a97d0d9f770d430a",
         "kogl_type": 4,
         "authors": "최자은,김성윤"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5008,12 +5385,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=126ba7e61050429b93456958f8e18569",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "f1b3493f91bd4edf91c70b0975c7ed4714384cc48dfb9af5f8e2365ea498968f",
+        "sha256": "e9d29c98477b7451eef434b9454f9ac7156640b3314f4f79abd28c60d11b1221",
         "kogl_type": 4,
         "authors": "진보라,김진영"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5052,12 +5429,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=9ff42c3f16dc49efbe5eecba2ce6c48d",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "443276a2171dd3642ee9f924c8eccdfd7228de77caf3df848510c15dfe7a1062",
+        "sha256": "e99e8f5233193674f772a685e15d336f37d33ccf1fa81fd534772961dd093995",
         "kogl_type": 4,
         "authors": "김영준,송수엽"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5096,12 +5473,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=5262e35ee31d4ce281e6dbdd60b3df66",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "14806d83be8e3a5ceeac5bbeedd3f098b1c2057b7040f3f0241ea2e98f1ef05a",
+        "sha256": "150e6a54dbe438579bab5035f5ab6c702a47a6eb4a5ccb0f534843aa3862f69f",
         "kogl_type": 4,
         "authors": "전효재,송수엽"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5143,12 +5520,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=85ae19fbba9b4defa60f6ded3c2ec06e",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "4cc00196a469996f6fc273d1894a3602d88c1a3939c6fed2bfbd35fce902daba",
+        "sha256": "9f9a0648d4b8bc22b68f0f3641fbbd6248d7d04edbcd0d991235bcf41a446d9d",
         "kogl_type": 4,
         "authors": "유지윤,정광민"
       },
       "first_discovered_at": "2026-10-29T13:51:10+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5193,7 +5570,7 @@
         "authors": "백승한,안미진"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -5282,7 +5659,7 @@
         "authors": "백승한,박진서,손정웅,정수진"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_get_then_landing_get",
       "verification_status": "verified",
@@ -5386,12 +5763,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=7c300f15d98944c594be08d203b27a5d",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "bfe332cce5e5a97029dcc1cf415492a01e6bc01079d133357a3776aa69d053d3",
+        "sha256": "51b74c5b39a7d2d4300a515f1879fcaec653f9b2bf8ab3ce0df7b8cb1b96be14",
         "kogl_type": 4,
         "authors": "유지윤"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5430,12 +5807,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=483f685cab574ec4b28aaff4a85769ff",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "390d223afc21fe25ee4c3042d4468a84b3e6327105e90e614812701607104864",
+        "sha256": "683a547a9116f771329fc80f5c8bad2b6b73df4057aabc095e3880ad334808b0",
         "kogl_type": 4,
         "authors": "김윤영"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5475,12 +5852,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=5c326faca40b4b01826867e65ac362ba",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "f54a2387586f9101c717249e5888f73e3aad3b6c04d2387877f0d619d3a165c1",
+        "sha256": "2711453daf866f29505e0c1ceec5e4fb15f4ba41d7efd8024db24a6cdeff63b6",
         "kogl_type": 4,
         "authors": "전효재,김윤영,김유림,송재일,이영주"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5520,12 +5897,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=aafe2dfd57004fbdbdf97a39c70b1d8c",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "39cbd405002ea96a79eb88e8f9df0518a242c196d1f6a45d95134a2c18637f27",
+        "sha256": "66ce1c3d1c54b981d406d984c6d368932444752e49ee60ee462c94bffe096f33",
         "kogl_type": 4,
         "authors": "김현주,윤주,이성빈"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5564,12 +5941,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=dc55e2603daf40a1bd29f8d74d1a2b89",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "38f6305e5ac104d95e3f4182d6426791217779da9b3b95e6bb6be13754d9fc4c",
+        "sha256": "1c0b47b031a6a9bf8909f391f090636832cc0486dd13630cd61c891e07247100",
         "kogl_type": 4,
         "authors": "김성윤"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5609,12 +5986,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=f6d64fa2f96046c0834bdf8606d0f37e",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "3b2f3a902e5decb5b01b665595038770682690df0796d8fb734663141530976f",
+        "sha256": "adf22b1bb6fe2abd869e7ba470b9f3fe0b27ec623993cb816da7323e70c54f01",
         "kogl_type": 4,
         "authors": "류광훈,김동현,이성빈"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5653,12 +6030,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=63aa859891484687b9c17a6f28d62558",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "058c7e28f179441a86a5e15555697f1ef910c2c65d9a9360037b015f452c5cf6",
+        "sha256": "8ee3ca1506c7bfd71326aeb223b5ccc0b2f7dd5f2d1049cc6bce2f54f158d3d9",
         "kogl_type": 4,
         "authors": "김영준,손신욱"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5695,12 +6072,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e6b37acf8f374bb583322f038ff9a069",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "eec0fd43c264f78f93e16dd008dfcbebaf60217bb51bba12f389ac631ab909f7",
+        "sha256": "7ee326712071881aac58014b58d2637e013c26caefa4d7b41cc870aee5ea80f6",
         "kogl_type": 4,
         "authors": "최자은,정혜진"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5742,12 +6119,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=0af56c2a557f47769237411f839ca1b2",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "fb68606c6ca81f5f0f5134b161222f4348ffa0b9c39039caec7e68c75d0a56ed",
+        "sha256": "03e42c8d26dbaddba1b193544aa945103929b3572cc7c70bf28d00dbf14202e1",
         "kogl_type": 4,
         "authors": "안희자,한희정"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5786,12 +6163,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=5ba66c80ac6a4912b8714e129ea13b9e",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "0179c80f3dd496ca06ccbc85b14178d94242d11a7bfbf0e4b21c9832e6ea33a3",
+        "sha256": "cc771c964646c123fb884aea2f4602932b24f34914217c39ce930ba3192ce0ee",
         "kogl_type": 4,
         "authors": "윤주,진보라"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5831,12 +6208,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=ad5ec490885c4f9da76c8dea8ab3f38a",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "178639f1b9ebeb45a5d1cf8ef136e4d19aa8e8c996bf4f648652cb3b1817e96b",
+        "sha256": "38391112adf9facacd4ea710da739fa40164c1033d15f79cadfa778ca4e6642e",
         "kogl_type": 4,
         "authors": "김현주,남승희"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5876,12 +6253,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b86ad65832b44fc59c5e9f72215ae110",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "edbce7da6374706032f81f574403fa40d7f801f1a1c4ec6d098005a697d0b949",
+        "sha256": "2df074d53d93aba485a3c163a91153301572e9a68b18c199c74e77725b11abd9",
         "kogl_type": 4,
         "authors": "류광훈,김유림,김지훈"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5920,12 +6297,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6f2557ae5f3b43f6926f4904693ee391",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "fb5834910890f00450ddce5395c58b0cae035af8554206d3a56ead9f9e04860e",
+        "sha256": "53665ecdd500653142eb61a71f3672643556f3b25cc7d10c799baeb89529561f",
         "kogl_type": 4,
         "authors": "유지윤,송수엽,권혁진,문유진"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -5965,12 +6342,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6aabe0424fd74cecaa34ddda20e0f636",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "814d17bfe681b92a9810574d013c336830d5e42135563063ea2859f307355baf",
+        "sha256": "4c8a8a2022a859a36ce64477d193e5651ec0f6ca3606a542d902624b42957c80",
         "kogl_type": 4,
         "authors": "김형종,고강혁,박상수"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -6009,12 +6386,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e5cfabf6bc014d6585c495f0a9095aa0",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "d884e07b5d3e2d47558dade0e3a699d17a9d713c4384a480aa85cd31a72603fd",
+        "sha256": "0235e0184de1c8b542d727b5773110b03c2bf25116c7d0a5185be21b0893d1c7",
         "kogl_type": 4,
         "authors": "박상곤,박주영"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -6053,12 +6430,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=2ab6bb49bb0f431f9134e777224f89ea",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "a5df2e55ec966ac58d257813dc52709f74c82b7075528703fe7dc2ae85ae41a6",
+        "sha256": "c0f1385d0d5176764db291b5b74f38bf1290d683bb02ebdac4e80eeb38dff3d3",
         "kogl_type": 4,
         "authors": "이성빈,류광훈"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -6098,12 +6475,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6d3626b633ce4364bb7db6eb5f8cd065",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "1dab7d12287e90b0e45199d821796bb70ab6fdbf1123a8e74f78b78bfc60cc48",
+        "sha256": "2a216b9af35f4dd64d7307bf50221ed689debc4356c34c2a48085bd74617f5c2",
         "kogl_type": 4,
         "authors": "한희정,송수엽"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -6142,12 +6519,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=a816344d672942218bd699fab66bcac2",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "b2f2d295b11ec66d000d8ceb08d266cda7bfae6200a11a3eebc1d9b73025381c",
+        "sha256": "86f8122572f7fea444115cc410bb1cb7a0db3b0c76f18a4b0c9ad6c1d4d52200",
         "kogl_type": 4,
         "authors": "송수엽,손신욱,김동한"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",
@@ -6187,12 +6564,12 @@
       "metadata_evidence": {
         "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4b2c8ad78b5941e984a67686543b33c0",
         "catalog_url": "https://www.kcti.re.kr/web/board/boardContentsList.do",
-        "sha256": "f553a6ad03885232943857c26e1bfcbed627e59948c849a28a74a5c57b97b4c4",
+        "sha256": "2ba3d45b64f117681fdf03d72f07b740663ae45939b1640ca5baa0e09efd90a2",
         "kogl_type": 4,
         "authors": "김형종,최경은"
       },
       "first_discovered_at": "2026-11-02T13:18:04+09:00",
-      "last_verified_at": "2026-11-16T08:05:27+09:00",
+      "last_verified_at": "2026-11-23T08:13:15+09:00",
       "discovery_method": "automatic",
       "access_method": "official_catalog_post_then_landing_get",
       "verification_status": "verified",

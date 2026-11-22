@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "mode": "verified_official_metadata",
-  "generated_at": "2026-11-16T08:05:27+09:00",
-  "count": 138,
+  "generated_at": "2026-11-23T08:13:15+09:00",
+  "count": 147,
   "reports": [
     {
       "title": "Monitoring Sentiment for Intra-European Travel Autumn & Winter 2026/2027",
@@ -924,6 +924,127 @@
       "keywords": [],
       "url": "https://www.phocuswright.com/Travel-Research/Research-Updates/2026/26-data-driven-insights-to-make-your-organization-smarter",
       "access_type": "미확인"
+    },
+    {
+      "title": "K-뷰티 관광 현황 및 정책 추진 방안",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e7a13293d5db446e9a6d331e103ae2e7",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "항공 접근성 변화가 지역 인바운드 관광수요에 미치는 영향",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "항공·교통산업",
+      "keywords": [
+        "항공",
+        "인바운드",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=63e66313987042018a5231036ec8313f",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "지역관광산업 활성화를 위한 관광기념품 육성 방안",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "관광산업",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b40d46926dc7434988114ee5544e9bcd",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "지역 간 연계 협력 관광사업 실태와 활성화 방안",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "관광시장 전망·트렌드",
+      "keywords": [
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4b6cc1a62bc84c0cb231c597bfd11bf3",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "신관광산업의 동향과 정책 대응 방안",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광산업",
+        "동향",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4c86eab28212424ba612088cdbea75e2",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "방한 중국관광시장 분석 및 정책방향",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "국제관광·인바운드",
+      "keywords": [
+        "방한",
+        "정책",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6342fd5092f849abb065b3658d71ba6f",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "방한 외래관광객 유입의 지역 경제 효과 분석",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "국제관광·인바운드",
+      "keywords": [
+        "방한",
+        "경제효과",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=f1900c930311481583f6a939d0d7402a",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "관광단지 민간투자 활성화를 위한 정책방안",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=d3bbab6a9d4649dbad5beac4e8656c1d",
+      "access_type": "무료 공개"
+    },
+    {
+      "title": "5극3특 국가균형성장전략과 초광역권 관광정책방향",
+      "publisher": "한국문화관광연구원",
+      "published_at": "2026",
+      "report_type": "정책연구",
+      "category": "관광정책·산업경제",
+      "keywords": [
+        "정책",
+        "관광"
+      ],
+      "url": "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b69de0133c3d4776805f366c67edf3f3",
+      "access_type": "무료 공개"
     },
     {
       "title": "Phocuswright Research Roundup 2H25",
@@ -2059,6 +2180,42 @@
       "kind": "official_page_first_publication",
       "precision": "day"
     },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e7a13293d5db446e9a6d331e103ae2e7": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=63e66313987042018a5231036ec8313f": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b40d46926dc7434988114ee5544e9bcd": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4b6cc1a62bc84c0cb231c597bfd11bf3": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4c86eab28212424ba612088cdbea75e2": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6342fd5092f849abb065b3658d71ba6f": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=f1900c930311481583f6a939d0d7402a": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=d3bbab6a9d4649dbad5beac4e8656c1d": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b69de0133c3d4776805f366c67edf3f3": {
+      "kind": "publication_year",
+      "precision": "year"
+    },
     "https://www.phocuswright.com/Travel-Research/Research-Updates/2025/Phocuswright-Research-Roundup-2H25": {
       "kind": "official_page_first_publication",
       "precision": "day"
@@ -2313,6 +2470,42 @@
     }
   },
   "attributions": {
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=e7a13293d5db446e9a6d331e103ae2e7": {
+      "authors": "이원희,김진영",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=63e66313987042018a5231036ec8313f": {
+      "authors": "류광훈,김형종,이성빈",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b40d46926dc7434988114ee5544e9bcd": {
+      "authors": "김윤영,서예빈,윤설민",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4b6cc1a62bc84c0cb231c597bfd11bf3": {
+      "authors": "김영준,김성윤",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=4c86eab28212424ba612088cdbea75e2": {
+      "authors": "전효재,송수엽",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=6342fd5092f849abb065b3658d71ba6f": {
+      "authors": "최경은,김형종",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=f1900c930311481583f6a939d0d7402a": {
+      "authors": "강지수,김동현,조장희",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=d3bbab6a9d4649dbad5beac4e8656c1d": {
+      "authors": "진보라,박주영,박상곤",
+      "kogl_type": 4
+    },
+    "https://www.kcti.re.kr/web/board/boardContentsView.do?board_id=2&contents_id=b69de0133c3d4776805f366c67edf3f3": {
+      "authors": "윤주,강현수",
+      "kogl_type": 4
+    },
     "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=72143": {
       "authors": "김명현,한익현",
       "kogl_type": 4

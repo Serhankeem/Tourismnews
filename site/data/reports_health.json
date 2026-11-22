@@ -1,28 +1,28 @@
 {
   "version": "0.5",
-  "checked_at": "2026-11-20T13:53:28+09:00",
-  "status": "no_due_sources",
+  "checked_at": "2026-11-23T08:13:15+09:00",
+  "status": "partial",
   "target_sources": 11,
   "source_coverage": 11,
   "connected_sources": 6,
   "publishing_sources": 5,
-  "candidate_reports": 236,
-  "candidates_this_run": 0,
-  "verified_candidates_this_run": 0,
-  "verified_this_run": 0,
-  "verified_reports": 178,
-  "verified_automatic_reports": 178,
+  "candidate_reports": 246,
+  "candidates_this_run": 173,
+  "verified_candidates_this_run": 116,
+  "verified_this_run": 116,
+  "verified_reports": 187,
+  "verified_automatic_reports": 187,
   "verified_manual_reports": 0,
-  "excluded_this_run": 0,
+  "excluded_this_run": 94,
   "duplicate_reports": 0,
-  "duplicate_observations": 0,
-  "published_reports": 138,
-  "archived_reports": 138,
-  "new_reports_this_run": 0,
-  "new_automatic_reports_this_run": 0,
+  "duplicate_observations": 212,
+  "published_reports": 147,
+  "archived_reports": 147,
+  "new_reports_this_run": 9,
+  "new_automatic_reports_this_run": 9,
   "new_manual_reports_this_run": 0,
-  "new_reports_last30d": 4,
-  "automatic_reports": 138,
+  "new_reports_last30d": 3,
+  "automatic_reports": 147,
   "manual_reports": 0,
   "by_publisher": {
     "야놀자리서치": {
@@ -30,18 +30,18 @@
       "new_last30d": 0,
       "latest_publication": null,
       "latest_registration": null,
-      "last_collection": "2026-11-16T08:05:27+09:00",
-      "last_successful_collection": "2026-11-16T08:05:27+09:00",
+      "last_collection": "2026-11-23T08:13:15+09:00",
+      "last_successful_collection": "2026-11-23T08:13:15+09:00",
       "success_rate": 1.0
     },
     "한국문화관광연구원": {
-      "published": 37,
+      "published": 46,
       "new_last30d": 0,
-      "latest_publication": "2025",
+      "latest_publication": "2026",
       "latest_registration": null,
-      "last_collection": "2026-11-16T08:05:27+09:00",
-      "last_successful_collection": "2026-11-16T08:05:27+09:00",
-      "success_rate": 0.8571428571428571
+      "last_collection": "2026-11-23T08:13:15+09:00",
+      "last_successful_collection": "2026-11-23T08:13:15+09:00",
+      "success_rate": 0.875
     },
     "한국관광공사 / 관광데이터랩": {
       "published": 0,
@@ -63,12 +63,12 @@
     },
     "Phocuswright": {
       "published": 65,
-      "new_last30d": 2,
+      "new_last30d": 1,
       "latest_publication": "2026-10-28",
       "latest_registration": null,
-      "last_collection": "2026-11-16T08:05:27+09:00",
+      "last_collection": "2026-11-23T08:13:15+09:00",
       "last_successful_collection": null,
-      "success_rate": 0.4
+      "success_rate": 0.3333333333333333
     },
     "UN Tourism": {
       "published": 0,
@@ -93,8 +93,8 @@
       "new_last30d": 2,
       "latest_publication": "2026-11-09",
       "latest_registration": null,
-      "last_collection": "2026-11-16T08:05:27+09:00",
-      "last_successful_collection": "2026-11-16T08:05:27+09:00",
+      "last_collection": "2026-11-23T08:13:15+09:00",
+      "last_successful_collection": "2026-11-23T08:13:15+09:00",
       "success_rate": 1.0
     },
     "WTTC": {
@@ -111,68 +111,70 @@
       "new_last30d": 0,
       "latest_publication": "2026-06-30",
       "latest_registration": null,
-      "last_collection": "2026-11-16T08:05:27+09:00",
+      "last_collection": "2026-11-23T08:13:15+09:00",
       "last_successful_collection": "2026-11-02T13:24:45+09:00",
-      "success_rate": 0.5
+      "success_rate": 0.4
     },
     "한국교통연구원": {
       "published": 4,
       "new_last30d": 0,
       "latest_publication": "2025-11-28",
       "latest_registration": null,
-      "last_collection": "2026-11-16T08:05:27+09:00",
-      "last_successful_collection": "2026-11-16T08:05:27+09:00",
+      "last_collection": "2026-11-23T08:13:15+09:00",
+      "last_successful_collection": "2026-11-23T08:13:15+09:00",
       "success_rate": 1.0
     }
   },
   "category_counts": {
-    "국제관광·인바운드": 15,
+    "국제관광·인바운드": 17,
     "국내관광·관광소비": 4,
     "숙박·호텔산업": 8,
-    "항공·교통산업": 4,
+    "항공·교통산업": 5,
     "OTA·여행기술": 17,
-    "관광정책·산업경제": 8,
+    "관광정책·산업경제": 13,
     "MICE·비즈니스 이벤트": 1,
-    "관광시장 전망·트렌드": 81
+    "관광시장 전망·트렌드": 82
   },
   "sources": [
     {
       "id": "yanolja",
       "publisher": "야놀자리서치",
-      "status": "not_due",
-      "candidate_reports": 0,
-      "access_verified_candidates": 0,
+      "status": "ok",
+      "candidate_reports": 57,
+      "access_verified_candidates": 57,
       "rights_reviewed_candidates": 0,
       "verified_reports": 0,
       "verified_candidates": 0,
-      "catalog_entries": 0,
-      "excluded_reports": 0,
-      "duplicate_observations": 0,
+      "catalog_entries": 96,
+      "excluded_reports": 57,
+      "duplicate_observations": 95,
       "duplicate_editions_merged": 0,
       "new_reports": 0,
       "detail_errors": 0,
-      "date_holds": 0,
+      "date_holds": 57,
       "rights_holds": 0,
-      "last_attempt_at": "2026-11-16T08:05:27+09:00"
+      "last_successful_at": "2026-11-23T08:13:15+09:00",
+      "success_rate": 1.0
     },
     {
       "id": "kcti",
       "publisher": "한국문화관광연구원",
-      "status": "not_due",
-      "candidate_reports": 0,
-      "access_verified_candidates": 0,
-      "rights_reviewed_candidates": 0,
-      "verified_reports": 0,
-      "verified_candidates": 0,
-      "catalog_entries": 0,
+      "status": "ok",
+      "candidate_reports": 46,
+      "access_verified_candidates": 46,
+      "rights_reviewed_candidates": 46,
+      "verified_reports": 46,
+      "verified_candidates": 46,
+      "catalog_entries": 46,
       "excluded_reports": 0,
-      "duplicate_observations": 0,
+      "duplicate_observations": 37,
       "duplicate_editions_merged": 0,
-      "new_reports": 0,
+      "new_reports": 9,
       "detail_errors": 0,
       "date_holds": 0,
       "rights_holds": 0,
-      "last_attempt_at": "2026-11-16T08:05:27+09:00"
+      "last_successful_at": "2026-11-23T08:13:15+09:00",
+      "success_rate": 0.875
     },
     {
       "id": "kto",
@@ -215,7 +217,7 @@
     {
       "id": "phocuswright",
       "publisher": "Phocuswright",
-      "status": "not_due",
+      "status": "error",
       "candidate_reports": 0,
       "access_verified_candidates": 0,
       "rights_reviewed_candidates": 0,
@@ -229,7 +231,9 @@
       "detail_errors": 0,
       "date_holds": 0,
       "rights_holds": 0,
-      "last_attempt_at": "2026-11-16T08:05:27+09:00"
+      "error": "robots_unverified:http_403",
+      "last_successful_at": null,
+      "success_rate": 0.3333333333333333
     },
     {
       "id": "untourism",
@@ -272,21 +276,22 @@
     {
       "id": "etc",
       "publisher": "European Travel Commission (ETC)",
-      "status": "not_due",
-      "candidate_reports": 0,
-      "access_verified_candidates": 0,
-      "rights_reviewed_candidates": 0,
-      "verified_reports": 0,
-      "verified_candidates": 0,
-      "catalog_entries": 0,
-      "excluded_reports": 0,
-      "duplicate_observations": 0,
+      "status": "ok",
+      "candidate_reports": 30,
+      "access_verified_candidates": 30,
+      "rights_reviewed_candidates": 30,
+      "verified_reports": 30,
+      "verified_candidates": 30,
+      "catalog_entries": 40,
+      "excluded_reports": 1,
+      "duplicate_observations": 40,
       "duplicate_editions_merged": 0,
       "new_reports": 0,
       "detail_errors": 0,
       "date_holds": 0,
       "rights_holds": 0,
-      "last_attempt_at": "2026-11-16T08:05:27+09:00"
+      "last_successful_at": "2026-11-23T08:13:15+09:00",
+      "success_rate": 1.0
     },
     {
       "id": "wttc",
@@ -310,7 +315,7 @@
     {
       "id": "oecd",
       "publisher": "OECD",
-      "status": "not_due",
+      "status": "error",
       "candidate_reports": 0,
       "access_verified_candidates": 0,
       "rights_reviewed_candidates": 0,
@@ -324,34 +329,516 @@
       "detail_errors": 0,
       "date_holds": 0,
       "rights_holds": 0,
-      "last_attempt_at": "2026-11-16T08:05:27+09:00"
+      "error": "HTTP Error 403: Forbidden",
+      "last_successful_at": "2026-11-02T13:24:45+09:00",
+      "success_rate": 0.4
     },
     {
       "id": "koti",
       "publisher": "한국교통연구원",
-      "status": "not_due",
-      "candidate_reports": 0,
-      "access_verified_candidates": 0,
-      "rights_reviewed_candidates": 0,
-      "verified_reports": 0,
-      "verified_candidates": 0,
-      "catalog_entries": 0,
-      "excluded_reports": 0,
-      "duplicate_observations": 0,
+      "status": "ok",
+      "candidate_reports": 40,
+      "access_verified_candidates": 40,
+      "rights_reviewed_candidates": 40,
+      "verified_reports": 40,
+      "verified_candidates": 40,
+      "catalog_entries": 40,
+      "excluded_reports": 36,
+      "duplicate_observations": 40,
       "duplicate_editions_merged": 0,
       "new_reports": 0,
       "detail_errors": 0,
       "date_holds": 0,
       "rights_holds": 0,
-      "last_attempt_at": "2026-11-16T08:05:27+09:00"
+      "last_successful_at": "2026-11-23T08:13:15+09:00",
+      "success_rate": 1.0
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/1015?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/736?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/162?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/153?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/42?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/40?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/36?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/9?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/report/view/8?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/998?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/858?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/758?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/680?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/588?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/513?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/171?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/160?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/138?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/121?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/44?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/37?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/32?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/21?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/trend/view/16?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/1005?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/963?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/945?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/894?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/867?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/772?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/705?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/695?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/624?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/558?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/174?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/173?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/169?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/166?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/161?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/973?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/972?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/943?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/857?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/843?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/815?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/782?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/752?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/740?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/738?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/724?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/718?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/684?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/674?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/insight/view/640?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/145?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/132?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "yanolja",
+      "url": "https://www.yanolja-research.com/brief/view/49?lang=kr",
+      "error": "registration_date_not_verified_as_publication_date"
+    },
+    {
+      "source_id": "phocuswright",
+      "error": "robots_unverified:http_403"
+    },
+    {
+      "source_id": "etc",
+      "url": "https://etc-corporate.org/reports/european-tourism-2024-trends-prospects-q3-2024/",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "oecd",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=65273",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=63553",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=714",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=697",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=696",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=677",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=676",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=659",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=606",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=65272",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=660",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=616",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=582",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=561",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=542",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=38",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=61",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/bassRsrchReprtView.do?bbs_no=89",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=62479",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=62146",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1167",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1137",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1108",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1074",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1055",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1004",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=722",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=725",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1181",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1179",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1173",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1163",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1122",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1110",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1100",
+      "error": "outside_or_uncertain_initial_date_window"
+    },
+    {
+      "source_id": "koti",
+      "url": "https://www.koti.re.kr/user/bbs/anytmRsrchReprtView.do?bbs_no=1073",
+      "error": "outside_or_uncertain_initial_date_window"
+    }
+  ],
   "stage_counts_this_run": {
-    "candidate": 0,
-    "access_verified": 0,
-    "metadata_verified": 0,
-    "rights_reviewed": 0,
-    "newly_published": 0
+    "candidate": 173,
+    "access_verified": 173,
+    "metadata_verified": 116,
+    "rights_reviewed": 116,
+    "newly_published": 9
   }
 }
