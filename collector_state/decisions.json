@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-22T20:10:54+09:00",
+  "checked_at": "2026-11-22T22:23:40+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -2440,6 +2440,306 @@
       "decision": "exclude"
     },
     {
+      "id": "236fdd963d33cf07a9",
+      "title": "[인터뷰] ‘항공 공급’ 증가, 뉴욕의 다음 전략은?",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72770",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "7097daa61a8087ea1b",
+      "title": "[마이스] 타이완, MICE 유치 파격 인센티브 제공",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72769",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "44ee96555511fa1177",
+      "title": "미국 ‘유타 스키' 한국을 찾은 까닭은?",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72768",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "dd347a3e9032029ccb",
+      "title": "피지 관광청 ‘아시아 로드쇼’ 성료",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72767",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "문화·트렌드",
+        "score": 6,
+        "rules": [
+          "tourism_organization_market_action"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "관광청",
+              "로드쇼",
+              "성료"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "관광 전담기관의 구체적인 시장 유치·홍보 사업과 실행이 제목에 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "decision": "publish"
+    },
+    {
+      "id": "f669cf9f68f74bd917",
+      "title": "롯데관광, 코스타 크루즈 단독 총판 계약 체결",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72766",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "10126ff940fd65b146",
+      "title": "이탈리아···이제 ’맛‘으로 여행할 때",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72765",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "a5ac68effe10165410",
+      "title": "할리우드 너머, 진짜 ‘L.A’는 동네에 있다",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72764",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "68b226c99dc58236a2",
+      "title": "한국관광공사, 스타트업 혁신 기술 경쟁력 알려",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72763",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "d435a766569fa31fba",
+      "title": "트리니티, 글로벌 항공사로 본격 도약",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72762",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "0b26a716cbff5ef8f1",
+      "title": "호시노 리조트 토마무, ‘어드벤처 베이스’ 12월 오픈",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72761",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "569651706644e53796",
+      "title": "제주 MICE, 국내·외 바이어 사로잡았다",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72760",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "a85614a02d51642a31",
+      "title": "대한항공, APEX 선정 ‘5성 글로벌 항공사’",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72759",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "0d49aaea6f64e95abb",
+      "title": "세부, 다채로운 여행 매력 조명",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72758",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "b38dd04c5741c11643",
+      "title": "방문위, 화이트 보물트리’ 점등식 개최",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72757",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "bf7cc6cf61f17ae9b6",
+      "title": "에어프레미아, ‘동북아 최고 기내 엔터테인먼트’ 선정",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72756",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "3b5e3599e117bb77aa",
+      "title": "[여행단신] 한진·레고·트리니티항공·노랑풍선",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72755",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "e5bc969f15831fc5fb",
       "title": "[주말판] 시드니에서 맞이하는 특별한 새해",
       "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72753",
@@ -3089,304 +3389,6 @@
         "evidence_status": "industry_subject_in_feed"
       },
       "decision": "publish"
-    },
-    {
-      "id": "6234b285d445d8252d",
-      "title": "‘2026 PHR 괌 아카데미’ 성료",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72717",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "123fefd8d65d5de83f",
-      "title": "가을빛과 파노라마 절경···‘고베’ 여행",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72716",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "9342d9efb758297a04",
-      "title": "본에어, 럭셔리 여행 큐레이션 협력",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72715",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "f8c7b6ef83d606de0f",
-      "title": "트리니티항공, 3분기 매출 5336억 원 기록",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72714",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "750ac6777b1a2fa36b",
-      "title": "핀에어, 유럽 노선 최대 25% 할인",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72713",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "9b0cab098718a385f4",
-      "title": "모두투어, 첫 대만 파크골프 상품 출시",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72712",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "bf9a548d432d060a7e",
-      "title": "서울관광재단, 유럽 MICE 시장 공략",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72711",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "af3a55ebfc4024ac76",
-      "title": "한진트래블, 대한항공 전세기 초특가 여행 출시",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72710",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "e1fc8dcb7417fb770d",
-      "title": "트리니티항공, 일반직 · 정비자재 부문 신입 채용",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72709",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "aed5e66b51e4afa753",
-      "title": "한진트래블-한국조리기능장협회, MOU 체결",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72708",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "9de5daceb5c11732d3",
-      "title": "[여행단신] 제주항공·제주드림타워·부산관광",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72706",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "57ac4c4315f392d877",
-      "title": "내년 초 장거리 상품, 유류할증료 인하에 기대감↑",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72721",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "b2a50ecdb467abc2c1",
-      "title": "캘리포니아…‘지역 다변화’가 관건",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72705",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "e8b69f49b2348dd25b",
-      "title": "하나투어, 中 기획 상품 전년 대비 12% 증가",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72704",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "0aaad09e9d63540045",
-      "title": "‘2030 관광기업 육성’ 비전 선포",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72703",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "여행산업",
-        "score": 6,
-        "rules": [
-          "explicit_industry_subject"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "관광기업"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "RSS 제목 또는 설명에서 구체적인 관광산업 대상·사업 신호를 확인했습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "2581f13cba82f3be3e",
-      "title": "천년 문화유산 지키고, 관광 혜택 지역으로",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72702",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
     },
     {
       "id": "778d390d667c9621b4",
