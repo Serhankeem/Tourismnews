@@ -1,0 +1,182 @@
+{
+  "aggregate": {
+    "current_score": "62.50",
+    "current_period": "2026-09",
+    "evaluated_months": 69,
+    "scored_months": 31,
+    "withheld_months": 38,
+    "oracle_checks": 217,
+    "all_months": {
+      "n": 31,
+      "first": "2024-03",
+      "last": "2026-09",
+      "minimum": 2.0833333333333335,
+      "maximum": 79.16666666666667,
+      "consecutive_comparisons": 30,
+      "mean_absolute_monthly_change": 10.416666666666666,
+      "maximum_absolute_monthly_change": 39.583333333333336
+    },
+    "strict_raw_cutoff_sensitivity": {
+      "2022-12": {
+        "n": 7,
+        "first": "2026-03",
+        "last": "2026-09",
+        "minimum": 62.5,
+        "maximum": 79.16666666666667,
+        "consecutive_comparisons": 6,
+        "mean_absolute_monthly_change": 4.513888888888889,
+        "maximum_absolute_monthly_change": 16.666666666666668
+      },
+      "2023-12": {
+        "n": 0,
+        "first": null,
+        "last": null,
+        "minimum": null,
+        "maximum": null,
+        "consecutive_comparisons": 0,
+        "mean_absolute_monthly_change": null,
+        "maximum_absolute_monthly_change": null
+      }
+    },
+    "weight_variants": {
+      "n": 62,
+      "band_changes": 10,
+      "max_absolute_score_change": 7.916666666666667
+    },
+    "single_axis_ablations": {
+      "kto_inbound": {
+        "n": 31,
+        "band_changes": 15,
+        "maximum_absolute_score_change": 39.58333333333333
+      },
+      "kto_tourism_receipts": {
+        "n": 31,
+        "band_changes": 13,
+        "maximum_absolute_score_change": 39.583333333333336
+      }
+    },
+    "B_whole_market_withheld": 31,
+    "C_exact_equal_A": 31,
+    "additional_empirical_variables": 0,
+    "VIF": "not_applicable_no_regression"
+  },
+  "correlations": [
+    {
+      "transform": "levels",
+      "raw_after": null,
+      "n": 69,
+      "first": "2021-01",
+      "last": "2026-09",
+      "pearson": 0.9181066869856661,
+      "spearman": 0.9439897698209718,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "yoy",
+      "raw_after": null,
+      "n": 57,
+      "first": "2022-01",
+      "last": "2026-09",
+      "pearson": 0.2614685208493317,
+      "spearman": 0.061381903033445685,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "smoothed_yoy",
+      "raw_after": null,
+      "n": 55,
+      "first": "2022-03",
+      "last": "2026-09",
+      "pearson": 0.34573727170701957,
+      "spearman": 0.17669552669552668,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "levels",
+      "raw_after": "2022-12",
+      "n": 45,
+      "first": "2023-01",
+      "last": "2026-09",
+      "pearson": 0.900030123308355,
+      "spearman": 0.8988142292490119,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "yoy",
+      "raw_after": "2022-12",
+      "n": 33,
+      "first": "2024-01",
+      "last": "2026-09",
+      "pearson": -0.07962613420008673,
+      "spearman": -0.14371657754010694,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "smoothed_yoy",
+      "raw_after": "2022-12",
+      "n": 31,
+      "first": "2024-03",
+      "last": "2026-09",
+      "pearson": -0.29319131422239814,
+      "spearman": -0.06290322580645161,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "levels",
+      "raw_after": "2023-12",
+      "n": 33,
+      "first": "2024-01",
+      "last": "2026-09",
+      "pearson": 0.8922791686444345,
+      "spearman": 0.8793449197860963,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "yoy",
+      "raw_after": "2023-12",
+      "n": 21,
+      "first": "2025-01",
+      "last": "2026-09",
+      "pearson": 0.282010612157045,
+      "spearman": 0.11818181818181818,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    },
+    {
+      "transform": "smoothed_yoy",
+      "raw_after": "2023-12",
+      "n": 19,
+      "first": "2025-03",
+      "last": "2026-09",
+      "pearson": 0.725946013693915,
+      "spearman": 0.7473684210526316,
+      "p_value": null,
+      "effective_independent_sample_size": null
+    }
+  ],
+  "protocol_sha256": "bf46a92240a9bfbd165a583d80c20266bc951eb3c6c960e01652d5d35e38cfcb",
+  "public_content": "aggregate statistics only; no monthly score/observation series",
+  "historical_as_of_verified": false,
+  "model_adoption_approved": false,
+  "verification": {
+    "python_tests_passed": 802,
+    "new_research_tests": 13,
+    "existing_js_tests_passed": 34,
+    "fraction_oracle_checks": 217,
+    "scipy_coefficient_checks": 18,
+    "repeated_output_files_identical": 3,
+    "existing_tracked_files_unchanged": 656,
+    "future_prefix_failures": 0,
+    "future_poison_failures": 0,
+    "new_official_statistical_downloads": 0,
+    "new_authenticated_ecos_requests": 0,
+    "operating_actions_dispatched": 0
+  }
+}

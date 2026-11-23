@@ -1,0 +1,118 @@
+{
+  "protocol_id": "tourism-model-phase2c-v0.1",
+  "frozen_at": "2026-11-23T07:36:57.444008+00:00",
+  "not_blinded_to_previous_model_results": true,
+  "purpose": "current inbound/travel-receipts partial diagnosis; not prediction or whole-tourism validation",
+  "base_main": "33f74880c74e7829e09f2cf1dabbffec61f78be7",
+  "evidence_prs": {
+    "66": "merged",
+    "67": "merged; three unresolved level discrepancies preserved",
+    "68": "draft; report consulted without merge"
+  },
+  "source": {
+    "commit": "4e48fb5504204aedf7205c69eb605c45b7967100",
+    "path": "site/data/macro.json",
+    "sha256": "0670733c8e4df8d6c63c7a85eb9c95b04fcdb0ad904f2569a6888baaffc1afcb",
+    "generated_at": "2026-11-23T12:25:30.898326+09:00",
+    "source_url": "https://github.com/Serhankeem/tourismnews/blob/4e48fb5504204aedf7205c69eb605c45b7967100/site/data/macro.json",
+    "historical_as_of_verified": false,
+    "mode": "retrospective_current_vintage"
+  },
+  "input": {
+    "ids": [
+      "kto_inbound",
+      "kto_tourism_receipts"
+    ],
+    "period_from": "2021-01",
+    "period_through": "2026-09",
+    "as_of_period": "2026-11",
+    "expected_months_each": 69,
+    "tourgo_period_from": "2021-01",
+    "tourgo_period_through": "2026-09",
+    "imputation": false,
+    "independent_raw_xlsx_reparse": false
+  },
+  "exclusions": {
+    "C10": "three unresolved level differences; no quantitative exploratory inclusion",
+    "C13": "2024-03 difference, 2022-04 precision-limited; no correlations or contributions",
+    "C07": "joint use conditions pending; no quantitative inclusion",
+    "other_unverified_candidates": "no correlation or contribution analysis"
+  },
+  "transformations": {
+    "levels": "descriptive correlation only, common trend risk",
+    "yoy": "100*(x[t]/x[t-12]-1), exact Fraction",
+    "smoothed_yoy": "3-month arithmetic average of exact YoY",
+    "rank": "existing frozen production model, preceding 24 smoothed YoY; target excluded",
+    "seasonal_adjustment": false,
+    "zero_denominator": "missing/unavailable, not filled",
+    "missing_observation": "exclude pair; production model withholds; no time compression"
+  },
+  "models": {
+    "A": {
+      "existing_version": "model-signal-v1.0.0",
+      "weights": [
+        "1/2",
+        "1/2"
+      ],
+      "window": 24,
+      "smoothing": 3,
+      "cutoffs": [
+        25,
+        50,
+        75
+      ]
+    },
+    "B": {
+      "domains_available": [
+        "demand",
+        "consumption"
+      ],
+      "required_for_broad_diagnosis": [
+        "demand",
+        "consumption",
+        "industry"
+      ],
+      "missing_domain": "retain empty; no renormalized broad index",
+      "additional_whole_market_limit": "domestic coverage and supply/accessibility absent"
+    },
+    "C": {
+      "core": "exactly A",
+      "environment_inputs_quantitatively_eligible": [],
+      "environment_affects_core_score": false
+    }
+  },
+  "sensitivity": {
+    "inbound_weights": [
+      "2/5",
+      "3/5"
+    ],
+    "other_weight": "1-inbound_weight",
+    "composition": "one-axis ablation only, not deployable models",
+    "raw_input_exclusion_through": [
+      "2022-12",
+      "2023-12"
+    ],
+    "cutoff_meaning": "conservative pandemic/recovery proxies, not empirically identified break dates",
+    "window_variants": [],
+    "rule": "no cutoff/window/weight tuning after results"
+  },
+  "evaluation": [
+    "pairwise Pearson and midrank-tie Spearman on levels, YoY, smoothed YoY with n/from/through",
+    "complete-case sample retention and descriptive ranges",
+    "weight change absolute score differences and existing display-band changes",
+    "single-axis ablation agreement; no independent new evidence",
+    "subsample score coverage and absolute month-to-month changes; compare same months",
+    "no regression fitted; VIF not applicable",
+    "future-prefix equality; independent Fraction oracle",
+    "repeatability and counterfactual revision/missing-value behavior",
+    "no p-values, no predictive accuracy or causal claims"
+  ],
+  "engine_hashes": {
+    "site/market-signal-model.js": "65f9dcbc22cd6470d9c14913342aed1ada0d334dafb079eec92a76e6ca6e3ba8",
+    "site/market-signal-registry.js": "ed325bb1c4b42d9a7650bbe6a835d5909cb83e22988f09e5507995fe0dc5c3f8",
+    "tools/replay_model_signal.py": "d466de95eee475328dac91072d96adb4059faf5aca2bef12a3a072fed40b0704"
+  },
+  "public_output": "metadata and aggregate report only; no monthly derived series",
+  "new_authenticated_requests": 0,
+  "operating_approvals_granted": false
+}
