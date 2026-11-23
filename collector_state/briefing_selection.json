@@ -839,6 +839,40 @@
       "generated_at": "2026-11-22T10:39:07+09:00",
       "mode": "live_rss",
       "decisions": []
+    },
+    {
+      "briefing_date": "2026-11-23",
+      "generated_at": "2026-11-23T10:43:25+09:00",
+      "mode": "live_rss",
+      "decisions": [
+        {
+          "article_id": "bdc8f0491cbc8b1038",
+          "decision": "selected",
+          "tier": "korea_direct",
+          "category": "인바운드",
+          "new_category": true,
+          "age_hours": 10.56,
+          "published_at": "2026-11-23T00:10:00+09:00",
+          "basis": [
+            "authorized_newsroom",
+            "verified_timestamp_last24h",
+            "korea_priority_then_category_diversity",
+            "conservative_title_similarity"
+          ]
+        },
+        {
+          "article_id": "e939aa8161e3c1b3e2",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-23T00:10:00+09:00"
+        },
+        {
+          "article_id": "dd347a3e9032029ccb",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-22T21:33:42+09:00"
+        }
+      ]
     }
   ]
 }
