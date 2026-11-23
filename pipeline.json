@@ -54,6 +54,7 @@
     "macro.css",
     "macro.js",
     "market-observation.js",
+    "market-signal-registry.js",
     "market-signal-model.js",
     "market-signal.js",
     "monthly-market-weather-view.js",

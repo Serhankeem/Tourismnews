@@ -47,10 +47,11 @@ if(r.status==='observed')for(const id of m.IDS)for(const delta of [-1,1]){
  const next=m.evaluate(changed,{reference_period:r.reference_period,as_of_period:process.argv[2]});
  revisionStress.push({kind:'counterfactual_copy_not_an_official_correction',indicator:id,delta_in_stored_unit:delta,status:next.status,score:next.score,weather:next.weather});
 }
-process.stdout.write(JSON.stringify({result:r,revision_stress:revisionStress}));
+process.stdout.write(JSON.stringify({result:r,model_config:m.CONFIG,revision_stress:revisionStress}));
 '''
     run=subprocess.run(['node','-e',script,str(args.macro.resolve()),args.as_of],cwd=ROOT,capture_output=True,text=True,check=True)
-    report=json.loads(run.stdout);db=json.loads(args.macro.read_text());maps={i['id']:{o['period']:o['value'] for o in i['observations']} for i in db['indicators'] if i['id'] in ('kto_inbound','kto_tourism_receipts')}
+    report=json.loads(run.stdout);db=json.loads(args.macro.read_text());maps={i['id']:{o['period']:o['value'] for o in i['observations']} for i in db['indicators'] if i['id'] in report['result']['source_indicator_ids']}
+    weights={e['id']:Fraction(e['weight']['numerator'],e['weight']['denominator']) for e in report['model_config']['indicators']}
     checks=0;sensitivity=[];changes=[]
     band=lambda v:'rain' if v<25 else 'cloudy' if v<50 else 'partly' if v<75 else 'sunny'
     for point in report['result']['backtest']['points']:
@@ -62,16 +63,18 @@ process.stdout.write(JSON.stringify({result:r,revision_stress:revisionStress}));
             assert decimal(smoothed)==axis['smoothed_yoy_pct']
             assert decimal(percent(series,period))==axis['yoy_pct']
             ranks.append(position);checks+=3
-        base=sum(ranks,Fraction())/2
+        base=sum((position*weights[axis['indicator_id']] for position,axis in zip(ranks,point['axes'])),Fraction())
         assert abs(float(base)-point['score'])<1e-12 and point['weather']==band(base);checks+=1
         variants=[]
-        for weight in (Fraction(2,5),Fraction(3,5)):
+        # Only the published v1 two-axis definition has this particular research stress.
+        for weight in ((Fraction(2,5),Fraction(3,5)) if report['result']['model_version']=='model-signal-v1.0.0' else ()):
             value=weight*ranks[0]+(1-weight)*ranks[1];changes.append(abs(value-base))
             variants.append(dict(weight_a=str(weight),weight_b=str(1-weight),score=decimal(value),weather=band(value)))
         sensitivity.append(dict(period=point['reference_period'],base=decimal(base),base_weather=band(base),variants=variants))
     report['weight_sensitivity']=sensitivity
     report.update(input_sha256=hashlib.sha256(args.macro.read_bytes()).hexdigest(),
         model_source_sha256=hashlib.sha256((ROOT/'site/market-signal-model.js').read_bytes()).hexdigest(),
+        registry_source_sha256=hashlib.sha256((ROOT/'site/market-signal-registry.js').read_bytes()).hexdigest(),
         independent_fraction_oracle_checks=checks,independent_fraction_oracle_passed=True,
         sensitivity_summary=dict(variant_weather_changes=sum(v['weather']!=p['base_weather'] for p in sensitivity for v in p['variants']),
                                  evaluated_weight_variants=len(sensitivity)*2,

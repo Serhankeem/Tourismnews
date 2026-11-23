@@ -59,10 +59,20 @@
 
 ## 구현 및 검수
 
-`site/market-signal-model.js`(순수 계산/계약/회고 검증)와 `site/market-signal.js`(공유 렌더링)를 분리했습니다. MacroMonitor 로드가 끝난 뒤 한 결과로 홈/상세를 갱신합니다. 새로운 fetch·API·Secret·DB·스케줄러·공개 데이터 파일은 없습니다. pipeline.json에는 두 JS의 정적 allowlist만 추가합니다. 구형 수동 식·슬라이더·초기화 이벤트는 삭제했습니다.
+`site/market-signal-registry.js`(선언적 계약/동결 판본), `site/market-signal-model.js`(N계열 순수 계산/검증/회고), `site/market-signal.js`(공유 렌더링)를 분리했습니다. MacroMonitor 로드가 끝난 뒤 한 결과로 홈/상세를 갱신합니다. 새로운 fetch·API·Secret·DB·스케줄러·공개 데이터 파일은 없습니다. pipeline.json에는 세 JS의 정적 allowlist만 추가합니다. 구형 수동 식·슬라이더·초기화 이벤트는 삭제했습니다.
 
-검수: Node 순수 계산 20개, 기존 Python 전체 회귀(새 Node bridge 포함), 실제 읽기 전용 리플레이, 390/1440 모델·홈/상세/유보/접근성 및 기존 header/navigation/home/public-preservation/monthly reader 검사를 수행합니다. 기존 URL·서브메뉴·키보드/모바일 동작은 유지합니다. 오래된 가상 입력 테스트 중 현재 내비게이션/홈/월간/공개 보존 suite의 관련 부분을 모델 계약으로 전환했습니다.
+검수: 기존 Node 순수 계산 20개와 등록부/확장 회귀 14개, 기존 Python 전체 회귀(새 Node bridge 포함), 실제 읽기 전용 리플레이, 390/1440 모델·홈/상세/유보/접근성 및 기존 header/navigation/home/public-preservation/monthly reader 검사를 수행합니다. 기존 URL·서브메뉴·키보드/모바일 동작은 유지합니다. 오래된 가상 입력 테스트 중 현재 내비게이션/홈/월간/공개 보존 suite의 관련 부분을 모델 계약으로 전환했습니다.
 
 이미 발행된 VOL.01 공개 내용 SHA-256 `f0ab5238755ecba0d22144fabbf5c3de6cabd1884bcdd1ac5e64af9aa9d846c0`는 그대로 대조했습니다. 실제 공개 JSON과 운영 원장/정정 이력·승인/Secrets·워크플로는 수정하지 않았습니다. 병합·Production 배포·월간 재발행을 하지 않습니다.
 
 검수 스냅샷/리플레이/이미지: `/workspace/work/model-signal-v1-20261120/`(Git 밖). 재현 도구는 `python -m tools.replay_model_signal --macro <읽기전용 macro.json> --as-of 2026-11 --output <새 격리 디렉터리>`입니다. 출력 경로는 저장소 밖으로 제한합니다.
+
+## PR #65 병합 전 확장 보완
+
+운영 활성 지표는 여전히 두 개/50:50입니다. ID·분석 영역·정의·단위·검증 규칙은 선언적 등록부, 활성 ID·계약 revision·유리수 가중치·계산식은 동결 판본으로 분리합니다. 계산과 UI는 해당 판본을 읽으며 등록만으로 활성화되지 않습니다. `IDS`/`CONTRACT`는 판본에서 파생하는 호환 별칭입니다.
+
+합성 3·4계열은 같은 핵심 계산에서 검증하지만 운영 등록부에 포함하지 않습니다. 향후 6개 영역 18개 후보, 권리/자료 확보·통계 검증·새 모델 버전 승인 절차는 [별도 확장 계획](market-weather-indicator-expansion-plan.md)에 정리합니다. 현재 알고리즘의 월별 정수/YoY 전제에 맞지 않는 지수·금리·심리 등을 단순 등록만으로 운영 입력에 넣지 않습니다.
+
+두 보존 스냅샷(`e39df3ce`, `ca66f6b8`)의 변경 전후 전체 모델 출력과 회고 결과가 바이트 단위로 같습니다. 최신 결과는 **62.50점**, 두 기여도 **33.333333 / 29.166667**로 동일합니다. 추가 검수 자료는 Git 밖 `/workspace/work/model-signal-registry-20261123/`에 보존합니다.
+
+이번 보완 검증: Python **789개**, Node **34개**(기존 20 + 확장 14) 통과. 읽기 전용 Fraction 대조 **217개**와 두 스냅샷의 전체 출력 동등성을 확인했습니다. 390/1440 모델 및 홈, 기존 320~1440 내비게이션/공개 데이터 보존, 합성 승인 월간 reader의 접근성·만료/변조 차단을 재검증했습니다. 합성 월간 회귀는 현재 시각의 테스트 승인으로 격리 재생성했으며 실제 VOL.01을 발행하지 않았습니다.
