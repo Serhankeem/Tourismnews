@@ -1,0 +1,94 @@
+{
+  "audit_date_kst": "2026-11-23",
+  "base_main": "dbfbf8aeb06767e61226c1f39dda9a7d86598f9c",
+  "indicator": {
+    "id": "market_lodging",
+    "codes": [
+      "901Y038",
+      "I51ADA",
+      "2"
+    ],
+    "unit": "2020=100",
+    "frequency": "M",
+    "adjustment": "unadjusted_constant_index"
+  },
+  "result": "independent_level_crosscheck_incomplete",
+  "baseline_original_observations_reverified": 69,
+  "original_monthly_fingerprint_comparison": "passed",
+  "primary_originator_level_comparison": {
+    "compared_months": 0,
+    "matched_months": 0,
+    "different_months": 0,
+    "unverified_months": 69,
+    "reason": "exact_current_KOSIS_table/item mapping and raw file unavailable"
+  },
+  "official_republication_level_comparison": {
+    "compared_months": 3,
+    "matched_months": 0,
+    "different_months": 3,
+    "periods": [
+      "2022-11",
+      "2023-10",
+      "2023-11"
+    ],
+    "uncompared_months": 66,
+    "source": "KTO official PDF reprinting KOSIS",
+    "same_underlying_source_possible": true,
+    "vintage_difference_cause": "unconfirmed"
+  },
+  "originator_publication_rate_only_comparison": {
+    "compared_months": 4,
+    "matched_months": 3,
+    "different_months": 1,
+    "matched_periods": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "different_periods": [
+      "2025-09"
+    ],
+    "rounding": "Decimal half-up 0.1 percentage point",
+    "source_kind": "web extraction of official PDF; original bytes not obtained",
+    "level_comparison": false
+  },
+  "newly_acquired_statistical_files": {
+    "kosis_raw": 0,
+    "originator_pdf_bytes": 0,
+    "official_republication_pdf": 1
+  },
+  "official_republication_pdf_sha256": "89ab92638699d01a7d111e07ce7c46cebad7f34827a417dba1ce6b96044497d1",
+  "correlation_analysis_ready": false,
+  "remaining_conditions": [
+    "exact matching original table and 69 monthly levels",
+    "same-vintage comparison and discrepancy attribution",
+    "publication/revision metadata and frozen analysis plan"
+  ],
+  "rights": {
+    "ecos_noncommercial_research_basis": "previously confirmed, capture hash reverified",
+    "kosis_domestic_data": "attribution-based use/reuse/redistribution policy confirmed",
+    "originator_publication": "KOGL Type 2 attribution/noncommercial",
+    "republication_pdf_full_redistribution": "not granted by this audit",
+    "operational_publication": "not approved"
+  },
+  "new_authenticated_requests": 0,
+  "new_collection_approvals": 0,
+  "new_publication_approvals": 0,
+  "model_code_changed": false,
+  "operating_data_changed": false,
+  "model_preservation": {
+    "snapshot": "df0908711264da11d3c3330fd42a9baaf3c19fa6",
+    "version": "model-signal-v1.0.0",
+    "score": "62.50",
+    "weather": "partly",
+    "source_indicator_ids": [
+      "kto_inbound",
+      "kto_tourism_receipts"
+    ],
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  "local_javascript_tests": 34
+}
