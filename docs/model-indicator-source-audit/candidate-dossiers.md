@@ -471,4 +471,3 @@
 - **권리/재배포**: BOK 작성 통계는 출처표시 조건 상업 포함 사용·가공·재배포 허용. 신규 수집/게시의 운영 승인은 별개
 - **권리 상태**: `bok_attribution_permission_confirmed`. API 인증 경로 별도 심의: 이번에는 지정 안 함(API 경로 선택 시 별도 검토).
 - **공식 근거**: [S13](https://ecos.bok.or.kr/#/CustomerSupport/Notice/0000003136), [S23](https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=11066009), [S22](https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?menuNo=200775&year=2026)
-
