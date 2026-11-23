@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-23T17:17:33+09:00",
+  "checked_at": "2026-11-23T18:52:18+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -278,6 +278,24 @@
       "decision": "exclude"
     },
     {
+      "id": "9f189831eb1d912420",
+      "title": "퇴근 후에도 만나는 공예 작품! 가을밤의 '서울공예박물관' 산책",
+      "url": "https://mediahub.seoul.go.kr/archives/2020123",
+      "source_id": "seoul_culture",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "8a7f923a55c8227f95",
       "title": "차 마시고 LP 듣고 명상까지! 오감 깨우는 웰니스 공간 '다감' 체험기",
       "url": "https://mediahub.seoul.go.kr/archives/2020096",
@@ -532,26 +550,6 @@
         "signals": [],
         "impact_targets": [],
         "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "c5e6e27d30a7dfcd8c",
-      "title": "서울시청에서 미로 탐험하고 기념품까지! '서울탐험대' 어린이 전시",
-      "url": "https://mediahub.seoul.go.kr/archives/2020092",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [
-          "cross_sentence_unproven"
-        ],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
       },
       "decision": "exclude"
     },
@@ -3959,9 +3957,27 @@
       "decision": "exclude"
     },
     {
-      "id": "5ba2b0c6b291d95b1f",
-      "title": "The Sanctuary Next Door to the Citadel at Sumaq Machu Picchu Hotel",
-      "url": "https://www.hospitalitynet.org/opinion/4135102/the-sanctuary-next-door-to-the-citadel-at-sumaq-machu-picchu-hotel",
+      "id": "3f1491c055156e286f",
+      "title": "Creating the Next Chapter: Caribbean Hospitality Looks Beyond the Build at CHICOS 2026",
+      "url": "https://www.hospitalitynet.org/report/4135627/creating-the-next-chapter-caribbean-hospitality-looks-beyond-the-build-at-chicos-2026",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "2386a54eab1d179a58",
+      "title": "Deeply Human Hospitality Starts Backstage",
+      "url": "https://www.hospitalitynet.org/opinion/4135626/deeply-human-hospitality-starts-backstage",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -3980,6 +3996,24 @@
       "id": "e2af57dd7ad73a1464",
       "title": "Where Innovation Meets Hospitality: a Case for Human-First Collaboration",
       "url": "https://www.hospitalitynet.org/opinion/4135498/where-innovation-meets-hospitality-a-case-for-human-first-collaboration",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "5ba2b0c6b291d95b1f",
+      "title": "The Sanctuary Next Door to the Citadel at Sumaq Machu Picchu Hotel",
+      "url": "https://www.hospitalitynet.org/opinion/4135102/the-sanctuary-next-door-to-the-citadel-at-sumaq-machu-picchu-hotel",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4085,9 +4119,9 @@
       "decision": "exclude"
     },
     {
-      "id": "307d7dd65ca8128829",
-      "title": "Why the Hotel Website is More Important than Ever",
-      "url": "https://www.hospitalitynet.org/opinion/4135173/why-the-hotel-website-is-more-important-than-ever",
+      "id": "6b8a93095da8eb81e7",
+      "title": "Your Sales Team Isn't Ignoring Your Strategy. They're Following Their Payslip.",
+      "url": "https://www.hospitalitynet.org/opinion/4134966/your-sales-team-isnt-ignoring-your-strategy-theyre-following-their-payslip",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4103,9 +4137,9 @@
       "decision": "exclude"
     },
     {
-      "id": "6b8a93095da8eb81e7",
-      "title": "Your Sales Team Isn't Ignoring Your Strategy. They're Following Their Payslip.",
-      "url": "https://www.hospitalitynet.org/opinion/4134966/your-sales-team-isnt-ignoring-your-strategy-theyre-following-their-payslip",
+      "id": "307d7dd65ca8128829",
+      "title": "Why the Hotel Website is More Important than Ever",
+      "url": "https://www.hospitalitynet.org/opinion/4135173/why-the-hotel-website-is-more-important-than-ever",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4268,42 +4302,6 @@
       "id": "165aa2db36fb8e296f",
       "title": "PMS Migration: How To Get Connectivity Right",
       "url": "https://www.hospitalitynet.org/explainer/4135612/pms-migration-how-to-get-connectivity-right",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "db4a2794d732aca030",
-      "title": "Rhodes Market Pulse 2026 - From Scale to Value Creation",
-      "url": "https://www.hospitalitynet.org/report/4135611/rhodes-market-pulse-2026-from-scale-to-value-creation",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "9ed4fd6068ba9aa605",
-      "title": "Kos Market Pulse 2026",
-      "url": "https://www.hospitalitynet.org/report/4135610/kos-market-pulse-2026",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
