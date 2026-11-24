@@ -1,0 +1,64 @@
+{
+  "protocol_id": "data-first-travel-market-research-v0.1",
+  "frozen_at": "2026-11-24T05:25:17.585293+00:00",
+  "base_main": "702dd192cc5da502ceeadc61a4ff07b2af6306ac",
+  "input_sha256": "0276787d67c9faea443763b06d460aab5d6bb6f4491a1b68da679444191b43a1",
+  "live_commit": "5d49d313465a63d6feeaaf50705bb6b2127ac480",
+  "scope": [
+    "2021-01",
+    "2026-09"
+  ],
+  "as_of_date": "2026-11-24",
+  "mode": "retrospective_current_vintage",
+  "historical_as_of_verified": false,
+  "A": "unmodified model-signal-v1.0.0",
+  "B": "separate inbound and outbound pairs; never a pooled four-axis score",
+  "outbound_research_version": "research-outbound-v0.1-draft",
+  "weights": [
+    "1/2",
+    "1/2"
+  ],
+  "weight_sensitivity_first_axis": [
+    "2/5",
+    "3/5"
+  ],
+  "smoothing_months": 3,
+  "reference_months": 24,
+  "display_bins": [
+    25,
+    50,
+    75
+  ],
+  "bins_are_not_validated_outbound_business_cycle_labels": true,
+  "raw_cutoff_sensitivity": [
+    "2022-12",
+    "2023-12"
+  ],
+  "transformations": [
+    "levels",
+    "yoy",
+    "smoothed_yoy"
+  ],
+  "pair_correlations": "all six pairs of four observed series, exact calendar-aligned pairs",
+  "VIF": "not applicable; no regression fitted",
+  "C": "not computed without an additional automatically acquired eligible series",
+  "country_composition": "five selected markets as shares of inbound total; residual not a country; no HHI, no score weights",
+  "missing_or_failed_source": "withhold affected market; keep validated operating data; no synthetic fills",
+  "source_roles": {
+    "kto_inbound": "live public KTO XLSX verified",
+    "kto_outbound": "live public KTO XLSX verified",
+    "kto_tourism_receipts": "retained manually supplied TOURGO ledger; not current API collection",
+    "kto_tourism_expenditure": "retained manually supplied TOURGO ledger; not current API collection"
+  },
+  "current_authenticated_ecos_or_domestic_api_requests": 0,
+  "not_blinded_to_preexisting_A_results": true,
+  "engine_hashes": {
+    "site/market-signal-model.js": "65f9dcbc22cd6470d9c14913342aed1ada0d334dafb079eec92a76e6ca6e3ba8",
+    "site/market-signal-registry.js": "ed325bb1c4b42d9a7650bbe6a835d5909cb83e22988f09e5507995fe0dc5c3f8",
+    "macro_sources.json": "6818a25ca352c1d879c32ab0db16d583b893bcdf433d6d27b1410d85ba8750f8",
+    "tools/compare_market_models.py": "6404fcf99a6a7678577207c912d8c0c79121a7ef4dbf5e05fb23d770965f0d8f",
+    "tools/replay_model_signal.py": "d466de95eee475328dac91072d96adb4059faf5aca2bef12a3a072fed40b0704"
+  },
+  "archive_sha256": "8cc192a4b6d2d965d5c1cb5f29c630e964a89c23d9e15c753df67cdc8c836bc8",
+  "frozen_before_first_outbound_comparison": true
+}
