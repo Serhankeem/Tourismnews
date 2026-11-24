@@ -1,8 +1,28 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-25T06:20:49+09:00",
+  "checked_at": "2026-11-25T08:23:05+09:00",
   "scope": "successful_sources_this_run",
   "items": [
+    {
+      "id": "f41c175fc3f4697ea2",
+      "title": "‘찾아가는 밀라노 도서전’ 온라인 화상상담회로 유럽 출판시장 겨냥",
+      "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22869",
+      "source_id": "mcst_press",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "cross_sentence_unproven"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
     {
       "id": "08e179e7f94ae80439",
       "title": "국제지도자 자격 보유자 대상 체육지도자 자격검정 일부 면제",
@@ -153,24 +173,6 @@
       "id": "bb037297757eb95f52",
       "title": "2027년 열린 관광지 조성 사업 대상지 30개소 선정",
       "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22860",
-      "source_id": "mcst_press",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "659855382ed4e3a360",
-      "title": "희망사다리 정책으로 더 나은 미래로 향한 이야기 19편 시상",
-      "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22859",
       "source_id": "mcst_press",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -2251,34 +2253,6 @@
         "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
       },
       "decision": "exclude"
-    },
-    {
-      "id": "b3a02f5169a38fe80a",
-      "title": "'롤러코스터' 탄 국제선 유류할증료, 12월 소폭 하락",
-      "url": "https://www.traveltimes.co.kr/news/articleView.html?idxno=500739",
-      "source_id": "traveltimes",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 6,
-        "rules": [
-          "explicit_industry_subject"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "국제선"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "RSS 제목 또는 설명에서 구체적인 관광산업 대상·사업 신호를 확인했습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
     },
     {
       "id": "e80c77bce3c053d7e2",
