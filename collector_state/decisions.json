@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-24T20:20:48+09:00",
+  "checked_at": "2026-11-24T22:44:52+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -2540,6 +2540,278 @@
       "decision": "exclude"
     },
     {
+      "id": "e80c77bce3c053d7e2",
+      "title": "숫자로는 역대 최대, 속내는 복잡한 '한국관광'",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72807",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "aaebdd55984dc69adc",
+      "title": "비자, “국내처럼 간편한 결제 지원”",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72785",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "c2138d621b01c2f640",
+      "title": "태국, 아태지역 MICE 시장 주도권 잡는다",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72805",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "b64b3f04a2e1e76038",
+      "title": "외국인 ‘ㅇㅇ산’ 가장 많이 찾았다",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72804",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "6c2aae4e76e236e9d6",
+      "title": "에어서울, 동계 여객 공략 시동",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72803",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "00aecc66766b27b405",
+      "title": "로컬콘텐츠랩, '로컬라이브랩' 12월 22일 개최",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72802",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "5be13a3d47f62431cd",
+      "title": "노랑풍선, ‘2026 허니문 온라인 박람회’ 개최",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72801",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "25615d87459aa17e67",
+      "title": "에어프레미아, 3분기 누적 시간준수율 88.9% 기록",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72800",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "0419c31cabd3b7bb2f",
+      "title": "수트라하버 리조트, 사바 문화 축제 오픈",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72799",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "cross_sentence_unproven"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "9bb5ff949a83820c94",
+      "title": "서울관광재단, 겨울철 서울 단체 여행 활성화",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72796",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "2e2963d1b69eb52626",
+      "title": "이제 빵집 운영도 데이터로 하는 시대",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72795",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "fc73ead0962be3491b",
+      "title": "1955 도쿄 베이 by 호시노 리조트, 2박 3일 체류 플랜 제안",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72794",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "d9ec91c5cdfb2b63e8",
+      "title": "롯데관광, ‘실크로드 컬렉션’ 3종 출시",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72793",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "4ac0b8187499252816",
+      "title": "모두투어, 호주 퀸즐랜드 기획전 출시",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72792",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "5259ff5e3b49917185",
+      "title": "부산관공, ‘올해의 SNS’ 수상",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72791",
+      "source_id": "traveldaily",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "5caa173dd0146edc26",
       "title": "[현장에서] 인천항에서 만난 ‘노르웨지안 제이드’",
       "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72789",
@@ -3200,292 +3472,6 @@
       "id": "3b5e3599e117bb77aa",
       "title": "[여행단신] 한진·레고·트리니티항공·노랑풍선",
       "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72755",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "e5bc969f15831fc5fb",
-      "title": "[주말판] 시드니에서 맞이하는 특별한 새해",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72753",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "6391871be3aef5a3e1",
-      "title": "기가막힌 타이밍 ‘ITB China 2027’에 쏠린 시선",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72752",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "d7ca9093bd28e2d90a",
-      "title": "‘한-중 FTA’ 타결 관광분야는?",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72751",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "4747498fd515a2b33b",
-      "title": "관협중앙회, “한-중 FTA 관광 분야 타결 환영”",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72750",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "e260a586d1ae5bce1d",
-      "title": "하나투어, 하나LIVE 론칭 5주년 결산 데이터 공개",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72749",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "e5aa288406ed32ea5c",
-      "title": "뉴욕관광청, 글로벌 캠페인 ‘더 NYC 이펙트’ 론칭",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72748",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "04ad2f9614521588cf",
-      "title": "‘2026 코리아 마이스 엑스포’ 성료",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72747",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "b214a8e6eff8824bfc",
-      "title": "‘열린 관광지’ 조성 사업 대상지 선정",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72746",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "f0df318b397bd0025e",
-      "title": "에어부산, 나가사키 재운항·시즈오카 증편",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72745",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 7,
-        "rules": [
-          "air_route_capacity_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "운항",
-              "증편",
-              "부산"
-            ]
-          }
-        ],
-        "impact_targets": [
-          "관광기업"
-        ],
-        "reason": "제목에 관광산업의 수요·공급·사업·정책 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
-    },
-    {
-      "id": "a6c3c46db7a3d6fb6f",
-      "title": "부킹 홀딩스, B2B 부킹 파트너 사업부 공개",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72744",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "1944bf3195c652ab1d",
-      "title": "‘2026 서울관광 프롬프톤’ 참가자 모집",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72743",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "2ba6ba7d3f3321a05b",
-      "title": "‘문광원-동국대 한류융합학술원’ 연구 협력 강화",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72742",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [
-          "cross_sentence_unproven"
-        ],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "68ed5638b587aeb768",
-      "title": "크리에이트립, ‘강원도 관광상품 기획전’ 운영",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72741",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "5ff8c303ab8ca3dc5a",
-      "title": "호시노 리조트 리조나레 괌, 올데이 다이닝 선보여",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72740",
-      "source_id": "traveldaily",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "772dfac07d32fa66a3",
-      "title": "인스파이어, ‘윈터 원더랜드’ 겨울 패키지 4종 출시",
-      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72739",
       "source_id": "traveldaily",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4407,6 +4393,60 @@
       "decision": "exclude"
     },
     {
+      "id": "a8fe343fb053e7570f",
+      "title": "The Hidden Dependency Behind Strong Hotel Performance",
+      "url": "https://www.hospitalitynet.org/opinion/4135667/the-hidden-dependency-behind-strong-hotel-performance",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "689d86fc280badfca1",
+      "title": "The Hotel Beyond the Room: Turning Existing Assets into Guest Value",
+      "url": "https://www.hospitalitynet.org/opinion/4135666/the-hotel-beyond-the-room-turning-existing-assets-into-guest-value",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "98e4e2242bb7072466",
+      "title": "Your Hotel Doesn't Need Another Restaurant. It Needs a Reason to Visit.",
+      "url": "https://www.hospitalitynet.org/opinion/4135665/your-hotel-doesnt-need-another-restaurant-it-needs-a-reason-to-visit",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "e51b438dfed4056583",
       "title": "Hotel revenue management without a revenue manager",
       "url": "https://www.hospitalitynet.org/explainer/4135641/hotel-revenue-management-without-a-revenue-manager",
@@ -4616,9 +4656,9 @@
       "decision": "exclude"
     },
     {
-      "id": "ae811938bd7c345c48",
-      "title": "Guests Now Arrive With AI Itineraries. Hotels Need a Second Look.",
-      "url": "https://www.hospitalitynet.org/opinion/4135648/guests-now-arrive-with-ai-itineraries-hotels-need-a-second-look",
+      "id": "8adff4972a05a08114",
+      "title": "The Rave Economy Isn't a Party. It's a Revenue Stream.",
+      "url": "https://www.hospitalitynet.org/opinion/4135649/the-rave-economy-isnt-a-party-its-a-revenue-stream",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4634,9 +4674,9 @@
       "decision": "exclude"
     },
     {
-      "id": "8adff4972a05a08114",
-      "title": "The Rave Economy Isn't a Party. It's a Revenue Stream.",
-      "url": "https://www.hospitalitynet.org/opinion/4135649/the-rave-economy-isnt-a-party-its-a-revenue-stream",
+      "id": "ae811938bd7c345c48",
+      "title": "Guests Now Arrive With AI Itineraries. Hotels Need a Second Look.",
+      "url": "https://www.hospitalitynet.org/opinion/4135648/guests-now-arrive-with-ai-itineraries-hotels-need-a-second-look",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4688,24 +4728,6 @@
       "decision": "exclude"
     },
     {
-      "id": "7144821f07557d579b",
-      "title": "Hotel Operators Target Southern Europe as Contract Flexibility Grows Across the Continent, New Cushman & Wakefield Research Finds",
-      "url": "https://www.hospitalitynet.org/news/4135652/hotel-operators-target-southern-europe-as-contract-flexibility-grows-across-the-continent-new-cushman-wakefield-research-finds",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
       "id": "3d70d07ff4a8c671d7",
       "title": "Three Associations, One Voice on AI",
       "url": "https://www.hospitalitynet.org/opinion/4135651/three-associations-one-voice-on-ai",
@@ -4727,42 +4749,6 @@
       "id": "8bccc4b49c6ba0ff30",
       "title": "Google Retires Hotel Campaigns, the Breakfast Buffet Stops Paying Its Way, CoStar Lifts Its 2026 RevPAR Forecast by 1.5 Points",
       "url": "https://www.hospitalitynet.org/editorial/4135647/google-retires-hotel-campaigns-the-breakfast-buffet-stops-paying-its-way-costar-lifts-its-2026-revpar-forecast-by-15-points",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "1ed76218b279e6c7f7",
-      "title": "HAMA Europe opens applications for the 11th annual Asset Management Achievement Award",
-      "url": "https://www.hospitalitynet.org/news/4135646/hama-europe-opens-applications-for-the-11th-annual-asset-management-achievement-award",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "3e1280ba016141e30d",
-      "title": "HFTP, HSMAI and AHLA Unite to Create Global Hospitality AI Coordinating Council",
-      "url": "https://www.hospitalitynet.org/news/4135645/hftp-hsmai-and-ahla-unite-to-create-global-hospitality-ai-coordinating-council",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
