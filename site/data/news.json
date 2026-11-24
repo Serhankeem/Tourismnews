@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-25T00:31:48+09:00",
-  "last_successful_fetch": "2026-11-25T00:31:48+09:00",
-  "count": 157,
+  "generated_at": "2026-11-25T02:27:35+09:00",
+  "last_successful_fetch": "2026-11-25T02:27:35+09:00",
+  "count": 158,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,16 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Only a Third of Revenue Gains Come From Price, a New AI Council Faces the Neutrality Question, Lifestyle Brands Learn to Run Owners' Hotels",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-25T00:40:00+09:00",
+      "url": "https://www.hospitalitynet.org/editorial/4135676/only-a-third-of-revenue-gains-come-from-price-a-new-ai-council-faces-the-neutrality-question-lifestyle-brands-learn-to-run-owners-hotels",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels"
+      ]
+    },
     {
       "title": "AENDRE to Launch Wellness-Led Hotel Brand Acolyte with Three London Properties",
       "source": "Hospitality Net",
