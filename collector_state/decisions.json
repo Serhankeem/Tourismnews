@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-24T18:36:48+09:00",
+  "checked_at": "2026-11-24T20:20:48+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -4407,6 +4407,53 @@
       "decision": "exclude"
     },
     {
+      "id": "e51b438dfed4056583",
+      "title": "Hotel revenue management without a revenue manager",
+      "url": "https://www.hospitalitynet.org/explainer/4135641/hotel-revenue-management-without-a-revenue-manager",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Direct",
+        "decision": "publish",
+        "category": "항공·숙박",
+        "score": 8,
+        "rules": [
+          "english_industry_change"
+        ],
+        "signals": [
+          {
+            "field": "title",
+            "terms": [
+              "hotel",
+              "revenue"
+            ]
+          }
+        ],
+        "impact_targets": [],
+        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
+        "evidence_status": "industry_subject_in_feed"
+      },
+      "decision": "publish"
+    },
+    {
+      "id": "40b75a52ea845a21ce",
+      "title": "Hotels Can Measure What A Known Guest Is Worth. Most Choose Not To",
+      "url": "https://www.hospitalitynet.org/opinion/4135662/hotels-can-measure-what-a-known-guest-is-worth-most-choose-not-to",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "7d04d9d8e24416e830",
       "title": "Children take a seat at the table, as Sofitel launches its Very Important Children program",
       "url": "https://www.hospitalitynet.org/news/4135661/children-take-a-seat-at-the-table-as-sofitel-launches-its-very-important-children-program",
@@ -4551,6 +4598,24 @@
       "decision": "exclude"
     },
     {
+      "id": "a5136a193e765cb6ef",
+      "title": "\"Only a third of it is price\"",
+      "url": "https://www.hospitalitynet.org/interview/4135653/only-a-third-of-it-is-price",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "ae811938bd7c345c48",
       "title": "Guests Now Arrive With AI Itineraries. Hotels Need a Second Look.",
       "url": "https://www.hospitalitynet.org/opinion/4135648/guests-now-arrive-with-ai-itineraries-hotels-need-a-second-look",
@@ -4572,24 +4637,6 @@
       "id": "8adff4972a05a08114",
       "title": "The Rave Economy Isn't a Party. It's a Revenue Stream.",
       "url": "https://www.hospitalitynet.org/opinion/4135649/the-rave-economy-isnt-a-party-its-a-revenue-stream",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "a5136a193e765cb6ef",
-      "title": "\"Only a third of it is price\"",
-      "url": "https://www.hospitalitynet.org/interview/4135653/only-a-third-of-it-is-price",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4716,42 +4763,6 @@
       "id": "3e1280ba016141e30d",
       "title": "HFTP, HSMAI and AHLA Unite to Create Global Hospitality AI Coordinating Council",
       "url": "https://www.hospitalitynet.org/news/4135645/hftp-hsmai-and-ahla-unite-to-create-global-hospitality-ai-coordinating-council",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "6093532d0093d4260f",
-      "title": "Making Hospitality Leaders Smarter On... The 2027 Budget",
-      "url": "https://www.hospitalitynet.org/opinion/4135644/making-hospitality-leaders-smarter-on-the-2027-budget",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "50b84e7faf992cafcb",
-      "title": "Proudly Committed: RIU Hotels & Resorts partners with the Angel Shark Project to protect the angel shark in the Canary Islands",
-      "url": "https://www.hospitalitynet.org/news/4135643/proudly-committed-riu-hotels-resorts-partners-with-the-angel-shark-project-to-protect-the-angel-shark-in-the-canary-islands",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",

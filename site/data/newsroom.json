@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-24T18:36:48+09:00",
-  "last_successful_fetch": "2026-11-24T18:36:48+09:00",
-  "count": 155,
+  "generated_at": "2026-11-24T20:20:48+09:00",
+  "last_successful_fetch": "2026-11-24T20:20:48+09:00",
+  "count": 156,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,16 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Hotel revenue management without a revenue manager",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-24T20:00:00+09:00",
+      "url": "https://www.hospitalitynet.org/explainer/4135641/hotel-revenue-management-without-a-revenue-manager",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
     {
       "title": "Windsor Aughtry Opens Home2 Suites by Hilton Murrells Inlet Myrtle Beach Area",
       "source": "Hospitality Net",
