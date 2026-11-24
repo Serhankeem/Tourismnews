@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-24T11:46:53+09:00",
+  "checked_at": "2026-11-24T12:19:21+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -3503,6 +3503,42 @@
       "decision": "exclude"
     },
     {
+      "id": "9db628234f4c558eaf",
+      "title": "NH투자증권, 설치 없이 쓰는 ‘나무Max 웹트레이딩’ 오픈",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165719",
+      "source_id": "ttlnews",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "6fb0d05a6b3533145c",
+      "title": "고흥군, 2026년 치매관리사업 성과평가 ‘최우수기관’ 선정",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165757",
+      "source_id": "ttlnews",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "3b712900ff09dbfed2",
       "title": "알보젠코리아, 14년째 김장 나눔…임직원 손길로 지역사회 온정 전해",
       "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165758",
@@ -4358,42 +4394,6 @@
       "id": "ea47d150b747b26a21",
       "title": "효성굿스프링스, 원전 공급용 펌프 전 제품 ASME 인증 획득",
       "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165143",
-      "source_id": "ttlnews",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "7c683736c67d3db12e",
-      "title": "LS전선, 뉴욕 초고압 전력망에 7000억원 규모 케이블 공급",
-      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165033",
-      "source_id": "ttlnews",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "9e67d57881a40ac7f0",
-      "title": "교원라이프, 프리미엄 해양 추모 서비스 ‘오션포레스트’ 론칭",
-      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165113",
       "source_id": "ttlnews",
       "relevance_evidence": {
         "rule_version": "0.2",
