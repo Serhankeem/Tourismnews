@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-24T18:14:27+09:00",
+  "checked_at": "2026-11-24T18:36:48+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -4407,6 +4407,60 @@
       "decision": "exclude"
     },
     {
+      "id": "7d04d9d8e24416e830",
+      "title": "Children take a seat at the table, as Sofitel launches its Very Important Children program",
+      "url": "https://www.hospitalitynet.org/news/4135661/children-take-a-seat-at-the-table-as-sofitel-launches-its-very-important-children-program",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "4eb88371267d03c688",
+      "title": "Salt Lake City Hotels Prepare for a Transformative Decade",
+      "url": "https://www.hospitalitynet.org/report/4135660/salt-lake-city-hotels-prepare-for-a-transformative-decade",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "1d5cc2acb7ebce63bd",
+      "title": "HotelMinder Experts' Choice Awards Announce 2027 Winners, Recognising the Best Operational Solutions for Different Hotels' Specific Needs",
+      "url": "https://www.hospitalitynet.org/news/4135552/hotelminder-experts-choice-awards-announce-2027-winners-recognising-the-best-operational-solutions-for-different-hotels-specific-needs",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "569d54d8fbe7161e11",
       "title": "HVS Europe Hotel Transactions Bulletin - Week Ending 20 November 2026",
       "url": "https://www.hospitalitynet.org/news/4135659/hvs-europe-hotel-transactions-bulletin-week-ending-20-november-2026",
@@ -4497,9 +4551,9 @@
       "decision": "exclude"
     },
     {
-      "id": "a5136a193e765cb6ef",
-      "title": "\"Only a third of it is price\"",
-      "url": "https://www.hospitalitynet.org/interview/4135653/only-a-third-of-it-is-price",
+      "id": "ae811938bd7c345c48",
+      "title": "Guests Now Arrive With AI Itineraries. Hotels Need a Second Look.",
+      "url": "https://www.hospitalitynet.org/opinion/4135648/guests-now-arrive-with-ai-itineraries-hotels-need-a-second-look",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4533,9 +4587,9 @@
       "decision": "exclude"
     },
     {
-      "id": "ae811938bd7c345c48",
-      "title": "Guests Now Arrive With AI Itineraries. Hotels Need a Second Look.",
-      "url": "https://www.hospitalitynet.org/opinion/4135648/guests-now-arrive-with-ai-itineraries-hotels-need-a-second-look",
+      "id": "a5136a193e765cb6ef",
+      "title": "\"Only a third of it is price\"",
+      "url": "https://www.hospitalitynet.org/interview/4135653/only-a-third-of-it-is-price",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
@@ -4711,71 +4765,6 @@
         "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
       },
       "decision": "exclude"
-    },
-    {
-      "id": "729d65959dc2dea5b0",
-      "title": "Right visitor, right message, right moment: advanced targeting on your hotel website",
-      "url": "https://www.hospitalitynet.org/explainer/4135640/right-visitor-right-message-right-moment-advanced-targeting-on-your-hotel-website",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "edd209afc904e71b50",
-      "title": "CoStar, Tourism Economics raise U.S. hotel growth forecast",
-      "url": "https://www.hospitalitynet.org/news/4135638/costar-tourism-economics-raise-us-hotel-growth-forecast",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "a3d48bb653bac753ab",
-      "title": "Windsor Aughtry Opens Home2 Suites by Hilton Murrells Inlet Myrtle Beach Area",
-      "url": "https://www.hospitalitynet.org/news/4135620/windsor-aughtry-opens-home2-suites-by-hilton-murrells-inlet-myrtle-beach-area",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Direct",
-        "decision": "publish",
-        "category": "항공·숙박",
-        "score": 8,
-        "rules": [
-          "english_industry_change"
-        ],
-        "signals": [
-          {
-            "field": "title",
-            "terms": [
-              "hilton",
-              "opens"
-            ]
-          }
-        ],
-        "impact_targets": [],
-        "reason": "공식 제목에 관광기업·항공·숙박 등 산업 대상과 운영 또는 재무 변화가 함께 명시되어 있습니다.",
-        "evidence_status": "industry_subject_in_feed"
-      },
-      "decision": "publish"
     }
   ]
 }
