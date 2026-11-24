@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-24T22:44:52+09:00",
-  "last_successful_fetch": "2026-11-24T22:44:52+09:00",
-  "count": 156,
+  "generated_at": "2026-11-25T00:31:48+09:00",
+  "last_successful_fetch": "2026-11-25T00:31:48+09:00",
+  "count": 157,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,16 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "AENDRE to Launch Wellness-Led Hotel Brand Acolyte with Three London Properties",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-25T00:16:09+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135673/aendre-to-launch-wellness-led-hotel-brand-acolyte-with-three-london-properties",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
     {
       "title": "Hotel revenue management without a revenue manager",
       "source": "Hospitality Net",
