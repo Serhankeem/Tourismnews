@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:27:15+09:00",
+  "generated_at": "2026-11-24T14:35:02+09:00",
   "mode": "live_rss",
   "decisions": [
     {
@@ -8,7 +8,7 @@
       "tier": "korea_direct",
       "category": "항공·숙박",
       "new_category": true,
-      "age_hours": 15.62,
+      "age_hours": 16.75,
       "published_at": "2026-11-23T21:49:58+09:00",
       "basis": [
         "authorized_newsroom",
@@ -23,7 +23,7 @@
       "tier": "korea_direct",
       "category": "문화·트렌드",
       "new_category": true,
-      "age_hours": 15.64,
+      "age_hours": 16.77,
       "published_at": "2026-11-23T21:49:06+09:00",
       "basis": [
         "authorized_newsroom",
