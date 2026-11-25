@@ -1,16 +1,16 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-25T12:25:27+09:00",
+  "generated_at": "2026-11-25T13:37:39+09:00",
   "briefing_date": "2026-11-25",
-  "last_successful_fetch": "2026-11-25T12:25:27+09:00",
+  "last_successful_fetch": "2026-11-25T13:37:39+09:00",
   "status": "no_eligible_recent_articles",
   "recent_news_count": 3,
   "selected_count": 0,
   "collection": {
     "status": "partial",
-    "successful_sources": 50,
+    "successful_sources": 47,
     "source_count": 60,
-    "failed_sources": 10
+    "failed_sources": 13
   },
   "mode": "live_rss",
   "title": "관광산업 주요 뉴스 브리핑 후보",

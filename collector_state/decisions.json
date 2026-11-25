@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-25T12:25:27+09:00",
+  "checked_at": "2026-11-25T13:37:39+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -4474,6 +4474,26 @@
       "decision": "exclude"
     },
     {
+      "id": "85a1cef10b80861095",
+      "title": "How to Make a Foshan Sourcing Visit Useful for Hotel FF&E — and What to Leave With",
+      "url": "https://www.hospitalitynet.org/opinion/4135684/how-to-make-a-foshan-sourcing-visit-useful-for-hotel-ff-e-and-what-to-leave-with",
+      "source_id": "hospitalitynet",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "general_industry_howto_not_operating_news"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "일반적인 방법 안내 제목은 실제 산업 변화 뉴스로 간주하지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "2c448bda39dc1a59b2",
       "title": "The New Language of Luxury Travel",
       "url": "https://www.hospitalitynet.org/opinion/4135683/the-new-language-of-luxury-travel",
@@ -4834,24 +4854,6 @@
       "id": "569d54d8fbe7161e11",
       "title": "HVS Europe Hotel Transactions Bulletin - Week Ending 20 November 2026",
       "url": "https://www.hospitalitynet.org/news/4135659/hvs-europe-hotel-transactions-bulletin-week-ending-20-november-2026",
-      "source_id": "hospitalitynet",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "08b1fc3cc50a26ab07",
-      "title": "Radisson Blu Resort Modernizes Operations with Shiji Infrasys POS and Reviewpro Reputation",
-      "url": "https://www.hospitalitynet.org/news/4135658/radisson-blu-resort-modernizes-operations-with-shiji-infrasys-pos-and-reviewpro-reputation",
       "source_id": "hospitalitynet",
       "relevance_evidence": {
         "rule_version": "0.2",
