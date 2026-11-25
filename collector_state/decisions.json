@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-25T13:37:39+09:00",
+  "checked_at": "2026-11-25T14:36:30+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -174,6 +174,24 @@
       "title": "주태국한국문화원, 개원 13년 만에 국유청사 마련해 새 출발",
       "url": "http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pMenuCD=0302000000&pSeq=22861",
       "source_id": "mcst_press",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "e7f52bf0357ce06167",
+      "title": "서울별빛명소로 거듭날 성북천! 야간산책부터 전통시장, 칼국수 한 그릇까지",
+      "url": "https://mediahub.seoul.go.kr/archives/2020158",
+      "source_id": "seoul_culture",
       "relevance_evidence": {
         "rule_version": "0.2",
         "label": "Irrelevant",
@@ -521,24 +539,6 @@
       "id": "41503a4388a031db5c",
       "title": "겨울에도 찜! 무료 야경명소 '하늘전망대' 운영 확대",
       "url": "https://mediahub.seoul.go.kr/archives/2020119",
-      "source_id": "seoul_culture",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "c4c7c486f289ce42f7",
-      "title": "서울의 밤이 이렇게 예뻤나? 하늘에서 본 눈부신 밤 풍경",
-      "url": "https://mediahub.seoul.go.kr/archives/2020118",
       "source_id": "seoul_culture",
       "relevance_evidence": {
         "rule_version": "0.2",
