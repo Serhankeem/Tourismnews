@@ -922,6 +922,31 @@
           "published_at": "2026-11-23T21:50:15+09:00"
         }
       ]
+    },
+    {
+      "briefing_date": "2026-11-25",
+      "generated_at": "2026-11-25T10:47:06+09:00",
+      "mode": "live_rss",
+      "decisions": [
+        {
+          "article_id": "aa20c4eb2712c3313e",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-25T00:40:00+09:00"
+        },
+        {
+          "article_id": "c5640703a595fbb2b0",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-25T00:16:09+09:00"
+        },
+        {
+          "article_id": "e51b438dfed4056583",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-24T20:00:00+09:00"
+        }
+      ]
     }
   ]
 }
