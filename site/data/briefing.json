@@ -1,19 +1,30 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-25T16:54:09+09:00",
-  "briefing_date": "2026-11-25",
-  "last_successful_fetch": "2026-11-25T16:54:09+09:00",
-  "status": "no_eligible_recent_articles",
-  "recent_news_count": 3,
-  "selected_count": 0,
+  "generated_at": "2026-11-26T03:54:41+09:00",
+  "briefing_date": "2026-11-26",
+  "last_successful_fetch": "2026-11-26T03:54:41+09:00",
+  "status": "candidates_ready",
+  "recent_news_count": 5,
+  "selected_count": 1,
   "collection": {
     "status": "partial",
-    "successful_sources": 50,
+    "successful_sources": 49,
     "source_count": 60,
-    "failed_sources": 10
+    "failed_sources": 11
   },
   "mode": "live_rss",
   "title": "관광산업 주요 뉴스 브리핑 후보",
-  "items": [],
+  "items": [
+    {
+      "title": "방한 중국인 단체관광객 무비자 1년 연장, 한국인 중국행 비자는?",
+      "source": "여행신문",
+      "published_at": "2026-11-26T00:15:00+09:00",
+      "url": "https://www.traveltimes.co.kr/news/articleView.html?idxno=500829",
+      "category": "관광정책",
+      "keywords": [
+        "무비자"
+      ]
+    }
+  ],
   "notice": "메타데이터 기반 후보 선별 · 본문 요약·실제 발송·구독은 제공하지 않습니다."
 }

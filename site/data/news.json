@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-25T16:54:09+09:00",
-  "last_successful_fetch": "2026-11-25T16:54:09+09:00",
-  "count": 158,
+  "generated_at": "2026-11-26T03:54:41+09:00",
+  "last_successful_fetch": "2026-11-26T03:54:41+09:00",
+  "count": 163,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,57 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "Why Hotel Marketing Fails Without a Revenue Management Strategy",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-26T01:47:52+09:00",
+      "url": "https://www.hospitalitynet.org/opinion/4135705/why-hotel-marketing-fails-without-a-revenue-management-strategy",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "방한 중국인 단체관광객 무비자 1년 연장, 한국인 중국행 비자는?",
+      "source": "여행신문",
+      "published_at": "2026-11-26T00:15:00+09:00",
+      "url": "https://www.traveltimes.co.kr/news/articleView.html?idxno=500829",
+      "category": "관광정책",
+      "keywords": [
+        "무비자"
+      ]
+    },
+    {
+      "title": "Your Hotel Is Sinking. You Can Only Save One: Sales, Revenue, Distribution or Marketing?",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-25T22:17:45+09:00",
+      "url": "https://www.hospitalitynet.org/opinion/4135702/your-hotel-is-sinking-you-can-only-save-one-sales-revenue-distribution-or-marketing",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "서울관협, 지역 관광상품 개발 박차",
+      "source": "트래블데일리",
+      "published_at": "2026-11-25T22:04:51+09:00",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72816",
+      "category": "문화·트렌드",
+      "keywords": [
+        "지역관광"
+      ]
+    },
+    {
+      "title": "Hotel Upselling Is Becoming a Loyalty Strategy. Are Hotels Ready?",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-25T19:58:52+09:00",
+      "url": "https://www.hospitalitynet.org/podcast/4135694/hotel-upselling-is-becoming-a-loyalty-strategy-are-hotels-ready",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels",
+        "Hotel"
+      ]
+    },
     {
       "title": "Only a Third of Revenue Gains Come From Price, a New AI Council Faces the Neutrality Question, Lifestyle Brands Learn to Run Owners' Hotels",
       "source": "Hospitality Net",

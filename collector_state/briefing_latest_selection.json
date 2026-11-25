@@ -1,24 +1,45 @@
 {
-  "generated_at": "2026-11-25T16:54:09+09:00",
+  "generated_at": "2026-11-26T03:54:41+09:00",
   "mode": "live_rss",
   "decisions": [
     {
-      "article_id": "aa20c4eb2712c3313e",
-      "decision": "editorial_ineligible",
-      "tier": "reference",
-      "published_at": "2026-11-25T00:40:00+09:00"
+      "article_id": "640e9dce56a8d3e584",
+      "decision": "selected",
+      "tier": "korea_direct",
+      "category": "관광정책",
+      "new_category": true,
+      "age_hours": 3.66,
+      "published_at": "2026-11-26T00:15:00+09:00",
+      "basis": [
+        "authorized_newsroom",
+        "verified_timestamp_last24h",
+        "korea_priority_then_category_diversity",
+        "conservative_title_similarity"
+      ]
     },
     {
-      "article_id": "c5640703a595fbb2b0",
+      "article_id": "76e94aae509a03ff64",
       "decision": "editorial_ineligible",
       "tier": "reference",
-      "published_at": "2026-11-25T00:16:09+09:00"
+      "published_at": "2026-11-26T01:47:52+09:00"
     },
     {
-      "article_id": "e51b438dfed4056583",
+      "article_id": "ace5169aab47fa9722",
       "decision": "editorial_ineligible",
       "tier": "reference",
-      "published_at": "2026-11-24T20:00:00+09:00"
+      "published_at": "2026-11-25T22:17:45+09:00"
+    },
+    {
+      "article_id": "04307ec4ec2d7abb29",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-25T22:04:51+09:00"
+    },
+    {
+      "article_id": "a680f173a9d93666a7",
+      "decision": "editorial_ineligible",
+      "tier": "reference",
+      "published_at": "2026-11-25T19:58:52+09:00"
     }
   ]
 }
