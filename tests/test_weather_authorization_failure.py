@@ -1,10 +1,12 @@
 """Failure-run regressions. Synthetic inputs/HTTP responses; no live approval."""
 import base64
+import ast
 import io
 import json
 import os
 from pathlib import Path
 import tempfile
+import textwrap
 import unittest
 import urllib.error
 from unittest.mock import patch
@@ -17,6 +19,20 @@ from test_weather_publication import NOW
 
 
 class AuthorizationFailureTests(unittest.TestCase):
+    def workflow_contract(self, code, **values):
+        workflow=(g.engine.ROOT/'.github/workflows/collect.yml').read_text()
+        script=textwrap.dedent(workflow.split("python - <<'PYCODE'\n",1)[1].split('          PYCODE',1)[0])
+        guards=[node for node in ast.walk(ast.parse(script)) if isinstance(node,ast.Call) and isinstance(node.func,ast.Name) and node.func.id=='require']
+        guard=next(node for node in guards if isinstance(node.args[1],ast.Constant) and node.args[1].value==code)
+        return eval(compile(ast.Expression(guard.args[0]),'<workflow-contract>','eval'),{'REPOSITORY':d.REPOSITORY,**values})
+    def test_pr_default_token_repository_binding_is_case_insensitive_but_exact(self):
+        for name in [d.REPOSITORY,'Serhankeem/Tourismnews','SERHANKEEM/TOURISMNEWS']:
+            self.assertTrue(self.workflow_contract('github_dispatch_binding_invalid',run={'repository':{'full_name':name}}))
+        for name in ['other/Tourismnews','Serhankeem/other','Serhankeem/Tourismnews-extra']:
+            self.assertFalse(self.workflow_contract('github_dispatch_binding_invalid',run={'repository':{'full_name':name}}))
+    def test_pr_default_token_actor_and_collaborator_permission_still_required(self):
+        for permission,actor_id,expected in [('admin',2,True),('write',2,True),('maintain',2,True),('read',2,False),('admin',3,False)]:
+            self.assertEqual(self.workflow_contract('github_publish_permission_required',run={'actor':{'id':2}},role={'permission':permission,'user':{'id':actor_id}}),expected)
     def test_execution_and_actor_permission_contracts_are_both_still_required(self):
         _,_,mh,ch=inputs();api=API(mh,ch)
         self.assertLessEqual(d.authorize(api,ENV,mh,ch,'a'*40,NOW),NOW)
