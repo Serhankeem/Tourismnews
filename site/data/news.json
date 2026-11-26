@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-26T13:32:57+09:00",
-  "last_successful_fetch": "2026-11-26T13:32:57+09:00",
-  "count": 164,
+  "generated_at": "2026-11-26T23:09:58+09:00",
+  "last_successful_fetch": "2026-11-26T23:09:58+09:00",
+  "count": 171,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,77 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "10월 인바운드 24% 증가, 아웃바운드 1.4% 감소",
+      "source": "트래블데일리",
+      "published_at": "2026-11-26T22:09:09+09:00",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72833",
+      "category": "인바운드",
+      "keywords": [
+        "인바운드"
+      ]
+    },
+    {
+      "title": "델타항공, NDC 유통 확대 여행사 선택권 보장",
+      "source": "트래블데일리",
+      "published_at": "2026-11-26T22:09:05+09:00",
+      "url": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72835",
+      "category": "여행산업",
+      "keywords": [
+        "여행사"
+      ]
+    },
+    {
+      "title": "Radisson Hotel Group wins 2026 Hotel Visionary Award for AI-powered revenue management innovation",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-26T21:55:23+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135716/radisson-hotel-group-wins-2026-hotel-visionary-award-for-ai-powered-revenue-management-innovation",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "Emerging Travel Group integrates with Hoteliers.Guru to Connect APAC Hotels to Global Demand",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-26T21:30:00+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135714/emerging-travel-group-integrates-with-hoteliersguru-to-connect-apac-hotels-to-global-demand",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotels"
+      ]
+    },
+    {
+      "title": "Hilton Surpasses 60 Hotels in Egypt, with a Growing Pipeline Representing a Combined Owner Investment of USD $1.6 Billion",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-26T21:20:11+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135713/hilton-surpasses-60-hotels-in-egypt-with-a-growing-pipeline-representing-a-combined-owner-investment-of-usd-16-billion",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hilton",
+        "Hotels"
+      ]
+    },
+    {
+      "title": "Holiday Travel Demand Diverges as Hotel Searches Rise and Flight Bookings Lag",
+      "source": "Hospitality Net",
+      "published_at": "2026-11-26T21:13:49+09:00",
+      "url": "https://www.hospitalitynet.org/news/4135712/holiday-travel-demand-diverges-as-hotel-searches-rise-and-flight-bookings-lag",
+      "category": "항공·숙박",
+      "keywords": [
+        "Hotel"
+      ]
+    },
+    {
+      "title": "2030년 관광객 2600만명 유치 목표… 모로코, 한국 여행사 인센티브·공동 마케팅 확대 검토",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-26T14:34:42+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3166700",
+      "category": "여행산업",
+      "keywords": [
+        "여행사"
+      ]
+    },
     {
       "title": "4개월 연속, 방한 외국인 관광객 월 200만 명 돌파",
       "source": "문화체육관광부 보도자료",

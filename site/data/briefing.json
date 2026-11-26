@@ -1,11 +1,11 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-26T13:32:57+09:00",
+  "generated_at": "2026-11-26T23:09:58+09:00",
   "briefing_date": "2026-11-26",
-  "last_successful_fetch": "2026-11-26T13:32:57+09:00",
+  "last_successful_fetch": "2026-11-26T23:09:58+09:00",
   "status": "candidates_ready",
-  "recent_news_count": 6,
-  "selected_count": 2,
+  "recent_news_count": 10,
+  "selected_count": 3,
   "collection": {
     "status": "partial",
     "successful_sources": 49,
@@ -15,6 +15,16 @@
   "mode": "live_rss",
   "title": "관광산업 주요 뉴스 브리핑 후보",
   "items": [
+    {
+      "title": "2030년 관광객 2600만명 유치 목표… 모로코, 한국 여행사 인센티브·공동 마케팅 확대 검토",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-26T14:34:42+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3166700",
+      "category": "여행산업",
+      "keywords": [
+        "여행사"
+      ]
+    },
     {
       "title": "4개월 연속, 방한 외국인 관광객 월 200만 명 돌파",
       "source": "문화체육관광부 보도자료",
