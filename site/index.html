@@ -4,6 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="theme-color" content="#173B73" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64 128x128 256x256" href="./assets/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="./assets/icon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="./assets/icon-512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
 <link rel="stylesheet" href="./monthly-market-weather.css">
 <title>여행기류 currentourism — 관광산업 인텔리전스</title>
 <style>
@@ -203,7 +208,8 @@ function navigate(page,updateHash=true){
  const inNews=['news','briefing','research'].includes(page);newsGroup.classList.toggle('active',inNews);
  if(inNews)newsGroup.setAttribute('aria-current','true');else newsGroup.removeAttribute('aria-current');
  const weatherGroup=document.getElementById('weather-menu-toggle');
- const inWeather=['weather','macro'].includes(page);weatherGroup.classList.toggle('active',inWeather);
+ // Both weather hashes normalize to this page; Macro has its own top-level link.
+ const inWeather=page==='weather';weatherGroup.classList.toggle('active',inWeather);
  if(inWeather)weatherGroup.setAttribute('aria-current','true');else weatherGroup.removeAttribute('aria-current');
  window.closeNavigation?.();
  window.polishPageTransition?.(page,changed);

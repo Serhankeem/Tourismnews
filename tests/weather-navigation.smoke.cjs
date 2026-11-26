@@ -37,7 +37,7 @@ try{for(const width of [320,390,768,1024,1440]){
   assert.equal(await screen.isVisible(),true);
   assert.equal(await screen.locator('.weather-modes a[aria-current="page"]').getAttribute('href'),'#'+route);
   assert.equal(await page.locator('#weather-submenu a[aria-current="page"]').getAttribute('href'),'#'+route);
-  assert.equal(await weather.getAttribute('aria-current'),'true');
+  assert.equal(await weather.getAttribute('aria-current'),route==='macro'?null:'true');
   assert.equal(await page.locator('#weather-monthly').isVisible(),route==='weather');
   assert.equal(await page.locator('#weather-legacy').isVisible(),route==='weather-simulator');
   assert.equal(await screen.locator('h1').textContent(),route==='weather'?'월간 진단':route==='weather-simulator'?'관광시장 모델 · 공식 관측':'Macro Monitor');
