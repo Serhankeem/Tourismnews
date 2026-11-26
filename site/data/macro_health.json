@@ -1,15 +1,21 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T13:40:41.690537+09:00",
-  "status": "not_due",
+  "checked_at": "2026-11-26T13:35:16.678168+09:00",
+  "status": "ok",
   "sources": [
     {
       "id": "kto_monthly_statistics",
       "name": "한국관광공사 한국관광통계",
-      "status": "not_due",
+      "status": "ok",
       "reason": null,
-      "last_successful_check": "2026-11-25T12:27:27.801186+09:00",
-      "reference_period": "2026-09"
+      "last_successful_check": "2026-11-26T13:35:16.678168+09:00",
+      "reference_period": "2026-10",
+      "release_published_at": "2026-11-25T16:00:00+09:00",
+      "observations": 490,
+      "new_observations": 7,
+      "unchanged_observations": 483,
+      "value_corrections": 0,
+      "status_changes": 0
     },
     {
       "id": "ecos_general_travel",
@@ -90,31 +96,31 @@
       "collection_state": "disabled"
     }
   ],
-  "new_observations": 0,
-  "unchanged_observations": 0,
+  "new_observations": 7,
+  "unchanged_observations": 483,
   "value_corrections": 0,
   "status_changes": 0,
-  "successful_sources": 0,
-  "attempted_sources": 0,
+  "successful_sources": 1,
+  "attempted_sources": 1,
   "pending_sources": 8,
   "connected_indicators": 9,
   "connected_primary_indicators": 4,
-  "observation_count": 621,
+  "observation_count": 628,
   "indicators": [
     {
       "id": "kto_inbound",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
       "id": "kto_outbound",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
@@ -137,40 +143,40 @@
       "id": "kto_inbound_cn",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
       "id": "kto_inbound_jp",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
       "id": "kto_inbound_tw",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
       "id": "kto_inbound_us",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
       "id": "kto_inbound_vn",
       "connected": true,
       "first_period": "2021-01",
-      "latest_period": "2026-09",
-      "months": 69,
+      "latest_period": "2026-10",
+      "months": 70,
       "missing_periods": []
     },
     {
