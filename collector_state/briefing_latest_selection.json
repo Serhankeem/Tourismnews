@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T19:08:48+09:00",
+  "generated_at": "2026-11-27T21:38:07+09:00",
   "mode": "live_rss",
   "decisions": [
     {
@@ -8,7 +8,7 @@
       "tier": "korea_direct",
       "category": "여행산업",
       "new_category": true,
-      "age_hours": 17.27,
+      "age_hours": 19.76,
       "published_at": "2026-11-27T01:52:48+09:00",
       "basis": [
         "authorized_newsroom",
@@ -34,24 +34,6 @@
       "decision": "editorial_ineligible",
       "tier": "reference",
       "published_at": "2026-11-26T21:55:23+09:00"
-    },
-    {
-      "article_id": "370e3a0aa76d7b6b1b",
-      "decision": "editorial_ineligible",
-      "tier": "reference",
-      "published_at": "2026-11-26T21:30:00+09:00"
-    },
-    {
-      "article_id": "9adc66f4a6464b2aa1",
-      "decision": "editorial_ineligible",
-      "tier": "reference",
-      "published_at": "2026-11-26T21:20:11+09:00"
-    },
-    {
-      "article_id": "4af47b256d7f078554",
-      "decision": "editorial_ineligible",
-      "tier": "reference",
-      "published_at": "2026-11-26T21:13:49+09:00"
     }
   ]
 }
