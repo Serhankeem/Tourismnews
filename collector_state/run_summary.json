@@ -1,19 +1,19 @@
 {
   "schema_version": 3,
-  "checked_at": "2026-11-27T12:58:35+09:00",
+  "checked_at": "2026-11-27T13:13:17+09:00",
   "publication_result": "partial",
   "discovery_status": "partial",
-  "received": 3999,
-  "new_discoveries": 2074,
-  "duplicate_observations": 1671,
-  "new_auto_published": 1,
+  "received": 4011,
+  "new_discoveries": 89,
+  "duplicate_observations": 3665,
+  "new_auto_published": 0,
   "total_published": 180,
   "total_published_scope": "current_public_views_all_record_types",
   "total_archived": 185,
   "newsroom_count": 172,
   "filings_count": 5,
   "other_research_count": 3,
-  "new_newsroom_items": 1,
+  "new_newsroom_items": 0,
   "new_filings": 0,
   "newsroom_korea_direct_count": 50,
   "newsroom_korea_direct_last7d": 7,
@@ -64,7 +64,7 @@
       "count": 30,
       "originally_published_last7d": 2,
       "korea_direct": 14,
-      "new_this_run": 1
+      "new_this_run": 0
     }
   },
   "newsroom_category_counts": {
@@ -98,8 +98,8 @@
     "문화·트렌드": 28,
     "경제·시장": 3
   },
-  "discovered_last24h": 6025,
-  "discovered_last7d": 45254,
+  "discovered_last24h": 6114,
+  "discovered_last7d": 45343,
   "auto_published_last24h": 8,
   "auto_published_last7d": 27,
   "originally_published_last24h": 8,
@@ -143,7 +143,7 @@
         "limitation": "Only items currently returned by the official feed. No article or archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.990909090909091,
+      "success_rate": 0.9909297052154195,
       "news_conversion_last7d": {
         "observed_unique": 10,
         "industry_candidates": 1,
@@ -198,7 +198,7 @@
         "limitation": "Only items currently returned by the official feed. No article or archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.7227272727272728,
+      "success_rate": 0.7233560090702947,
       "news_conversion_last7d": {
         "observed_unique": 0,
         "industry_candidates": 0,
@@ -299,7 +299,7 @@
         "limitation": "Only items currently returned by the official feed. No article or archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9181818181818182,
+      "success_rate": 0.9183673469387755,
       "news_conversion_last7d": {
         "observed_unique": 20,
         "industry_candidates": 0,
@@ -354,7 +354,7 @@
         "limitation": "Only items currently returned by the official feed. No article or archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9659090909090909,
+      "success_rate": 0.9659863945578231,
       "news_conversion_last7d": {
         "observed_unique": 6,
         "industry_candidates": 0,
@@ -375,61 +375,6 @@
       "id": "seoul_transport",
       "name": "서울시 내 손안에 서울 교통",
       "url": "https://mediahub.seoul.go.kr/news/rss/01",
-      "group": "public",
-      "fetch_attempted": true,
-      "news_classifications": {
-        "Direct": 0,
-        "Indirect": 0,
-        "Irrelevant": 20
-      },
-      "received": 20,
-      "new_discoveries": 0,
-      "duplicates": 20,
-      "rights_holds": 0,
-      "date_holds": 0,
-      "invalid_metadata": 0,
-      "outside_window": 0,
-      "future_date_holds": 0,
-      "attribution_holds": 0,
-      "classifications": {
-        "Direct": 0,
-        "Indirect": 0,
-        "Irrelevant": 20
-      },
-      "publication_policy": {
-        "status": "approved",
-        "scope": "metadata_only",
-        "terms_url": "https://www.seoul.go.kr/helper/copyright.do",
-        "basis": "Existing official RSS service provides titles, dates and original links for metadata indexing; no article/description/image republication.",
-        "checked_at": "2026-10-27"
-      },
-      "backfill": {
-        "mode": "provided_feed_only",
-        "max_days": 90,
-        "limitation": "Only items currently returned by the official feed. No article or archive crawling."
-      },
-      "status": "ok",
-      "success_rate": 0.7454545454545455,
-      "news_conversion_last7d": {
-        "observed_unique": 3,
-        "industry_candidates": 0,
-        "approved_candidates": 0,
-        "public_observed_candidates": 0,
-        "new_public_candidates": 0,
-        "irrelevant_unique": 3,
-        "rights_held_unique": 0,
-        "candidate_to_approved": null,
-        "candidate_to_public": null,
-        "definition": "unique_URL_IDs_in_successful_feed_this_run; verified_publication_in_last7d; approval_includes_Indirect_review; public_count_requires_matching_source_id; new_excludes_existing_archive; non_news_excluded"
-      },
-      "new_auto_published": 0,
-      "new_newsroom_items": 0,
-      "outcome": "no_new_candidate"
-    },
-    {
-      "id": "seoul_environment",
-      "name": "서울시 내 손안에 서울 환경",
-      "url": "https://mediahub.seoul.go.kr/news/rss/05",
       "group": "public",
       "fetch_attempted": true,
       "news_classifications": {
@@ -466,11 +411,66 @@
       "status": "error",
       "error_kind": "transport_error",
       "error": "<urlopen error _ssl.c:994: The handshake operation timed out>",
-      "success_rate": 0.5431818181818182,
+      "success_rate": 0.7437641723356009,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
       "outcome": "fetch_failed"
+    },
+    {
+      "id": "seoul_environment",
+      "name": "서울시 내 손안에 서울 환경",
+      "url": "https://mediahub.seoul.go.kr/news/rss/05",
+      "group": "public",
+      "fetch_attempted": true,
+      "news_classifications": {
+        "Direct": 0,
+        "Indirect": 0,
+        "Irrelevant": 20
+      },
+      "received": 20,
+      "new_discoveries": 0,
+      "duplicates": 20,
+      "rights_holds": 0,
+      "date_holds": 0,
+      "invalid_metadata": 0,
+      "outside_window": 0,
+      "future_date_holds": 0,
+      "attribution_holds": 0,
+      "classifications": {
+        "Direct": 0,
+        "Indirect": 0,
+        "Irrelevant": 20
+      },
+      "publication_policy": {
+        "status": "approved",
+        "scope": "metadata_only",
+        "terms_url": "https://www.seoul.go.kr/helper/copyright.do",
+        "basis": "Existing official RSS service provides titles, dates and original links for metadata indexing; no article/description/image republication.",
+        "checked_at": "2026-10-27"
+      },
+      "backfill": {
+        "mode": "provided_feed_only",
+        "max_days": 90,
+        "limitation": "Only items currently returned by the official feed. No article or archive crawling."
+      },
+      "status": "ok",
+      "success_rate": 0.54421768707483,
+      "news_conversion_last7d": {
+        "observed_unique": 4,
+        "industry_candidates": 0,
+        "approved_candidates": 0,
+        "public_observed_candidates": 0,
+        "new_public_candidates": 0,
+        "irrelevant_unique": 4,
+        "rights_held_unique": 0,
+        "candidate_to_approved": null,
+        "candidate_to_public": null,
+        "definition": "unique_URL_IDs_in_successful_feed_this_run; verified_publication_in_last7d; approval_includes_Indirect_review; public_count_requires_matching_source_id; new_excludes_existing_archive; non_news_excluded"
+      },
+      "new_auto_published": 0,
+      "new_newsroom_items": 0,
+      "outcome": "no_new_candidate"
     },
     {
       "id": "mss_press",
@@ -484,8 +484,8 @@
         "Irrelevant": 20
       },
       "received": 20,
-      "new_discoveries": 4,
-      "duplicates": 16,
+      "new_discoveries": 0,
+      "duplicates": 20,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -525,7 +525,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "msit_press",
@@ -539,8 +539,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 3,
-      "duplicates": 47,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -580,7 +580,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "sec_booking",
@@ -627,7 +627,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -678,7 +678,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -729,7 +729,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -780,7 +780,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -831,7 +831,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -882,7 +882,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -933,7 +933,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.004545454545454545,
+      "success_rate": 0.0045351473922902496,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -979,7 +979,7 @@
         "limitation": "Last 100 official press releases per query only; local 90-day gate and verified first_published_at. No article-body crawling or unsupported pagination."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 0,
         "industry_candidates": 0,
@@ -1036,7 +1036,7 @@
         "limitation": "Last 100 official press releases per query only; local 90-day gate and verified first_published_at. No article-body crawling or unsupported pagination."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 0,
         "industry_candidates": 0,
@@ -1091,7 +1091,7 @@
         "limitation": "No pagination or article fetching without explicit archive/reuse permission."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 4,
         "industry_candidates": 0,
@@ -1148,7 +1148,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:http_403",
-      "success_rate": 0.07045454545454545,
+      "success_rate": 0.07029478458049887,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -1276,8 +1276,8 @@
         "Irrelevant": 119
       },
       "received": 120,
-      "new_discoveries": 77,
-      "duplicates": 43,
+      "new_discoveries": 2,
+      "duplicates": 118,
       "rights_holds": 1,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1302,7 +1302,7 @@
         "limitation": "No pagination or article fetching without explicit archive/reuse permission."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 120,
         "industry_candidates": 1,
@@ -1331,8 +1331,8 @@
         "Irrelevant": 32
       },
       "received": 50,
-      "new_discoveries": 3,
-      "duplicates": 32,
+      "new_discoveries": 0,
+      "duplicates": 35,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1364,7 +1364,7 @@
         "limitation": "Only currently returned RSS metadata; no archive pagination, body retrieval or complete 7-day volume claim."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 35,
         "industry_candidates": 3,
@@ -1379,7 +1379,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "traveldaily",
@@ -1426,7 +1426,7 @@
         "limitation": "Only currently returned RSS metadata; no archive pagination, body retrieval or complete 7-day volume claim."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 5,
@@ -1455,8 +1455,8 @@
         "Irrelevant": 49
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1488,22 +1488,22 @@
         "limitation": "Only currently returned RSS metadata; no archive pagination, body retrieval or complete 7-day volume claim."
       },
       "status": "ok",
-      "success_rate": 0.9977272727272727,
+      "success_rate": 0.9977324263038548,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 1,
         "approved_candidates": 1,
         "public_observed_candidates": 1,
-        "new_public_candidates": 1,
+        "new_public_candidates": 0,
         "irrelevant_unique": 49,
         "rights_held_unique": 0,
         "candidate_to_approved": 1.0,
         "candidate_to_public": 1.0,
         "definition": "unique_URL_IDs_in_successful_feed_this_run; verified_publication_in_last7d; approval_includes_Indirect_review; public_count_requires_matching_source_id; new_excludes_existing_archive; non_news_excluded"
       },
-      "new_auto_published": 1,
-      "new_newsroom_items": 1,
-      "outcome": "auto_published"
+      "new_auto_published": 0,
+      "new_newsroom_items": 0,
+      "outcome": "no_new_candidate"
     },
     {
       "id": "hospitalitynet",
@@ -1637,7 +1637,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:transport_error",
-      "success_rate": 0.9512893982808023,
+      "success_rate": 0.9485714285714286,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -1655,8 +1655,8 @@
         "Irrelevant": 996
       },
       "received": 1000,
-      "new_discoveries": 163,
-      "duplicates": 836,
+      "new_discoveries": 17,
+      "duplicates": 982,
       "rights_holds": 3,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1708,11 +1708,11 @@
       "news_classifications": {
         "Direct": 1,
         "Indirect": 0,
-        "Irrelevant": 229
+        "Irrelevant": 232
       },
-      "received": 230,
-      "new_discoveries": 194,
-      "duplicates": 36,
+      "received": 233,
+      "new_discoveries": 3,
+      "duplicates": 230,
       "rights_holds": 1,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1722,7 +1722,7 @@
       "classifications": {
         "Direct": 1,
         "Indirect": 0,
-        "Irrelevant": 229
+        "Irrelevant": 232
       },
       "publication_policy": {
         "status": "review",
@@ -1740,12 +1740,12 @@
       "status": "ok",
       "success_rate": 1.0,
       "news_conversion_last7d": {
-        "observed_unique": 230,
+        "observed_unique": 233,
         "industry_candidates": 1,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 229,
+        "irrelevant_unique": 232,
         "rights_held_unique": 1,
         "candidate_to_approved": 0.0,
         "candidate_to_public": 0.0,
@@ -1767,8 +1767,8 @@
         "Irrelevant": 299
       },
       "received": 300,
-      "new_discoveries": 293,
-      "duplicates": 7,
+      "new_discoveries": 1,
+      "duplicates": 299,
       "rights_holds": 1,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1823,8 +1823,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 47,
-      "duplicates": 3,
+      "new_discoveries": 1,
+      "duplicates": 49,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1879,8 +1879,8 @@
         "Irrelevant": 48
       },
       "received": 100,
-      "new_discoveries": 35,
-      "duplicates": 13,
+      "new_discoveries": 0,
+      "duplicates": 48,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -1921,7 +1921,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_donga",
@@ -1932,21 +1932,21 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 50
+        "Irrelevant": 49
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 2,
+      "duplicates": 47,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
-      "outside_window": 0,
-      "future_date_holds": 0,
+      "outside_window": 1,
+      "future_date_holds": 1,
       "attribution_holds": 0,
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 50
+        "Irrelevant": 49
       },
       "publication_policy": {
         "status": "review",
@@ -1962,14 +1962,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.8578947368421053,
+      "success_rate": 0.8586387434554974,
       "news_conversion_last7d": {
-        "observed_unique": 50,
+        "observed_unique": 49,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 50,
+        "irrelevant_unique": 49,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -1991,8 +1991,8 @@
         "Irrelevant": 40
       },
       "received": 40,
-      "new_discoveries": 1,
-      "duplicates": 39,
+      "new_discoveries": 0,
+      "duplicates": 40,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2033,7 +2033,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_ebn",
@@ -2047,8 +2047,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 43,
-      "duplicates": 7,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2089,7 +2089,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_mk",
@@ -2103,8 +2103,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 4,
+      "duplicates": 46,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2130,7 +2130,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9894736842105263,
+      "success_rate": 0.9895287958115183,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 0,
@@ -2156,21 +2156,21 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 100
+        "Irrelevant": 99
       },
       "received": 100,
-      "new_discoveries": 100,
-      "duplicates": 0,
+      "new_discoveries": 10,
+      "duplicates": 89,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
-      "outside_window": 0,
-      "future_date_holds": 0,
+      "outside_window": 1,
+      "future_date_holds": 1,
       "attribution_holds": 0,
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 100
+        "Irrelevant": 99
       },
       "publication_policy": {
         "status": "review",
@@ -2186,14 +2186,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9473684210526315,
+      "success_rate": 0.9476439790575916,
       "news_conversion_last7d": {
-        "observed_unique": 100,
+        "observed_unique": 99,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 100,
+        "irrelevant_unique": 99,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -2215,8 +2215,8 @@
         "Irrelevant": 49
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 6,
+      "duplicates": 44,
       "rights_holds": 1,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2271,8 +2271,8 @@
         "Irrelevant": 100
       },
       "received": 100,
-      "new_discoveries": 100,
-      "duplicates": 0,
+      "new_discoveries": 0,
+      "duplicates": 100,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2313,7 +2313,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_etoday",
@@ -2324,11 +2324,11 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 221
+        "Irrelevant": 230
       },
-      "received": 221,
-      "new_discoveries": 171,
-      "duplicates": 50,
+      "received": 230,
+      "new_discoveries": 8,
+      "duplicates": 222,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2338,7 +2338,7 @@
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 221
+        "Irrelevant": 230
       },
       "publication_policy": {
         "status": "review",
@@ -2354,14 +2354,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
-        "observed_unique": 202,
+        "observed_unique": 210,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 202,
+        "irrelevant_unique": 210,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -2383,8 +2383,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2410,7 +2410,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9368421052631579,
+      "success_rate": 0.93717277486911,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 0,
@@ -2425,7 +2425,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_inews24",
@@ -2439,8 +2439,8 @@
         "Irrelevant": 100
       },
       "received": 100,
-      "new_discoveries": 85,
-      "duplicates": 15,
+      "new_discoveries": 1,
+      "duplicates": 99,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2495,8 +2495,8 @@
         "Irrelevant": 100
       },
       "received": 100,
-      "new_discoveries": 100,
-      "duplicates": 0,
+      "new_discoveries": 23,
+      "duplicates": 77,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2551,8 +2551,8 @@
         "Irrelevant": 101
       },
       "received": 101,
-      "new_discoveries": 76,
-      "duplicates": 25,
+      "new_discoveries": 1,
+      "duplicates": 100,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2604,21 +2604,21 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 50
+        "Irrelevant": 48
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 0,
+      "duplicates": 48,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
-      "outside_window": 0,
-      "future_date_holds": 0,
+      "outside_window": 2,
+      "future_date_holds": 2,
       "attribution_holds": 0,
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 50
+        "Irrelevant": 48
       },
       "publication_policy": {
         "status": "review",
@@ -2634,14 +2634,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9842105263157894,
+      "success_rate": 0.9842931937172775,
       "news_conversion_last7d": {
-        "observed_unique": 50,
+        "observed_unique": 48,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 50,
+        "irrelevant_unique": 48,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -2649,7 +2649,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_nocutnews",
@@ -2663,8 +2663,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 50,
-      "duplicates": 0,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2705,7 +2705,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_sisajournal",
@@ -2716,21 +2716,21 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 49
+        "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 36,
-      "duplicates": 13,
+      "new_discoveries": 3,
+      "duplicates": 47,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
-      "outside_window": 1,
-      "future_date_holds": 1,
+      "outside_window": 0,
+      "future_date_holds": 0,
       "attribution_holds": 0,
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 49
+        "Irrelevant": 50
       },
       "publication_policy": {
         "status": "review",
@@ -2746,14 +2746,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
-        "observed_unique": 49,
+        "observed_unique": 50,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 49,
+        "irrelevant_unique": 50,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -2775,8 +2775,8 @@
         "Irrelevant": 20
       },
       "received": 20,
-      "new_discoveries": 20,
-      "duplicates": 0,
+      "new_discoveries": 4,
+      "duplicates": 16,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2831,8 +2831,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 10,
-      "duplicates": 40,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2858,7 +2858,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 0,
@@ -2873,7 +2873,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_pressian",
@@ -2884,21 +2884,21 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 24
+        "Irrelevant": 23
       },
       "received": 25,
-      "new_discoveries": 24,
-      "duplicates": 0,
+      "new_discoveries": 2,
+      "duplicates": 21,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
-      "outside_window": 1,
-      "future_date_holds": 1,
+      "outside_window": 2,
+      "future_date_holds": 2,
       "attribution_holds": 0,
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 24
+        "Irrelevant": 23
       },
       "publication_policy": {
         "status": "review",
@@ -2914,14 +2914,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9105263157894737,
+      "success_rate": 0.9109947643979057,
       "news_conversion_last7d": {
-        "observed_unique": 24,
+        "observed_unique": 23,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 24,
+        "irrelevant_unique": 23,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -2943,8 +2943,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 19,
-      "duplicates": 31,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -2970,7 +2970,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 0,
@@ -2985,7 +2985,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_idomin",
@@ -3028,7 +3028,7 @@
       "status": "error",
       "error_kind": "access_policy",
       "error": "robots_unverified:transport_error",
-      "success_rate": 0.5842105263157895,
+      "success_rate": 0.581151832460733,
       "news_conversion_last7d": null,
       "new_auto_published": 0,
       "new_newsroom_items": 0,
@@ -3046,8 +3046,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 16,
-      "duplicates": 34,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -3073,7 +3073,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 0,
@@ -3088,7 +3088,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_incheonilbo",
@@ -3102,8 +3102,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 23,
-      "duplicates": 27,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -3129,7 +3129,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
         "observed_unique": 50,
         "industry_candidates": 0,
@@ -3144,7 +3144,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_jejunews",
@@ -3211,21 +3211,21 @@
       "news_classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 49
+        "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 19,
-      "duplicates": 30,
+      "new_discoveries": 1,
+      "duplicates": 49,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
-      "outside_window": 1,
-      "future_date_holds": 1,
+      "outside_window": 0,
+      "future_date_holds": 0,
       "attribution_holds": 0,
       "classifications": {
         "Direct": 0,
         "Indirect": 0,
-        "Irrelevant": 49
+        "Irrelevant": 50
       },
       "publication_policy": {
         "status": "review",
@@ -3241,14 +3241,14 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9947368421052631,
+      "success_rate": 0.9947643979057592,
       "news_conversion_last7d": {
-        "observed_unique": 49,
+        "observed_unique": 50,
         "industry_candidates": 0,
         "approved_candidates": 0,
         "public_observed_candidates": 0,
         "new_public_candidates": 0,
-        "irrelevant_unique": 49,
+        "irrelevant_unique": 50,
         "rights_held_unique": 0,
         "candidate_to_approved": null,
         "candidate_to_public": null,
@@ -3297,7 +3297,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9894736842105263,
+      "success_rate": 0.9895287958115183,
       "news_conversion_last7d": {
         "observed_unique": 22,
         "industry_candidates": 0,
@@ -3326,8 +3326,8 @@
         "Irrelevant": 50
       },
       "received": 50,
-      "new_discoveries": 21,
-      "duplicates": 29,
+      "new_discoveries": 0,
+      "duplicates": 50,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -3368,7 +3368,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     },
     {
       "id": "kr_koreatimes",
@@ -3382,8 +3382,8 @@
         "Irrelevant": 52
       },
       "received": 52,
-      "new_discoveries": 41,
-      "duplicates": 11,
+      "new_discoveries": 0,
+      "duplicates": 52,
       "rights_holds": 0,
       "date_holds": 0,
       "invalid_metadata": 0,
@@ -3409,7 +3409,7 @@
         "limitation": "Only the current publisher-returned RSS; no article/archive crawling."
       },
       "status": "ok",
-      "success_rate": 0.9842105263157894,
+      "success_rate": 0.9842931937172775,
       "news_conversion_last7d": {
         "observed_unique": 52,
         "industry_candidates": 0,
@@ -3424,7 +3424,7 @@
       },
       "new_auto_published": 0,
       "new_newsroom_items": 0,
-      "outcome": "discovered_not_publishable"
+      "outcome": "no_new_candidate"
     }
   ],
   "quality": {
@@ -3435,19 +3435,19 @@
     "publication_approved_sources": 19,
     "publishing_sources": 8,
     "new_publishing_sources": [],
-    "new_news_articles": 1,
+    "new_news_articles": 0,
     "published_news_articles": 172,
     "originally_published_last24h": 8,
     "originally_published_last7d": 26,
     "evaluated_news_classifications": {
       "Direct": 33,
       "Indirect": 0,
-      "Irrelevant": 3712
+      "Irrelevant": 3721
     },
-    "direct_ratio": 0.008811748998664886,
+    "direct_ratio": 0.008790623335109217,
     "direct_ratio_denominator": "classified_news_feed_observations_within_window_excluding_filings_and_statistics",
     "top3_source_share": 0.7558139534883721,
-    "duplicate_ratio": 0.44619492656875837,
+    "duplicate_ratio": 0.9762919552477357,
     "duplicate_ratio_denominator": "valid_discovery_observations_new_plus_previously_seen_not_removed_independent_reports",
     "news_by_source": {
       "govuk_aviation": 2,
@@ -3470,7 +3470,7 @@
       "hotelnewsresource": 3
     },
     "public_record_count": 180,
-    "public_metrics_as_of": "2026-11-27T12:58:35+09:00",
+    "public_metrics_as_of": "2026-11-27T13:13:17+09:00",
     "stored_news_count": 177,
     "failed_sources": [
       {
@@ -3479,7 +3479,7 @@
         "error": "https_public_endpoint_required"
       },
       {
-        "id": "seoul_environment",
+        "id": "seoul_transport",
         "error_kind": "transport_error",
         "error": "<urlopen error _ssl.c:994: The handshake operation timed out>"
       },
@@ -3972,8 +3972,8 @@
   },
   "briefing": {
     "status": "ok",
-    "checked_at": "2026-11-27T12:58:35+09:00",
+    "checked_at": "2026-11-27T13:13:17+09:00",
     "selection_status": "candidates_ready"
   },
-  "outcome": "new_newsroom_news"
+  "outcome": "no_new_publications_with_source_errors"
 }
