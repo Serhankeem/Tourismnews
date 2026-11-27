@@ -1,30 +1,19 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-11-27T21:38:07+09:00",
-  "briefing_date": "2026-11-27",
-  "last_successful_fetch": "2026-11-27T21:38:07+09:00",
-  "status": "candidates_ready",
-  "recent_news_count": 4,
-  "selected_count": 1,
+  "generated_at": "2026-11-28T04:44:24+09:00",
+  "briefing_date": "2026-11-28",
+  "last_successful_fetch": "2026-11-28T04:44:24+09:00",
+  "status": "no_eligible_recent_articles",
+  "recent_news_count": 1,
+  "selected_count": 0,
   "collection": {
     "status": "partial",
-    "successful_sources": 38,
+    "successful_sources": 49,
     "source_count": 60,
-    "failed_sources": 22
+    "failed_sources": 11
   },
   "mode": "live_rss",
   "title": "관광산업 주요 뉴스 브리핑 후보",
-  "items": [
-    {
-      "title": "한국여행업협회(KATA), 창립 35주년 정기총회·어워즈 성료 ... “단합과 생존 투쟁으로 K-관광 새 도약”",
-      "source": "퍼블릭뉴스통신(TTL)",
-      "published_at": "2026-11-27T01:52:48+09:00",
-      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3166842",
-      "category": "여행산업",
-      "keywords": [
-        "여행업"
-      ]
-    }
-  ],
+  "items": [],
   "notice": "메타데이터 기반 후보 선별 · 본문 요약·실제 발송·구독은 제공하지 않습니다."
 }
