@@ -7,5 +7,5 @@ import unittest
 class ModelSignalTests(unittest.TestCase):
     def test_pure_javascript_model_contracts(self):
         root=Path(__file__).resolve().parents[1]
-        result=subprocess.run(['node','--test','tests/model-signal.test.cjs','tests/model-signal-registry.test.cjs'],cwd=root,capture_output=True,text=True,timeout=90)
+        result=subprocess.run(['node','--test','tests/model-signal.test.cjs','tests/model-signal-registry.test.cjs','tests/model-signal-v11.test.cjs'],cwd=root,capture_output=True,text=True,timeout=90)
         self.assertEqual(result.returncode,0,result.stdout+result.stderr)
