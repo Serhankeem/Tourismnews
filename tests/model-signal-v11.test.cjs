@@ -25,3 +25,21 @@ test('walk-forward prefix versus future values produces identical numeric result
 test('every walk-forward month agrees with a truncated prefix; hash differs as expected',()=>{const db=fixture();for(let n=38;n<69;n++){const p=v1.addMonth('2021-01',n),opts={reference_period:p,as_of_period:v1.addMonth(p,1)},prefix=structuredClone(db);for(const i of prefix.indicators)i.observations=i.observations.filter(o=>o.period<=p);sync(prefix);const a=evaluate(db,opts),b=evaluate(prefix,opts);assert.equal(a.status,b.status);assert.equal(a.score,b.score);assert.deepEqual(a.axes,b.axes);}});
 
 test('unknown revision and malformed collection/publication evidence do not silently pass',()=>{for(const change of [d=>d.indicators[0].observations[50].revision_status='unverified',d=>d.indicators[0].observations[50].original_publication_at='not-a-date',d=>{const o=d.indicators[0].observations[50];o.first_collected_at='2026-11-20T00:00:00Z';o.last_collected_at='2026-11-19T00:00:00Z';}]){const db=fixture();change(db);assert.equal(evaluate(db).status,'withheld');}});
+
+test('KTO October with September missing must withhold September, never fall back to August',()=>{
+ const db=fixture(),i=db.indicators[0];
+ i.observations.push({...i.observations.at(-1),period:'2026-10'});
+ i.observations=i.observations.filter(o=>o.period!=='2026-09');sync(db);
+ const result=evaluate(db);
+ assert.equal(result.reference_period,'2026-09');
+ assert.equal(result.status,'withheld');assert.equal(result.reason,'target_common_month_unavailable');
+ assert.equal(result.score,null);assert.equal(result.weather,null);
+ assert.deepEqual(result.latest_observation_periods,{kto_inbound:'2026-10',kto_tourism_receipts:'2026-09'});
+});
+test('an internal gap in an advanced TOURGO series cannot move the expected common month backwards',()=>{
+ const db=fixture();trim(db,0,'2026-08');
+ db.indicators[1].observations=db.indicators[1].observations.filter(o=>o.period!=='2026-08');sync(db);
+ const result=evaluate(db);
+ assert.equal(result.reference_period,'2026-08');assert.equal(result.status,'withheld');
+ assert.equal(result.reason,'target_common_month_unavailable');assert.equal(result.score,null);
+});

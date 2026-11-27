@@ -3,7 +3,7 @@
 const crypto=require('node:crypto'),v1=require('../../site/market-signal-model.js');
 const VERSION='model-signal-v1.1.0-draft';
 const CONFIG=Object.freeze({model_version:VERSION,base_version:v1.VERSION,methodology:v1.METHOD,
- alignment:'last_explicit_common_month_then_validate_39_consecutive_months',max_lag_months:3});
+ alignment:'earliest_latest_month_then_validate_39_consecutive_months',max_lag_months:3});
 const month=p=>typeof p==='string'&&/^(19|20)\d\d-(0[1-9]|1[0-2])$/.test(p);
 const need=(condition,code)=>{if(!condition)throw Object.assign(Error(code),{safe:code});};
 const hash=raw=>crypto.createHash('sha256').update(raw).digest('hex');
@@ -51,8 +51,9 @@ function evaluateSnapshot(raw,options={}){
    if(entry.validation.rights)need(o.rights===entry.validation.rights,'official_file_evidence_missing');
    sets.push(seen);
   }
-  const common=[...sets[0].keys()].filter(p=>sets.every(s=>s.has(p))).sort();need(common.length>0,'common_period_unavailable');target=common.at(-1);
-  if(options.reference_period)need(target===options.reference_period,'target_common_month_unavailable');
+  // Pin the expected month before testing presence; an internal gap must never trigger fallback.
+  target=options.reference_period||Object.values(latest).sort()[0];
+  need(sets.every(s=>s.has(target)),'target_common_month_unavailable');
   for(const seen of sets)for(const o of seen.values())if(o.period>=v1.addMonth(target,-38)&&o.period<=target){
    if(o.revision_status!==undefined)need(['original','revised'].includes(o.revision_status),'revision_metadata_invalid');
    for(const key of ['release_published_at','original_publication_at','first_collected_at','last_collected_at'])
