@@ -1,0 +1,448 @@
+{
+  "future_prefix_checks": 396,
+  "future_prefix_failures": 0,
+  "protocol": {
+    "source_hashes": {
+      "site/market-signal-model.js": "65f9dcbc22cd6470d9c14913342aed1ada0d334dafb079eec92a76e6ca6e3ba8",
+      "site/market-signal-registry.js": "ed325bb1c4b42d9a7650bbe6a835d5909cb83e22988f09e5507995fe0dc5c3f8",
+      "src/model_signal/v11.cjs": "a9d2e0ac810db96b7d573e552722f5e6e9d5b13267adb2c272c821a9990c22ca",
+      "tools/compare_model_signal_v11.py": "9b4b28eb9900f40b968faeae3c33eb839100ccc0af3454a393c371cdb7978010"
+    },
+    "as_of_period": "2026-11",
+    "methods": [
+      "smooth24",
+      "smooth36",
+      "yoy24",
+      "rolling12_yoy24",
+      "zscore24",
+      "mad24",
+      "minmax24"
+    ],
+    "input_sha256": "5272f979758cd7562de15047e2a3f6a7e7590ee7ad1b27b853ba5e12bca2d9ae",
+    "target": "2026-09",
+    "reference_excludes_target": true,
+    "weights": [
+      "1/2",
+      "1/2"
+    ],
+    "stress_weights": [
+      "2/5",
+      "3/5"
+    ],
+    "perturbation": "one raw value at a time, all used months, exact fractional +/-0.5% and +/-2%",
+    "normalization": "normal CDF; population standard deviation for Z; median and 1.4826*MAD for robust Z; clipped MinMax",
+    "mode": "retrospective_current_vintage",
+    "prediction_accuracy_measured": false,
+    "historical_as_of_verified": false,
+    "protocol_not_blind_to_user_supplied_reference_results": true
+  },
+  "common_evaluation_months": [
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "methods": {
+    "smooth24": {
+      "own_period": {
+        "months": 31,
+        "first": "2024-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 10.416666666666666,
+        "max_absolute_monthly_change": 39.583333333333336,
+        "weather_transitions": 12
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 11.458333333333332,
+        "max_absolute_monthly_change": 39.583333333333336,
+        "weather_transitions": 9
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 8,
+        "max_score_change": 7.916666666666667
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1482,
+          "weather_changes": 2,
+          "max_score_change": 4.166666666666667
+        },
+        "-1/200": {
+          "cases": 1482,
+          "weather_changes": 0,
+          "max_score_change": 4.166666666666667
+        },
+        "1/200": {
+          "cases": 1482,
+          "weather_changes": 0,
+          "max_score_change": 4.166666666666667
+        },
+        "1/50": {
+          "cases": 1482,
+          "weather_changes": 2,
+          "max_score_change": 4.166666666666667
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 7,
+        "first": "2026-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 4.513888888888888,
+        "max_absolute_monthly_change": 16.66666666666667,
+        "weather_transitions": 3
+      },
+      "target_score": 62.5,
+      "supplied_reference_rounded_match": true
+    },
+    "smooth36": {
+      "own_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 9.64506172839506,
+        "max_absolute_monthly_change": 31.944444444444443,
+        "weather_transitions": 4
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 9.64506172839506,
+        "max_absolute_monthly_change": 31.944444444444443,
+        "weather_transitions": 4
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 3,
+        "max_score_change": 6.944444444444445
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1938,
+          "weather_changes": 12,
+          "max_score_change": 2.7777777777777777
+        },
+        "-1/200": {
+          "cases": 1938,
+          "weather_changes": 0,
+          "max_score_change": 2.7777777777777777
+        },
+        "1/200": {
+          "cases": 1938,
+          "weather_changes": 0,
+          "max_score_change": 2.7777777777777777
+        },
+        "1/50": {
+          "cases": 1938,
+          "weather_changes": 14,
+          "max_score_change": 2.7777777777777777
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 0,
+        "first": null,
+        "last": null,
+        "mean_absolute_monthly_change": null,
+        "max_absolute_monthly_change": null,
+        "weather_transitions": 0
+      },
+      "target_score": 56.94444444444444,
+      "supplied_reference_rounded_match": true
+    },
+    "yoy24": {
+      "own_period": {
+        "months": 33,
+        "first": "2024-01",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 17.96875,
+        "max_absolute_monthly_change": 41.66666666666667,
+        "weather_transitions": 20
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 19.09722222222222,
+        "max_absolute_monthly_change": 41.666666666666664,
+        "weather_transitions": 12
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 4,
+        "max_score_change": 7.916666666666667
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1406,
+          "weather_changes": 13,
+          "max_score_change": 10.416666666666666
+        },
+        "-1/200": {
+          "cases": 1406,
+          "weather_changes": 5,
+          "max_score_change": 4.166666666666667
+        },
+        "1/200": {
+          "cases": 1406,
+          "weather_changes": 5,
+          "max_score_change": 4.166666666666667
+        },
+        "1/50": {
+          "cases": 1406,
+          "weather_changes": 13,
+          "max_score_change": 10.416666666666666
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 9,
+        "first": "2026-01",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 23.697916666666668,
+        "max_absolute_monthly_change": 41.666666666666664,
+        "weather_transitions": 7
+      },
+      "target_score": 37.5,
+      "supplied_reference_rounded_match": true
+    },
+    "rolling12_yoy24": {
+      "own_period": {
+        "months": 22,
+        "first": "2024-12",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 7.440476190476191,
+        "max_absolute_monthly_change": 22.916666666666664,
+        "weather_transitions": 5
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 7.175925925925926,
+        "max_absolute_monthly_change": 22.916666666666664,
+        "weather_transitions": 5
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 11,
+        "max_score_change": 6.666666666666667
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1824,
+          "weather_changes": 25,
+          "max_score_change": 4.166666666666667
+        },
+        "-1/200": {
+          "cases": 1824,
+          "weather_changes": 0,
+          "max_score_change": 2.0833333333333335
+        },
+        "1/200": {
+          "cases": 1824,
+          "weather_changes": 3,
+          "max_score_change": 2.0833333333333335
+        },
+        "1/50": {
+          "cases": 1824,
+          "weather_changes": 30,
+          "max_score_change": 4.166666666666667
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 0,
+        "first": null,
+        "last": null,
+        "mean_absolute_monthly_change": null,
+        "max_absolute_monthly_change": null,
+        "weather_transitions": 0
+      },
+      "target_score": 75.0,
+      "supplied_reference_rounded_match": true
+    },
+    "zscore24": {
+      "own_period": {
+        "months": 31,
+        "first": "2024-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 8.888499006468477,
+        "max_absolute_monthly_change": 37.646581083948476,
+        "weather_transitions": 8
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 9.569022250917344,
+        "max_absolute_monthly_change": 37.646581083948476,
+        "weather_transitions": 5
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 6,
+        "max_score_change": 7.189458124817392
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1482,
+          "weather_changes": 3,
+          "max_score_change": 2.691356263642021
+        },
+        "-1/200": {
+          "cases": 1482,
+          "weather_changes": 0,
+          "max_score_change": 0.6796907232835139
+        },
+        "1/200": {
+          "cases": 1482,
+          "weather_changes": 0,
+          "max_score_change": 0.6827158287885453
+        },
+        "1/50": {
+          "cases": 1482,
+          "weather_changes": 3,
+          "max_score_change": 2.7395156282372355
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 7,
+        "first": "2026-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 4.585394723188,
+        "max_absolute_monthly_change": 16.617754448418168,
+        "weather_transitions": 0
+      },
+      "target_score": 57.33564924317899,
+      "supplied_reference_rounded_match": true
+    },
+    "mad24": {
+      "own_period": {
+        "months": 31,
+        "first": "2024-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 10.237005142563794,
+        "max_absolute_monthly_change": 38.82814331422241,
+        "weather_transitions": 12
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 10.576728355971598,
+        "max_absolute_monthly_change": 38.82814331422241,
+        "weather_transitions": 8
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 5,
+        "max_score_change": 6.667342657419695
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1482,
+          "weather_changes": 17,
+          "max_score_change": 4.419635598432205
+        },
+        "-1/200": {
+          "cases": 1482,
+          "weather_changes": 0,
+          "max_score_change": 1.3020424223942548
+        },
+        "1/200": {
+          "cases": 1482,
+          "weather_changes": 0,
+          "max_score_change": 1.2107151620870198
+        },
+        "1/50": {
+          "cases": 1482,
+          "weather_changes": 16,
+          "max_score_change": 4.415142112654387
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 7,
+        "first": "2026-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 5.441424103033054,
+        "max_absolute_monthly_change": 19.404289083443054,
+        "weather_transitions": 3
+      },
+      "target_score": 61.0769898357723,
+      "supplied_reference_rounded_match": true
+    },
+    "minmax24": {
+      "own_period": {
+        "months": 31,
+        "first": "2024-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 9.272372301615452,
+        "max_absolute_monthly_change": 34.22408547231669,
+        "weather_transitions": 10
+      },
+      "common_period": {
+        "months": 19,
+        "first": "2025-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 10.607092507249622,
+        "max_absolute_monthly_change": 34.22408547231669,
+        "weather_transitions": 7
+      },
+      "weight_stress_common": {
+        "cases": 38,
+        "weather_changes": 10,
+        "max_score_change": 9.778743007399603
+      },
+      "single_value_stress_common": {
+        "-1/50": {
+          "cases": 1482,
+          "weather_changes": 20,
+          "max_score_change": 2.0455024717951544
+        },
+        "-1/200": {
+          "cases": 1482,
+          "weather_changes": 3,
+          "max_score_change": 0.5147245594650622
+        },
+        "1/200": {
+          "cases": 1482,
+          "weather_changes": 3,
+          "max_score_change": 0.517086388210283
+        },
+        "1/50": {
+          "cases": 1482,
+          "weather_changes": 20,
+          "max_score_change": 1.8892486360725516
+        }
+      },
+      "post_pandemic_raw_window": {
+        "months": 7,
+        "first": "2026-03",
+        "last": "2026-09",
+        "mean_absolute_monthly_change": 6.388688963389767,
+        "max_absolute_monthly_change": 13.41691191466473,
+        "weather_transitions": 1
+      },
+      "target_score": 49.68279407156617,
+      "supplied_reference_rounded_match": true
+    }
+  },
+  "fraction_oracle_passed": true
+}
