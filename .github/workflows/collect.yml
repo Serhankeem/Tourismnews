@@ -49,7 +49,7 @@ jobs:
           from src.macro.weather_publication import require
           api = GitHub(os.environ['MONTHLY_READ_TOKEN'])
           run = api.get('repos/'+REPOSITORY+'/actions/runs/44681861640')
-          require(run['repository']['full_name']==REPOSITORY,'github_dispatch_binding_invalid')
+          require(run['repository']['full_name'].casefold()==REPOSITORY.casefold(),'github_dispatch_binding_invalid')
           role = api.get('repos/'+REPOSITORY+'/collaborators/Serhankeem/permission')
           require(role.get('permission') in ('admin','write','maintain') and role.get('user',{}).get('id')==run['actor']['id'],'github_publish_permission_required')
           print('monthly_default_token_run_and_role_contract_ok; no approval or publication requested')
