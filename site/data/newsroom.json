@@ -1,9 +1,9 @@
 {
   "schema_version": 4,
   "mode": "live_rss",
-  "generated_at": "2026-11-27T08:13:32+09:00",
-  "last_successful_fetch": "2026-11-27T08:13:32+09:00",
-  "count": 171,
+  "generated_at": "2026-11-27T12:58:35+09:00",
+  "last_successful_fetch": "2026-11-27T12:58:35+09:00",
+  "count": 172,
   "public_fields": [
     "title",
     "source",
@@ -13,6 +13,16 @@
     "keywords"
   ],
   "articles": [
+    {
+      "title": "한국여행업협회(KATA), 창립 35주년 정기총회·어워즈 성료 ... “단합과 생존 투쟁으로 K-관광 새 도약”",
+      "source": "퍼블릭뉴스통신(TTL)",
+      "published_at": "2026-11-27T01:52:48+09:00",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3166842",
+      "category": "여행산업",
+      "keywords": [
+        "여행업"
+      ]
+    },
     {
       "title": "10월 인바운드 24% 증가, 아웃바운드 1.4% 감소",
       "source": "트래블데일리",

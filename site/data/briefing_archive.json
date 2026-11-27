@@ -715,6 +715,46 @@
         }
       ],
       "notice": "메타데이터 기반 후보 선별 · 본문 요약·실제 발송·구독은 제공하지 않습니다."
+    },
+    {
+      "schema_version": 5,
+      "generated_at": "2026-11-27T12:58:35+09:00",
+      "briefing_date": "2026-11-27",
+      "last_successful_fetch": "2026-11-27T12:58:35+09:00",
+      "status": "candidates_ready",
+      "recent_news_count": 8,
+      "selected_count": 2,
+      "collection": {
+        "status": "partial",
+        "successful_sources": 48,
+        "source_count": 60,
+        "failed_sources": 12
+      },
+      "mode": "live_rss",
+      "title": "관광산업 주요 뉴스 브리핑 후보",
+      "items": [
+        {
+          "title": "한국여행업협회(KATA), 창립 35주년 정기총회·어워즈 성료 ... “단합과 생존 투쟁으로 K-관광 새 도약”",
+          "source": "퍼블릭뉴스통신(TTL)",
+          "published_at": "2026-11-27T01:52:48+09:00",
+          "url": "http://www.ttlnews.com/news/articleView.html?idxno=3166842",
+          "category": "여행산업",
+          "keywords": [
+            "여행업"
+          ]
+        },
+        {
+          "title": "2030년 관광객 2600만명 유치 목표… 모로코, 한국 여행사 인센티브·공동 마케팅 확대 검토",
+          "source": "퍼블릭뉴스통신(TTL)",
+          "published_at": "2026-11-26T14:34:42+09:00",
+          "url": "http://www.ttlnews.com/news/articleView.html?idxno=3166700",
+          "category": "여행산업",
+          "keywords": [
+            "여행사"
+          ]
+        }
+      ],
+      "notice": "메타데이터 기반 후보 선별 · 본문 요약·실제 발송·구독은 제공하지 않습니다."
     }
   ]
 }

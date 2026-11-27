@@ -1008,6 +1008,79 @@
           "published_at": "2026-11-25T19:58:52+09:00"
         }
       ]
+    },
+    {
+      "briefing_date": "2026-11-27",
+      "generated_at": "2026-11-27T12:58:35+09:00",
+      "mode": "live_rss",
+      "decisions": [
+        {
+          "article_id": "cf83f14b05da30a402",
+          "decision": "selected",
+          "tier": "korea_direct",
+          "category": "여행산업",
+          "new_category": true,
+          "age_hours": 11.1,
+          "published_at": "2026-11-27T01:52:48+09:00",
+          "basis": [
+            "authorized_newsroom",
+            "verified_timestamp_last24h",
+            "korea_priority_then_category_diversity",
+            "conservative_title_similarity"
+          ]
+        },
+        {
+          "article_id": "309d1a9a5182821c88",
+          "decision": "selected",
+          "tier": "korea_direct",
+          "category": "여행산업",
+          "new_category": false,
+          "age_hours": 22.4,
+          "published_at": "2026-11-26T14:34:42+09:00",
+          "basis": [
+            "authorized_newsroom",
+            "verified_timestamp_last24h",
+            "korea_priority_then_category_diversity",
+            "conservative_title_similarity"
+          ]
+        },
+        {
+          "article_id": "0fec886d2d58f79d89",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-26T22:09:09+09:00"
+        },
+        {
+          "article_id": "fa7e045f2529835e02",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-26T22:09:05+09:00"
+        },
+        {
+          "article_id": "8a48abb5843ed1b548",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-26T21:55:23+09:00"
+        },
+        {
+          "article_id": "370e3a0aa76d7b6b1b",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-26T21:30:00+09:00"
+        },
+        {
+          "article_id": "9adc66f4a6464b2aa1",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-26T21:20:11+09:00"
+        },
+        {
+          "article_id": "4af47b256d7f078554",
+          "decision": "editorial_ineligible",
+          "tier": "reference",
+          "published_at": "2026-11-26T21:13:49+09:00"
+        }
+      ]
     }
   ]
 }

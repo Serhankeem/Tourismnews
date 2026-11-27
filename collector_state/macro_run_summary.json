@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-26T13:35:16.678168+09:00",
+  "checked_at": "2026-11-27T13:01:24.427561+09:00",
   "status": "ok",
   "sources": [
     {
@@ -8,12 +8,12 @@
       "name": "한국관광공사 한국관광통계",
       "status": "ok",
       "reason": null,
-      "last_successful_check": "2026-11-26T13:35:16.678168+09:00",
+      "last_successful_check": "2026-11-27T13:01:24.427561+09:00",
       "reference_period": "2026-10",
       "release_published_at": "2026-11-25T16:00:00+09:00",
       "observations": 490,
-      "new_observations": 7,
-      "unchanged_observations": 483,
+      "new_observations": 0,
+      "unchanged_observations": 490,
       "value_corrections": 0,
       "status_changes": 0
     },
@@ -96,8 +96,8 @@
       "collection_state": "disabled"
     }
   ],
-  "new_observations": 7,
-  "unchanged_observations": 483,
+  "new_observations": 0,
+  "unchanged_observations": 490,
   "value_corrections": 0,
   "status_changes": 0,
   "successful_sources": 1,
