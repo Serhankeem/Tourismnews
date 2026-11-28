@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-28T11:56:40+09:00",
+  "checked_at": "2026-11-28T18:21:26+09:00",
   "scope": "successful_sources_this_run",
   "items": [
     {
@@ -3345,6 +3345,44 @@
       "decision": "exclude"
     },
     {
+      "id": "b87fd05e4cbe720df9",
+      "title": "오산미니어처빌리지, 기독교편 해설서 발간 및 ‘기독교 미니어처 특별전시’ 개최",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3167330",
+      "source_id": "ttlnews",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [
+          "cross_sentence_unproven"
+        ],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "다른 산업 기사에서 관광 키워드만으로 영향 관계를 만들지 않습니다."
+      },
+      "decision": "exclude"
+    },
+    {
+      "id": "af4def0aebb8c8ac0a",
+      "title": "‘제12회 우먼클럽 송년의 밤’ 성료 ... “관광업계 ‘연합 송년회’ 같은 모습 보이며 성황리 개최”",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3167325",
+      "source_id": "ttlnews",
+      "relevance_evidence": {
+        "rule_version": "0.2",
+        "label": "Irrelevant",
+        "decision": "exclude",
+        "category": null,
+        "score": 0,
+        "rules": [],
+        "signals": [],
+        "impact_targets": [],
+        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
+      },
+      "decision": "exclude"
+    },
+    {
       "id": "6029f65501013575f5",
       "title": "NH농협은행·한국조폐공사, NH포인트 지역화폐 전환 서비스 활성화 업무협약",
       "url": "http://www.ttlnews.com/news/articleView.html?idxno=3167061",
@@ -4204,42 +4242,6 @@
       "id": "bcc652b454e54e5d3c",
       "title": "대원미디어그룹 4개사, 일산 킨텍스 AGF 2026서 대형 통합 부스 및 신작 굿즈 공개",
       "url": "http://www.ttlnews.com/news/articleView.html?idxno=3167180",
-      "source_id": "ttlnews",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "edee53bf17087f75f0",
-      "title": "KB국민은행·에스원, AI 보안 접목한 금융·이동통신 공동사업 추진",
-      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3167152",
-      "source_id": "ttlnews",
-      "relevance_evidence": {
-        "rule_version": "0.2",
-        "label": "Irrelevant",
-        "decision": "exclude",
-        "category": null,
-        "score": 0,
-        "rules": [],
-        "signals": [],
-        "impact_targets": [],
-        "reason": "관광산업에 대한 구체적 대상·영향 근거가 없습니다."
-      },
-      "decision": "exclude"
-    },
-    {
-      "id": "41ef6d7f39f50e2304",
-      "title": "장흥군, 주요 도로변 수목 월동작업…보온과 방제 동시에",
-      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3167166",
       "source_id": "ttlnews",
       "relevance_evidence": {
         "rule_version": "0.2",
